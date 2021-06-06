@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+//   font-family: 'Inter';
+//    font-weight: normal;
+//    font-style: normal;
+//   font-size: calc(14px + (15 - 14) * ((100vw - 360px) / (1920 - 360)));
+//   line-height: calc(18px + (20 - 18) * ((100vw - 360px) / (1920 - 360)));
+  overflow-x: hidden;
+}
+textarea{
+	resize: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	position: relative;
+}
+.footer {
+	flex: 0 0 auto;
+}
+input,
+textarea { 
+	appearance: none;
+	outline:none 
+}
+
+.icon-
+
+.container{
+  max-width: px;
+  padding: 0 15px;
+}
+
+.breadcrumbs {
+
+}
+
+.d-flex{
+	display: flex !important;
+}
+
+//Ввод данных конец 
+.burger{
+
+}
