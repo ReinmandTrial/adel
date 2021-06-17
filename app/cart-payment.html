@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шаблон</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <!-- WRAPPER start -->
+   <div class="wrapper">
+
+      <!-- HEADER start  -->
+
+      <header class="header">
+         <div class="container">
+            <div class="header__content">
+               <div class="logo">
+                  <img src="images/svg/logo.svg" alt="Логотип">
+               </div>
+               <div class="header__container">
+                  <ul class="menu">
+                     <li class="menu__item h10"><a href="#" class="menu__link">Каталог</a></li>
+                     <li class="menu__item h10">
+                        Покупателям <span class="icon icon-triangle-down"></span>
+                        <div class="menu__item-body h12">
+                           <a href="#">Оплата заказа</a>
+                           <a href="#">Условия доставки</a>
+                           <a href="#">Обмен и возврат заказа</a>
+                           <a href="#">Уход за изделиями</a>
+                           <a href="#">Полезное</a>
+                        </div>
+                     </li>
+                     <li class="menu__item h10"><a href="#" class="menu__link">Контакты</a></li>
+                  </ul>
+
+                  <div class="header__nav">
+                     <label class="search">
+                        <input type="text" class="search__input h10">
+                        <span class="icon icon-search"></span>
+                     </label>
+                     <a href="#" class="header__link">
+                        <span class="icon icon-person"></span>
+                     </a>
+                     <a href="#" class="header__link">
+                        <span class="icon icon-heart"></span>
+                     </a>
+                     <a href="#" class="header__link">
+                        <span class="icon icon-bag"></span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- HEADER end  -->
+
+      <!-- MAIN start  -->
+      <main class="main">
+
+
+         <!-- CONTENT start  -->
+         <div class="content">
+            <div class="page-cart">
+               <div class="container">
+                  <div class="page-cart__content">
+
+                     <!-- steps start -->
+                     <div class="steps">
+                        <div class="steps__item">
+                           <div class="steps__num h4">1</div>
+                           <p class="steps__title">Корзина</p>
+                        </div>
+                        <div class="steps__item">
+                           <div class="steps__num h4">2</div>
+                           <p class="steps__title">Доставка</p>
+                        </div>
+                        <div class="steps__item">
+                           <div class="steps__num h4">3</div>
+                           <p class="steps__title">Отлата</p>
+                        </div>
+                     </div>
+                     <!-- steps end -->
+
+                     <!-- cart main start-->
+                     <div class="page-cart__main">
+                        <div class="page-cart__title h5">СПОСОБ ОПЛАТЫ</div>
+                        <div class="page-cart__body">
+                           <div class="page-cart__container">
+                              <div class="payment-radio">
+                                 <label class="payment-radio__item" for="payment1">
+                                    <input type="radio" class="radio-input" id="payment1" name="payment">
+                                    <span class="radio-style"></span>
+                                    <div class="payment-radio__body">
+                                       <p class="payment-radio__title h10">Оплата безналичным расчётом</p>
+                                       <p class="payment-radio__text h14">
+                                          Выставляется счёт на оплату
+                                          для юридического лица
+                                       </p>
+                                    </div>
+                                 </label>
+                                 <label class="payment-radio__item" for="payment2">
+                                    <input type="radio" class="radio-input" id="payment2" name="payment">
+                                    <span class="radio-style"></span>
+                                    <div class="payment-radio__body">
+                                       <p class="payment-radio__title h10">Оплата наличными</p>
+                                       <p class="payment-radio__text h14">
+                                          Осуществляется с помощью перевода
+                                       </p>
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="page-cart__button-box">
+                                 <button class="page-cart__button button">ОПЛАТИТЬ</button>
+                              </div>
+                           </div>
+                           <div class="order-info">
+                              <div class="order-info__text-line">
+                                 <p class="order-info__text_m h17">Стоимость заказа</p>
+                                 <p class="order-info__price h10">13 190 ₽</p>
+                              </div>
+                              <div class="order-info__text-line">
+                                 <p class="order-info__text_m h17">Доставка</p>
+                                 <p class="order-info__price h10">0 ₽</p>
+                              </div>
+                              <div class="order-info__sum">
+                                 <div class="order-info__text-line">
+                                    <p class="order-info__text_m h17">Скидка</p>
+                                    <p class="order-info__price h10">- 290 ₽</p>
+                                 </div>
+                                 <div class="order-info__text-line">
+                                    <p class="order-info__text_m_medium">ИТОГО К ОПЛАТЕ:</p>
+                                    <p class="order-info__price_semibold">12 900 ₽</p>
+                                 </div>
+                              </div>
+                              <button class="order-info-button button2">изменить заказ</button>
+                              <p class="order-info__text_s h14">Бесплатная доставка от 5000 ₽ </p>
+                              <a href="#" class="order-info__link_s h14">Прочитать о порядке и сроках возврата
+                                 товара</a>
+                           </div>
+                        </div>
+                        <!-- slider start -->
+                        <div class="slider-box">
+                           <p class="slider__header h5">ВЫ НЕДАВНО СМОТРЕЛИ</p>
+                           <div class="slider">
+                              <div class="slider__container swiper-container">
+                                 <div class="slider__wrapper swiper-wrapper">
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <span class="slider__linear-gradient"></span>
+                              </div>
+                              <div class="slider-button slider-button-prev">
+                                 <span class="icon icon-triangle-left"></span>
+                              </div>
+                              <div class="slider-button slider-button-next">
+                                 <span class="icon icon-triangle-right"></span>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- slider end -->
+
+                        <!-- slider start -->
+                        <div class="slider-box">
+                           <p class="slider__header h5">ВЫ НЕДАВНО СМОТРЕЛИ</p>
+                           <div class="slider">
+                              <div class="slider__container swiper-container">
+                                 <div class="slider__wrapper swiper-wrapper">
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="card-column swiper-slide">
+                                       <a href="#" class="card__code h12">арт. CN6269/1Z-6271</a>
+                                       <div class="card__img">
+                                          <a href="#">
+                                             <img src="images/card-img1.png" alt="">
+                                          </a>
+                                          <a href="#" class="card__banner card__banner_hit h12">Хит</a>
+                                          <button class="card__like-btn">
+                                             <span class="icon icon-heart-xl"></span>
+                                          </button>
+                                       </div>
+                                       <div class="card__descr">
+                                          <a href="#" class="card__name h10">Комплект «Мерлин»</a>
+                                          <a href="#" class="card__price">7 000 ₽</a>
+                                          <a href="#" class="card__availability">
+                                             <p>Наличие</p>
+                                             <p><span class="color_green semibold">76 шт.</span></p>
+                                          </a>
+                                          <div class="slider-color">
+                                             <div class="slider-color__container swiper-container">
+
+                                                <div class="slider-color__wrapper swiper-wrapper">
+                                                   <div class="color__item color-1 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-2 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-3 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-4 swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-5 active swiper-slide">
+                                                   </div>
+                                                   <div class="color__item color-6 swiper-slide">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <button class="slider-color__btn slider-color__btn-prev">
+                                                <span class="icon icon-triangle-left"></span>
+                                             </button>
+                                             <button class="slider-color__btn slider-color__btn-next">
+                                                <span class="icon icon-triangle-right"></span>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <span class="slider__linear-gradient"></span>
+                              </div>
+                              <div class="slider-button slider-button-prev">
+                                 <span class="icon icon-triangle-left"></span>
+                              </div>
+                              <div class="slider-button slider-button-next">
+                                 <span class="icon icon-triangle-right"></span>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- slider end -->
+
+                     </div>
+                     <!-- cart main end-->
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- CONTENT end -->
+
+         <!-- popup  -->
+
+         <!-- popup end  -->
+      </main>
+      <!-- MAIN end -->
+
+      <!-- FOOTER start  -->
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="footer__columns">
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">КАТАЛОГ</p>
+                     <a href="#" class="footer__link">Шапки</a>
+                     <a href="#" class="footer__link">Шарфы и бафы</a>
+                     <a href="#" class="footer__link">Комплекты</a>
+                  </div>
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">ПОКУПАТЕЛЯМ</p>
+                     <a href="#" class="footer__link">Оплата заказа</a>
+                     <a href="#" class="footer__link">Условия доставки</a>
+                     <a href="#" class="footer__link">Обмен и возврат заказа</a>
+                     <a href="#" class="footer__link">Уход за изделиями</a>
+                     <a href="#" class="footer__link">Полезное</a>
+                  </div>
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">СВЯЗАТЬСЯ С НАМИ</p>
+                     <a href="#" class="footer__link">Контакты и адреса магазинов</a>
+                  </div>
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">ПАРТНЕРАМ</p>
+                     <p class="footer__link"></p>
+                  </div>
+               </div>
+
+               <div class="footer__contacts h8">
+                  <p>8 800 495 84 49</p>
+                  <p>Aiva-shop@gmail.com</p>
+               </div>
+               <div class="footer__socials">
+                  <a href="#"><span class="icon icon-inst"></span></a>
+                  <a href="#"><span class="icon icon-vk"></span></a>
+                  <a href="#"><span class="icon icon-facebook"></span></a>
+               </div>
+               <a href="#" class="footer__info">Соглашение об обработке персональных данных</a>
+            </div>
+         </div>
+      </footer>
+      <!-- FOOTER end -->
+
+   </div>
+   <!-- WRAPPER end -->
+
+
+
+   <!-- SCRIPTS start  -->
+   <script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

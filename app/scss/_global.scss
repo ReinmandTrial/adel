@@ -1,11 +1,11 @@
 html,
 body {
   height: 100%;
-//   font-family: 'Inter';
-//    font-weight: normal;
-//    font-style: normal;
-//   font-size: calc(14px + (15 - 14) * ((100vw - 360px) / (1920 - 360)));
-//   line-height: calc(18px + (20 - 18) * ((100vw - 360px) / (1920 - 360)));
+  font-family: 'Montserrat';
+   font-weight: normal;
+   font-style: normal;
+  font-size: 18px;
+  color: $text1;
   overflow-x: hidden;
 }
 textarea{
@@ -24,17 +24,16 @@ textarea{
 .footer {
 	flex: 0 0 auto;
 }
+.container{
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	height: 100%;
+}
 input,
 textarea { 
 	appearance: none;
 	outline:none 
-}
-
-.icon-
-
-.container{
-  max-width: px;
-  padding: 0 15px;
 }
 
 .breadcrumbs {
@@ -49,3 +48,600 @@ textarea {
 .burger{
 
 }
+
+.off{
+	display: none !important;
+}
+
+.checkbox {
+	position: relative;
+	width: 20px;
+	height: 20px;
+}
+.checkbox-none, .radio-none {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+.checkbox-style {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid $color1;
+	border-radius: 2px;
+}
+.checkbox-none:checked + .checkbox-style{
+	background: url(../images/svg/check.svg) 1px 3px no-repeat;
+}
+
+
+
+
+
+.card-row-xl {
+   display: flex;
+   position: relative;
+   max-width: 880px;
+   &:not(:last-child){
+       margin-bottom: 30px;
+   }
+   .icon-close {
+       font-size: 24px;
+       position: absolute;
+       top: 10px;
+       right: 17px;
+   }
+   &__img {
+		flex: 0 0 auto;
+       width: 200px;
+       height: 207px;
+       & img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+   }
+
+   &__info {
+       flex: 1 1 auto;
+       padding: 20px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+
+   &__name {
+       font-weight: 500;
+		 margin-right: 25px;
+   }
+
+   &__price {
+       margin: 5px 0px;
+		 margin-bottom: 12px;
+		 line-height: unset;
+   }
+
+   &__container {
+       max-width: 530px;
+       height: 65px;
+       display: flex;
+       justify-content: space-between;
+   }
+   &__box{
+       flex: 1 0 auto;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+       &:not(:last-child){
+           margin-right: 15px;
+       }
+   }
+
+   &__title_s{
+       text-align: center;
+       margin-bottom: 12px;
+   }
+	&__amount-box{
+		flex: 0 1 auto;
+	}
+   &__amount {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+		 color: $text1op05;
+       & span{
+           font-size: 12px;
+           padding: 8px;
+       }
+       & p{
+			 text-align: center;
+           border: 1px solid $color1;
+           padding: 3px 10px;
+           min-width: 49px;
+       }
+   }
+
+
+   &__color {
+       background: #40697F;
+       margin-bottom: 3px;
+   }
+
+   &__code {
+       padding-bottom: 5px;
+   }
+   &__price_s{
+      font-family: 'Nunito';
+		margin-bottom: 2px;
+		
+   }
+}
+
+.slider {
+	position: relative;
+	&-box{
+		position: relative;
+		margin-top: 100px;
+	}
+	&__header {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	&__container {
+		position: relative;
+		margin: 0px calc(-50vw + 660px) 0px 15px;
+		overflow: hidden;
+	}
+
+	&__wrapper {
+	}
+	&__linear-gradient{
+		display: block;
+		height: 100%;
+		width: 46px;
+		background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		position: absolute;
+		right: -2px;
+		top: 0;
+		z-index: 3;
+	}
+	&-button{
+		position: absolute;
+		top: 40%;
+		transform: translate(0, -50%);
+		z-index: 4;
+		width: calc(26px + (50 - 26) * ((100vw - 320px) / (1440 - 320)));
+		height: calc(26px + (50 - 26) * ((100vw - 320px) / (1440 - 320)));
+		background: $color3;
+		border: 3px solid $color1;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		outline: none;
+		& span{
+			font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+			color: $color2;
+		}
+	}
+	&-button-prev{
+		left: -17px;
+		& span{
+			position: relative;
+			right: 1px;
+		}
+	}
+	&-button-next{
+		right: calc(-50vw + 695px);
+		& span{
+			position: relative;
+			left: 1px;
+		}
+	}
+}
+.card {
+	&__code {
+		display: block;
+		margin-bottom: 8px;
+		color: $text1op035;
+	}
+
+	&__img {
+		display: block;
+		position: relative;
+		& img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		
+	}
+	&__like-btn{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: $color1;
+	}
+	&__banner{
+		display: block;
+		min-width: 90px;
+		padding: 7px 10px 8px 10px;
+		text-align: center;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+  }
+	&__banner_hit {
+		background: $colorActive;
+	}
+	&__banner_stock{
+		background: #A50D2C;
+	}
+	&__banner_new{
+		background: #E9C4C9;
+	}
+
+	&__name {
+		display: block;
+		font-weight: 500;
+		color: $text1op07;
+	}
+
+	&__price {
+		display: block;
+		color: $text1op07;
+	}
+
+	&__availability {
+		display: flex;
+		justify-content: space-between;
+		& p:first-child{
+			margin-right: 5px;
+		}
+		& span{
+			color: $text2;
+			&.few{
+				color: $text3;
+			}
+		}
+	}
+	&__structure{
+		color: $text1op07;
+	}
+
+}
+.card-column {
+	display: inline-block;
+	position: relative;
+	width: 310px;
+	.card {
+		&__code {
+			display: block;
+			margin-bottom: 8px;
+			color: $text1op035;
+		}
+	
+		&__img {
+			display: block;
+			position: relative;
+			margin-bottom: 10px;
+			width: 310px;
+			height: 295px;
+			& img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			
+		}
+		&__like-btn{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: $color1;
+			& span{
+				display: none;
+			}
+			.active{
+				display: block;
+			}
+		}
+		&__banner{
+			display: block;
+			min-width: 90px;
+			padding: 7px 10px 8px 10px;
+			text-align: center;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+	  }
+		&__banner_hit {
+			background: $colorActive;
+		}
+		&__banner_stock{
+			background: #A50D2C;
+		}
+		&__banner_new{
+			background: #E9C4C9;
+		}
+	
+		&__name {
+			margin-bottom: 10px;
+			display: block;
+			font-weight: 500;
+			color: $text1op07;
+		}
+	
+		&__price {
+			margin-bottom: 7px;
+			display: block;
+			color: $text1op07;
+		}
+	
+		&__availability {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			& p:first-child{
+				margin-right: 5px;
+			}
+		}
+		&__structure{
+			color: $text1op07;
+		}
+	
+	}
+}
+.card-row-s{
+	display: flex;
+	text-align: left;
+	margin-bottom: 15px;
+	.card {
+		&__img {
+			flex: 0 0 auto;
+			width: 54px;
+			height: 57px;
+			& img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__descr {
+			flex: 1 1 auto;
+			padding: 0px 0px 0px 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+
+		&__name {
+			font-size: 10px;
+			margin-bottom: 8px;
+		}
+
+		&__container {
+			font-size: 14px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__amount-sum {
+			padding: 2px 10px 4px 10px;
+			border: 1px solid $color1;
+		}
+
+		&__color {
+			width: 20px;
+			height: 20px;
+			margin: 0px auto 0px 20px;
+		}
+	}
+}
+.card-row-m {
+   margin-bottom: 30px;
+   display: flex;
+   color: $text1;
+   position: relative;
+   .card {
+      &__img {
+         flex: 0 0 auto;
+         width: 100px;
+         height: 100px;
+      }
+   
+      &__descr {
+         padding: 0px 15px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+   
+      &__wrapper {
+         display: flex;
+         justify-content: space-between;
+      }
+   
+      &__name {
+         margin-right: 10px;
+         color: $text1;
+         font-weight: 500;
+      }
+   
+      &__price {
+         color: $text1;
+         flex: 0 0 auto;
+         font-weight: 700;
+      }
+   
+      &__code {
+         margin-bottom: unset;
+      }
+   
+      &__availability {
+         margin-bottom: auto;
+      }
+   
+      &__container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+   
+      &__delete {
+         text-decoration-line: underline;
+         color: $color1;
+      }
+      &__close{
+         position: absolute;
+         top: 0;
+         right: 0;
+         display: none;
+         height: 14px;
+         & span{
+            font-size: 14px;
+         }
+      }
+   }
+   .color__item {
+      margin: 0px auto 0px 20px;
+      width: 20px;
+      height: 20px;
+   }
+   .card-row-xl {
+
+      &__amount {
+      }
+
+      &__color {
+      }
+   }
+}
+.color {
+
+	&__item {
+	}
+}
+.color-5 {
+}
+.card-price {
+}
+
+.icon-heart-xl, .icon-heart-xl-on {
+	font-size: 32px;
+}
+.slider-color {
+	min-width: 0;
+	width: unset;
+	max-width: 100%;
+	position: relative;
+	padding: 0px 22px 0px 22px;
+	.color__item{
+
+	margin-right: 29.266px;
+}
+	&__container {
+	}
+	
+	&__wrapper {
+	}
+	.active{
+		border: 1px solid #000000;
+	}
+	&__btn{
+		padding: 6px 5px 5px 5px;
+		margin: 0px -5px;
+		color: $color1;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		overflow: visible;
+		z-index: 5;
+		font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1440 - 320)));
+		.icon-triangle-left, .icon-triangle-right{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__btn-prev{
+		left: 0;
+	}
+	&__btn-next{
+		right: 0;
+	}
+}
+.color__item{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: block;
+	box-sizing: border-box;
+
+}
+.color-1 {
+	background: #F7C65A;
+}
+.color-2 {
+	background: #977DAD;
+}
+.color-3 {
+	background: #35405C
+}
+.color-4 {
+	background: #35405C;
+}
+.color-5 {
+	background: #40697F;
+}
+.color-6 {
+	background: #477640;
+}
+
+
+.card-row {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 670px;
+	.card {
+
+		&__code {
+			width: 100%;
+		}
+
+		&__img {
+			width: 46%;
+			height: 350px;
+		}
+		&__descr {
+			width: 54%;
+			padding: 0px 0px 0px 50px;
+		}
+		&__price {
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+
+		&__availability {
+			justify-content: flex-start;
+		}
+		&__structure{
+			margin-bottom: 45px;
+		}
+		&__structure-title{
+			color: $text1;
+			margin-bottom: 5px;
+		}
+		
+	}
+	.slider-color {
+		margin-bottom: 17px;
+	}
+}
+

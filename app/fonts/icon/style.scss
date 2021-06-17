@@ -1,0 +1,144 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?e56n0t') format('truetype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?e56n0t') format('woff'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?e56n0t##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bag {
+  &:before {
+    content: $icon-bag; 
+  }
+}
+.icon-burger {
+  &:before {
+    content: $icon-burger; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-filter {
+  &:before {
+    content: $icon-filter; 
+  }
+}
+.icon-grid {
+  &:before {
+    content: $icon-grid; 
+  }
+}
+.icon-grid-row {
+  &:before {
+    content: $icon-grid-row; 
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart; 
+  }
+}
+.icon-heart-xl {
+  &:before {
+    content: $icon-heart-xl; 
+  }
+}
+.icon-heart-xl-on {
+  &:before {
+    content: $icon-heart-xl-on; 
+  }
+}
+.icon-inst {
+  &:before {
+    content: $icon-inst; 
+  }
+}
+.icon-minus {
+  &:before {
+    content: $icon-minus; 
+  }
+}
+.icon-person {
+  &:before {
+    content: $icon-person; 
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-sort {
+  &:before {
+    content: $icon-sort; 
+  }
+}
+.icon-triangle-down {
+  &:before {
+    content: $icon-triangle-down; 
+  }
+}
+.icon-triangle-left {
+  &:before {
+    content: $icon-triangle-left; 
+  }
+}
+.icon-triangle-right {
+  &:before {
+    content: $icon-triangle-right; 
+  }
+}
+.icon-triangle-up {
+  &:before {
+    content: $icon-triangle-up; 
+  }
+}
+.icon-vk {
+  &:before {
+    content: $icon-vk; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+

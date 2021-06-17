@@ -1,59 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Шаблон</title>
-  <link rel="stylesheet" href="css/style.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шаблон</title>
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
-  <!-- WRAPPER start -->
-  <div class="wrapper">
+   <!-- WRAPPER start -->
+   <div class="wrapper">
 
-    <!-- HEADER start  -->
-    
-    <header class="header">
-      
-    </header>
-    
-    <!-- HEADER end  -->
+      <!-- HEADER start  -->
 
-    <!-- MAIN start  -->
-    <main class="main">
+      <header class="header">
+         <div class="container">
+            <div class="header__content">
+               <div class="logo">
+                  <img src="images/svg/logo.svg" alt="Логотип">
+               </div>
+               <div class="header__container">
+                  <ul class="menu">
+                     <li class="menu__item h10"><a href="#" class="menu__link">Каталог</a></li>
+                     <li class="menu__item h10">
+                        Покупателям <span class="icon icon-triangle-down"></span>
+                        <div class="menu__item-body h12">
+                           <a href="#">Оплата заказа</a>
+                           <a href="#">Условия доставки</a>
+                           <a href="#">Обмен и возврат заказа</a>
+                           <a href="#">Уход за изделиями</a>
+                           <a href="#">Полезное</a>
+                        </div>
+                     </li>
+                     <li class="menu__item h10"><a href="#" class="menu__link">Контакты</a></li>
+                  </ul>
+
+                  <div class="header__nav">
+                     <label class="search">
+                        <input type="text" class="search__input h10">
+                        <span class="icon icon-search"></span>
+                     </label>
+                     <div class="header__link">
+                        <a href="#"><span class="icon icon-person"></span></a>
+                     </div>
+                     <div class="header__link">
+                        <a href="#"><span class="icon icon-heart"></span></a>
+                     </div>
+                     <div class="header__link">
+                        <a href="#"><span class="icon icon-bag"><i class="header__quantity">99</i></span></a>
+                        <div class="preview-cart">
+                           <div class="preview-cart__top-line">
+                              <span class="icon icon-close"></span>
+                              <p class="preview-cart__title h6">Корзина</p>
+                              <button class="preview-cart__clear-btn">Сбросить все</button>
+                           </div>
+                           <div class="preview-cart__body">
+                              <a href="#" class="card-row-m">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr h12">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code h14">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount">
+                                             <span class="icon icon-minus"></span>
+                                             <p>123</p>
+                                             <span class="icon icon-plus"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete h13">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                              <a href="#" class="card-row-m">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr h12">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code h14">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount">
+                                             <span class="icon icon-minus"></span>
+                                             <p>123</p>
+                                             <span class="icon icon-plus"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete h13">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                              <a href="#" class="card-row-m">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr h12">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code h14">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount">
+                                             <span class="icon icon-minus"></span>
+                                             <p>123</p>
+                                             <span class="icon icon-plus"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete h13">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                           </div>
+                           <div class="preview-cart__btn-box">
+                              <a class="preview-cart__btn button">перейти в корзину</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- HEADER end  -->
+
+      <!-- MAIN start  -->
+      <main class="main">
 
 
-      <!-- CONTENT start  -->
-      <div class="content">
-
-      </div>
-      <!-- CONTENT end -->
-
-      <!-- popup  -->
-
-      <!-- popup end  -->
-    </main>
-    <!-- MAIN end -->
-
-    <!-- FOOTER start  -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-
-        </div>
-      </div>
-    </footer>
-    <!-- FOOTER end -->
-
-  </div>
-  <!-- WRAPPER end -->
+         <!-- CONTENT start  -->
+         <div class="content">
+            <div class="page-">
+               <div class="container">
+                  <div class="page-*__content">
 
 
 
-  <!-- SCRIPTS start  -->
-    <script src="js/main.min.js"></script>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- CONTENT end -->
+
+      </main>
+      <!-- MAIN end -->
+
+      <!-- FOOTER start  -->
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="footer__columns">
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">КАТАЛОГ</p>
+                     <a href="#" class="footer__link">Шапки</a>
+                     <a href="#" class="footer__link">Шарфы и бафы</a>
+                     <a href="#" class="footer__link">Комплекты</a>
+                  </div>
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">ПОКУПАТЕЛЯМ</p>
+                     <a href="#" class="footer__link">Оплата заказа</a>
+                     <a href="#" class="footer__link">Условия доставки</a>
+                     <a href="#" class="footer__link">Обмен и возврат заказа</a>
+                     <a href="#" class="footer__link">Уход за изделиями</a>
+                     <a href="#" class="footer__link">Полезное</a>
+                  </div>
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">СВЯЗАТЬСЯ С НАМИ</p>
+                     <a href="#" class="footer__link">Контакты и адреса магазинов</a>
+                  </div>
+                  <div class="footer__block h12">
+                     <p class="footer__title h10">ПАРТНЕРАМ</p>
+                     <p class="footer__link"></p>
+                  </div>
+               </div>
+
+               <div class="footer__contacts h8">
+                  <p>8 800 495 84 49</p>
+                  <p>Aiva-shop@gmail.com</p>
+               </div>
+               <div class="footer__socials">
+                  <a href="#"><span class="icon icon-inst"></span></a>
+                  <a href="#"><span class="icon icon-vk"></span></a>
+                  <a href="#"><span class="icon icon-facebook"></span></a>
+               </div>
+               <a href="#" class="footer__info">Соглашение об обработке персональных данных</a>
+            </div>
+         </div>
+      </footer>
+      <!-- FOOTER end -->
+
+   </div>
+   <!-- WRAPPER end -->
+
+
+
+   <!-- SCRIPTS start  -->
+   <script src="js/main.min.js"></script>
 
 
 
