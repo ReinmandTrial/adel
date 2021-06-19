@@ -663,3 +663,22 @@ textarea {
 	}
 }
 
+.progress-bar{
+	&__body{
+		width: 332px;
+		height: 10px;
+		background: $white;
+		border: 1px solid $color1;
+	}
+	&__line{
+		height: 100%;
+		background-color: $color1;
+		// width: 100%;
+		border-radius: 20px;
+	}
+}
+.number__page{
+	margin-bottom: 15px;
+	color: #4d4d4d;
+	font-size: calc(12px + (14 - 12) * ((100vw - 320px)/(1920 - 320)));
+}

@@ -132,3 +132,49 @@ $(function(){
      $(this).closest('.card-block').remove();
  })
 //удаление карточки конец
+
+// //ползунок
+// $("#polzunok").slider({
+//     animate: "slow",
+//     range: true,    
+//     values: [ 10, 65 ],
+//     slide : function(event, ui) {    
+//         $("#result-polzunok").text( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] );        
+//     }
+// });
+// // $( "#result-polzunok" ).text("от " + $("#polzunok").slider("values", 0) + " до " + $("#polzunok").slider("values", 1));
+// //ползунок конец
+
+$(document).ready(function() {
+
+//ползунок в конце страницы
+	var width = $('.progress-bar__body').width();
+    var maxPage = parseInt($('.number__page-all').text());
+    var nowPage = parseInt($('.number__page-now').text());
+    // console.log(width + ' ' + maxPage + ' ' + nowPage)
+    var line = $('.progress-bar__line');
+
+    line.width((width / maxPage) * nowPage)
+//ползунок в конце страницы конец
+
+//mCustomScrollBar
+    $('.mCustomScrollBar').mCustomScrollbar();
+//mCustomScrollBarr
+
+//изменение положения кнопки в корзине
+    if($(window).width() < 991){
+        $('.page-cart__button-box').appendTo('.page-cart__body');
+        // alert();
+    }else{
+        $('.page-cart__button-box').appendTo('.page-cart__container')
+    }
+    $(window).resize(function(){
+        if($(window).width() < 991){
+            $('.page-cart__button-box').appendTo('.page-cart__body');
+            // alert();
+        }else{
+            $('.page-cart__button-box').appendTo('.page-cart__container')
+        }
+    });
+//изменение положения кнопки в корзине конец
+});
