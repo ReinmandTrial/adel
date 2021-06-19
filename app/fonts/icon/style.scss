@@ -3,9 +3,9 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?e56n0t') format('truetype'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?e56n0t') format('woff'),
-    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?e56n0t##{$icomoon-font-family}') format('svg');
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?jvc6qz') format('truetype'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.woff?jvc6qz') format('woff'),
+    url('../fonts/icon/#{$icomoon-font-path}/#{$icomoon-font-family}.svg?jvc6qz##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -84,6 +84,32 @@
 .icon-inst {
   &:before {
     content: $icon-inst; 
+  }
+}
+.icon-logo .path1 {
+  &:before {
+    content: $icon-logo-path1;  
+    opacity: 0.7;
+  }
+}
+.icon-logo .path2 {
+  &:before {
+    content: $icon-logo-path2;  
+    margin-left: -1em;  
+  }
+}
+.icon-logo .path3 {
+  &:before {
+    content: $icon-logo-path3;  
+    margin-left: -1em;  
+    color: none;
+  }
+}
+.icon-logo .path4 {
+  &:before {
+    content: $icon-logo-path4;  
+    margin-left: -1em;  
+    color: none;
   }
 }
 .icon-minus {

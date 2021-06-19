@@ -54,12 +54,13 @@ button{
 }
 
 .input{
-    color: $text1op05;
+    color: $text1;
     border: 1px solid $color2;
     padding: 11px 18px 11.5px 18px;
     font-size: 14px;
+    
     &::placeholder{
-        color: inherit;
+        color: $text1op05;
     }
 }
 

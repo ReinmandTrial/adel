@@ -79,6 +79,12 @@ textarea {
 
 
 
+.select{
+   &-input{
+      display: none;
+   }
+}
+
 
 .card-row-xl {
    display: flex;
@@ -92,6 +98,7 @@ textarea {
        position: absolute;
        top: 10px;
        right: 17px;
+		 color: #4D4D4D;
    }
    &__img {
 		flex: 0 0 auto;
@@ -156,11 +163,12 @@ textarea {
            font-size: 12px;
            padding: 8px;
        }
-       & p{
+      input{
 			 text-align: center;
            border: 1px solid $color1;
            padding: 3px 10px;
-           min-width: 49px;
+           width: 56px;
+			  color: $text1op05;
        }
    }
 
@@ -184,7 +192,7 @@ textarea {
 	position: relative;
 	&-box{
 		position: relative;
-		margin-top: 100px;
+		margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
 	}
 	&__header {
 		text-align: center;
@@ -226,6 +234,12 @@ textarea {
 		& span{
 			font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
 			color: $color2;
+		}
+		&:active{
+			border: 3px solid $text1;
+			& span{
+				color: $text1;
+			}
 		}
 	}
 	&-button-prev{
@@ -280,6 +294,7 @@ textarea {
 	}
 	&__banner_stock{
 		background: #A50D2C;
+		color: $white;
 	}
 	&__banner_new{
 		background: #E9C4C9;
@@ -296,7 +311,7 @@ textarea {
 		color: $text1op07;
 	}
 
-	&__availability {
+	&__availability, &__availability_s {
 		display: flex;
 		justify-content: space-between;
 		& p:first-child{
@@ -487,7 +502,10 @@ textarea {
       &__availability {
          margin-bottom: auto;
       }
-   
+		&__availability_s{
+			text-align: center;
+			display: none;
+		}
       &__container {
          display: flex;
          justify-content: space-between;
