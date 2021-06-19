@@ -138,7 +138,7 @@ textarea {
        justify-content: space-between;
    }
    &__box{
-       flex: 1 0 auto;
+       flex: 0 1 auto;
        display: flex;
        flex-direction: column;
        justify-content: space-between;
@@ -579,7 +579,7 @@ textarea {
 		top: 50%;
 		transform: translate(0, -50%);
 		overflow: visible;
-		z-index: 5;
+		z-index: 1;
 		font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1440 - 320)));
 		cursor: pointer;
 		.icon-triangle-left, .icon-triangle-right{

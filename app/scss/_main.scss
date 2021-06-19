@@ -56,6 +56,7 @@
    font-size: 24px;
 }
 .logo {
+   flex: 0 0 auto;
     margin-right: calc(20px + (75 - 20) * ((100vw - 991px) / (1440 - 991)));
     width: calc(156px + (195 - 156) * ((100vw - 991px) / (1440 - 991)));
     height: 100%;
@@ -104,17 +105,6 @@
       &::after{
          bottom: 0;
       }
-      &.active::before{
-         transform: rotate(45deg);
-         top: calc(50% - 1.5px);
-      }
-      &.active::after{
-         transform: rotate(-45deg);
-         bottom: calc(50% - 1.5px);
-      }
-      &.active span{
-         transform: scale(0);
-      }
    }
    &__item {
       flex: 0 0 auto;
@@ -147,6 +137,7 @@
       position: absolute;
       top: 44px;
       left: 0;
+      z-index: 99;
       & a{
          display: block;
          padding: 12px 9px;
@@ -163,7 +154,7 @@
 }
 .search {
     flex: 0 1 auto;
-    margin: 0px calc(0px + (60 - 0) * ((100vw - 991px) / (1440 - 991))) 0px auto;
+    margin: 0px calc(0px + (50 - 0) * ((100vw - 991px) / (1440 - 991))) 0px 10px;
     position: relative;
     &__input{
          width: calc(260px + (340 - 260) * ((100vw - 991px) / (1440 - 991)));
@@ -188,6 +179,8 @@
    position: absolute;
    top: 100%;
    right: 0;
+   z-index: 999;
+   padding: 20px 20px 30px;
    width: 440px;
    background: $white;
    box-shadow: 0px 2px 18px rgba(99, 35, 22, 0.2);
@@ -220,7 +213,8 @@
    }
 
    &__body {
-      padding: 20px 20px 10px 20px;
+      // padding: 20px 20px 10px 20px;
+      padding-bottom: 10px;
       margin-bottom: 40px;
       border-bottom: 1px solid $color1;
    }
@@ -494,11 +488,8 @@
       opacity: 0.5;
       position: relative;
       margin-bottom: 20px;
-<<<<<<< HEAD
    }
    &__label{
-=======
->>>>>>> cfac6ec6430a5506cbdb783f3d5e6793c8f2bd2b
       cursor: pointer;
       &:not(:last-child){
          margin-right: 20px;
@@ -556,15 +547,12 @@
    }
    &__watch-on-map {
       position: relative;
-      z-index: 3;
+      z-index: 2;
       text-decoration: underline;
       margin-bottom: 8px;
       color: $text1;
-<<<<<<< HEAD
       width: max-content;
-=======
       cursor: pointer;
->>>>>>> cfac6ec6430a5506cbdb783f3d5e6793c8f2bd2b
    }
 
    &__timetable {
@@ -668,13 +656,15 @@
       
    }
    &__select-item{
-      margin-bottom: 15px;
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
       color: #4D4D4D;
       cursor: pointer;
+      &:not(:last-child){
+         margin-bottom: 15px;
+      }
    }
 
    &__add-adress {
@@ -682,11 +672,12 @@
       text-decoration: underline;
       cursor: pointer;
    }
-
+   
    &__select-company {
       width: 275px;
       position: relative;
       border: 1px solid $color2;
+      margin-bottom: 50px;
       .icon-triangle-down{
          font-size: 14px;
          position: relative;
@@ -701,13 +692,13 @@
       }
       &-body{
          display: none;
-         overflow: hidden;
+         // overflow: hidden;
          position: absolute;
          top: calc(100% - 1px);
          left: -1px;
          z-index: 2;
          width: 100%;
-         height: 140px;
+         // height: 140px;
          border: 1px solid $color2;
          width: calc(100% + 2px);
          background: $white;
@@ -742,6 +733,7 @@
       align-items: start;
    }
    &__select-country {
+      position: relative;
       border: 1px solid $color2;
       font-size: 14px;
       .icon-triangle-down{
@@ -750,6 +742,7 @@
          top: 3px;
       }
       &-head{
+         cursor: pointer;
          display: flex;
          justify-content: space-between;
          color: $text1op05;
@@ -757,13 +750,34 @@
       }
       &-body{
          display: none;
-         & p{
-            padding: 11px 16px 11.5px 18px;
+         // overflow: hidden;
+         position: absolute;
+         top: calc(100% - 1px);
+         left: -1px;
+         z-index: 2;
+         width: 100%;
+         // height: 140px;
+         border: 1px solid $color2;
+         width: calc(100% + 2px);
+         background: $white;
+         border-bottom: 1px solid $color2;
+         border-left: 1px solid $color2;
+         border-right: 1px solid $color2;
+         & div{
+            background: $white;
+            padding: 11px 30px 11px 18px;
             &:not(:last-child){
                border-bottom: 1px solid $color2;
             }
          }
-         
+      }
+      &-item{
+         padding: 10px 11px 9px 9px;
+         cursor: pointer;
+         &:hover{
+            background: $color1;
+            color: $white;
+         }
       }
    }
 
