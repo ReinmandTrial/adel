@@ -541,11 +541,6 @@ textarea {
       }
    }
 }
-.color {
-
-	&__item {
-	}
-}
 .color-5 {
 }
 .card-price {
@@ -569,9 +564,7 @@ textarea {
 	
 	&__wrapper {
 	}
-	.active{
-		border: 1px solid #000000;
-	}
+	
 	&__btn{
 		padding: 6px 5px 5px 5px;
 		margin: 0px -5px;
@@ -601,8 +594,19 @@ textarea {
 	border-radius: 50%;
 	display: block;
 	box-sizing: border-box;
+	position: relative;
 
 }
+.color__style{
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	display: block;
+}
+.color__input:checked + .color__style{
+	border: 1px solid #000000;
+}
+
 .color-1 {
 	background: #F7C65A;
 }
@@ -627,6 +631,7 @@ textarea {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 670px;
+	margin-bottom: 25px;
 	.card {
 
 		&__code {
@@ -640,6 +645,8 @@ textarea {
 		&__descr {
 			width: 54%;
 			padding: 0px 0px 0px 50px;
+			display: flex;
+			flex-direction: column;
 		}
 		&__price {
 			font-weight: 500;
@@ -648,6 +655,7 @@ textarea {
 
 		&__availability {
 			justify-content: flex-start;
+			margin-bottom: 13px;
 		}
 		&__structure{
 			margin-bottom: 45px;
@@ -656,10 +664,27 @@ textarea {
 			color: $text1;
 			margin-bottom: 5px;
 		}
+		&-row-xl__box{
+			display: none;
+			flex-direction: row;
+			justify-content: start;
+		}
+		&-row-xl__title_s{
+			margin-bottom: 0;
+		}
+		&__add-to-cart-box{
+			display: none;
+			margin-top: auto;
+		}
 		
 	}
 	.slider-color {
 		margin-bottom: 17px;
+	}
+	&:hover{
+		.card__add-to-cart-box, .card-row-xl__box{
+			display: flex;
+		}
 	}
 }
 
