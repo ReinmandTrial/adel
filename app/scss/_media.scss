@@ -19,6 +19,9 @@
    .page-catalog__grid .card__img{
       height: calc(210px + (295 - 210) * ((100vw - 992px) / (1440 - 992)));
    }
+   .page-catalog__grid .slider-color .color__item {
+      margin-right: calc(11.5px + (30 - 11.5) * ((100vw - 992px) / (1440 - 992)));
+  }
 }
 // MAX-WIDTH 1399.98PX breakpoints END
 

@@ -71,6 +71,7 @@ textarea {
 	height: 20px;
 	border: 1px solid $color1;
 	border-radius: 2px;
+	cursor: pointer;
 }
 .checkbox-none:checked + .checkbox-style{
 	background: url(../images/svg/check.svg) 1px 3px no-repeat;
@@ -142,9 +143,13 @@ textarea {
        flex-direction: column;
        justify-content: space-between;
        align-items: center;
+		 cursor: unset;
        &:not(:last-child){
            margin-right: 15px;
        }
+		 .color__item{
+			 cursor: unset;
+		 }
    }
 
    &__title_s{
@@ -548,6 +553,7 @@ textarea {
 
 .icon-heart-xl, .icon-heart-xl-on {
 	font-size: 32px;
+	cursor: pointer;
 }
 .slider-color {
 	min-width: 0;
@@ -575,10 +581,12 @@ textarea {
 		overflow: visible;
 		z-index: 5;
 		font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1440 - 320)));
+		cursor: pointer;
 		.icon-triangle-left, .icon-triangle-right{
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			
 		}
 	}
 	&__btn-prev{
@@ -595,13 +603,14 @@ textarea {
 	display: block;
 	box-sizing: border-box;
 	position: relative;
-
+	cursor: pointer;
 }
 .color__style{
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
 	display: block;
+	
 }
 .color__input:checked + .color__style{
 	border: 1px solid #000000;
@@ -647,6 +656,9 @@ textarea {
 			padding: 0px 0px 0px 50px;
 			display: flex;
 			flex-direction: column;
+		}
+		&__name{
+			margin-bottom: 10px;
 		}
 		&__price {
 			font-weight: 500;

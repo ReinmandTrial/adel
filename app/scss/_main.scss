@@ -18,7 +18,6 @@
       justify-content: space-between;
       align-items: center;
    }
-
    &__nav {
       flex: 0 0 auto;
       display: flex;
@@ -28,6 +27,7 @@
       position: relative;
       margin-left: calc(0px + (10 - 0) * ((100vw - 991px) / (1440 - 991)));
       display: flex;
+      cursor: pointer;
       & > a{
          padding: 10px;
       }
@@ -119,6 +119,9 @@
    &__item {
       flex: 0 0 auto;
       position: relative;
+      & a{
+         cursor: pointer;
+      }
       &:not(:last-child){
          margin-right: calc(10px + (40 - 10) * ((100vw - 991px) / (1440 - 991)));
       }
@@ -133,7 +136,8 @@
       display: flex;
       width: 160px;
       justify-content: space-between;
-      align-items: center;   
+      align-items: center;
+      cursor: pointer;   
    }
    &__item-body {
       display: none;
@@ -146,6 +150,7 @@
       & a{
          display: block;
          padding: 12px 9px;
+         cursor: pointer;
          &:not(:last-child){
                border-bottom: 1px solid $color1;
          }
@@ -165,7 +170,7 @@
          padding: 11.5px 55px 11.5px 15px;
          border: unset;
          background: $color3;
-         &:active{
+         &:focus{
             box-shadow: 0px 4px 20px #ADAAAA;
          }
     }
@@ -236,6 +241,7 @@
 
 
 .icon-close {
+   cursor: pointer;
 }
 
 
@@ -487,6 +493,7 @@
       opacity: 0.5;
       position: relative;
       margin-bottom: 20px;
+      cursor: pointer;
       &:not(:last-child){
          margin-right: 20px;
       }
@@ -548,6 +555,7 @@
       text-decoration: underline;
       margin-bottom: 8px;
       color: $text1;
+      cursor: pointer;
    }
 
    &__timetable {
@@ -596,6 +604,7 @@
 
    &__change {
       text-decoration: underline;
+      cursor: pointer;
    }
    &__input-container{
       display: none;
@@ -635,6 +644,7 @@
    }
    &__select-btn{
       text-decoration: underline;
+      cursor: pointer;
    }
    &__select-body{
       display: none;
@@ -655,11 +665,13 @@
       font-weight: 300;
       font-size: 16px;
       color: #4D4D4D;
+      cursor: pointer;
    }
 
    &__add-adress {
       margin-bottom: 20px;
       text-decoration: underline;
+      cursor: pointer;
    }
 
    &__select-company {
@@ -771,6 +783,7 @@
       border: 1px solid $color1;
       padding: 20px;
       margin-bottom: 10px;
+      cursor: pointer;
       &:not(:last-child){
          margin-right: 60px;
       }
@@ -870,6 +883,7 @@
       display: flex;
       justify-content: space-between;
       max-width: 200px;
+      cursor: pointer;
       &:not(:last-child){
          margin-bottom: 22px;
       }
@@ -946,6 +960,7 @@
 
    &__selector-box {
       max-width: 230px;
+      
    }
 
    &__selector-head {
@@ -954,6 +969,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      cursor: pointer;
       .icon-triangle-down {
          margin-top: 2px;
       }
@@ -966,6 +982,7 @@
       padding: 13px 20px 13px 8px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       &:not(:last-child){
          border-bottom: 1px solid $color1;
       }
@@ -1049,8 +1066,6 @@
          margin-right: calc(15px + (55 - 15) * ((100vw - 992px) / (1440 - 992)));
 		}
 
-		&__amount-title {
-		}
 
 		&__amount-radio {
          display: flex;
@@ -1097,6 +1112,7 @@
          z-index: 3;
          background: $white;
          width: 100%;
+         box-shadow: 10px 10px 18px rgba(99, 35, 22, 0.07);
          & p{
             padding: 12px 9px;
             
@@ -1137,7 +1153,7 @@
          .slider-color {
             padding: 0px 17px 0px 18px;
             .color__item {
-               margin-right: calc(11.5px + (30 - 11.5) * ((100vw - 992px) / (1440 - 992)));
+               margin-right: 30px;
             }
          }
       }
@@ -1162,10 +1178,16 @@
          justify-content: space-between;
       }
 }
+.icon-grid-row{
 
+}
+.icon-grid{
+   font-size: 15px;
+}
 
 .amount-radio__style{
 	opacity: 0.5;
+   cursor: pointer;
 }
 .amount-radio__input:checked + .amount-radio__style{
 	opacity: 1;
@@ -1173,6 +1195,7 @@
 
 .view-radio__style{
 	opacity: 0.5;
+   cursor: pointer;
 }
 .view-radio__input:checked + .view-radio__style{
 	opacity: 1;

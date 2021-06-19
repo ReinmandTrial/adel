@@ -1,70 +1,77 @@
-
-
-
-
-
 .btn {
-    &:hover{
+    &:hover {
     }
-    &:focus{
+    &:focus {
     }
     &-primary {
         &:hover {
-            
         }
     }
-    &-secondary{
-        &:hover{
-            
+    &-secondary {
+        &:hover {
         }
     }
-    &-contour{
-        &:hover{
-            
+    &-contour {
+        &:hover {
         }
     }
-    &-filter{
-        &:hover{
+    &-filter {
+        &:hover {
         }
     }
 }
 
-button{
+button {
     color: inherit;
     padding: unset;
     background-color: transparent;
     border: unset;
 }
 
-.button{
+.button {
     padding: 10px 30px;
     line-height: 22px;
     background: $color1;
     border: 1px solid $color1;
     color: $white;
     text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid $text1;
+    }
+    &:active {
+        box-shadow: 0px 4px 18px rgba(99, 35, 22, 0.3);
+    }
 }
-.button2{
+.button2 {
     padding: 10px 30px;
     line-height: 22px;
     background: $white;
     border: 1px solid $color2;
     color: $text1;
     text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid $text1;
+    }
+    &:active {
+        background: #e1a986;
+        color: $white;
+    }
 }
 
-.input{
+.input {
     color: $text1;
     border: 1px solid $color2;
     padding: 11px 18px 11.5px 18px;
     font-size: 14px;
-    
-    &::placeholder{
+
+    &::placeholder {
         color: $text1op05;
     }
 }
 
-.banner{
+.banner {
     display: block;
     min-width: 90px;
     padding: 7px 10px 8px 10px;
