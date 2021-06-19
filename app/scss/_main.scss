@@ -477,6 +477,7 @@
    display: flex;
    margin-bottom: 40px;
    flex-wrap: wrap;
+   position: relative;
 
    &__item {
       flex: 0 1 auto;
@@ -487,6 +488,9 @@
       opacity: 0.5;
       position: relative;
       margin-bottom: 20px;
+   }
+   &__label{
+      cursor: pointer;
       &:not(:last-child){
          margin-right: 20px;
       }
@@ -510,7 +514,6 @@
    &__map{
       padding: 20px 24px 30px 34px;
       max-width: 1120px;
-      height: 560px;
       background: $white;
       box-shadow: 10px 10px 30px rgba(99, 35, 22, 0.1);
       display: flex;
@@ -548,6 +551,7 @@
       text-decoration: underline;
       margin-bottom: 8px;
       color: $text1;
+      width: max-content;
    }
 
    &__timetable {

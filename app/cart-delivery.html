@@ -49,40 +49,53 @@
                            <div class="page-cart__container">
                               <div class="delivery-radio">
                                  <div class="delivery-radio__map">
-                                    <span class="icon icon-close"></span>
+                                    <span class="icon icon-close popup__map-close"></span>
                                     <p class="t1">г. Черкесск, <br>
                                        ул. Первомайская, 15</p>
                                     <div class="delivery-radio__img">
                                        <img src="images/map.png" alt="">
                                     </div>
                                  </div>
-                                 <input class="delivery-radio__input" type="radio" id="delivery1" name="delivery">
-                                 <label class="delivery-radio__item t3" for="delivery1">
-                                    <p class="delivery-radio__title t4">САМОВЫВОЗ</p>
-                                    <div class="delivery-radio__body">
-                                       <p class="delivery-radio__adress">г. Черкесск, ул. Первомайская, 15</p>
-                                       <button class="delivery-radio__watch-on-map">Смотреть на карте</button>
-                                       <p class="delivery-radio__timetable">пн-вс с 10:00 до 19:00</p>
-                                       <p class="delivery-radio__text_s t6">Бесплатно</p>
+                                 <label class="delivery-radio__label popup__map-block">
+                                    <input class="delivery-radio__input" type="radio" name="delivery">
+                                    <div class="delivery-radio__item t3">
+                                       <p class="delivery-radio__title t4">САМОВЫВОЗ</p>
+                                       <div class="delivery-radio__body">
+                                          <p class="delivery-radio__adress">г. Черкесск, ул. Первомайская, 15</p>
+                                          <p class="delivery-radio__watch-on-map popup__map-btn">Смотреть на
+                                             карте</p>
+                                          <p class="delivery-radio__timetable">пн-вс с 10:00 до 19:00</p>
+                                          <p class="delivery-radio__text_s t6">Бесплатно</p>
+                                       </div>
                                     </div>
+                                    <!-- <div class="popap__map">
+                                       <div class="popup__map-body">
+                                          <h3 class="popup__map-title t2"></h3>
+                                          <span class="icon icon-close"></span>
+                                          <div class="popap__map-window"><img src="images/map.png" alt=""></div>
+                                       </div>
+                                    </div> -->
                                  </label>
-                                 <input class="delivery-radio__input" type="radio" id="delivery2" name="delivery">
-                                 <label class="delivery-radio__item t3" for="delivery2">
-                                    <p class="delivery-radio__title t4">ДОСТАВКА</p>
-                                    <div class="delivery-radio__body">
-                                       <div class="delivery-radio__row t5">
-                                          <p>Доставка до ТК</p>
-                                          <p>1 день</p>
+                                 <label class="delivery-radio__label">
+                                    <input class="delivery-radio__input" type="radio" name="delivery">
+                                    <div class="delivery-radio__item t3">
+                                       <p class="delivery-radio__title t4">ДОСТАВКА</p>
+                                       <div class="delivery-radio__body">
+                                          <div class="delivery-radio__row t5">
+                                             <p>Доставка до ТК</p>
+                                             <p>1 день</p>
+                                          </div>
+                                          <p class="delivery-radio__descr t7">Осуществляется до приёмного пункта
+                                             Транспортной Компании</p>
+                                          <div class="delivery-radio__row t5">
+                                             <p>Стоимость: </p>
+                                             <p>300 ₽</p>
+                                          </div>
+                                          <p class="delivery-radio__descr t7">Стоимость доставки бесплатная при заказе
+                                             от
+                                             5000
+                                             Р</p>
                                        </div>
-                                       <p class="delivery-radio__descr t7">Осуществляется до приёмного пункта
-                                          Транспортной Компании</p>
-                                       <div class="delivery-radio__row t5">
-                                          <p>Стоимость: </p>
-                                          <p>300 ₽</p>
-                                       </div>
-                                       <p class="delivery-radio__descr t7">Стоимость доставки бесплатная при заказе от
-                                          5000
-                                          Р</p>
                                     </div>
                                  </label>
                               </div>
@@ -119,8 +132,10 @@
                                           адресов</button>
                                        <input type="text" class="select-input">
                                        <div class="delivery-address__select-body t5 select-body">
-                                          <div class="delivery-address__select-item select-item">Россия, г. Сочи ул. Петрозаводская 39 кв. 103</div>
-                                          <div class="delivery-address__select-item select-item">Россия, г. Москва ул. Петрозаводская 39 кв. 103</div>
+                                          <div class="delivery-address__select-item select-item">Россия, г. Сочи ул.
+                                             Петрозаводская 39 кв. 103</div>
+                                          <div class="delivery-address__select-item select-item">Россия, г. Москва ул.
+                                             Петрозаводская 39 кв. 103</div>
                                        </div>
                                     </div>
                                     <!-- <div class="toggle-block"> -->

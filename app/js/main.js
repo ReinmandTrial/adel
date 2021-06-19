@@ -127,6 +127,17 @@ $('.count-more').on('click', function () {
 })
 //count end
 
+//попап карты на выборе доставик
+$('.popup__map-btn').on('click',function(){
+    if($(this).closest('.popup__map-block').find('input').is(':checked')){
+        $('.delivery-radio__map').slideToggle();
+    }
+})
+$('.popup__map-close').on('click',function(){
+    $(this).closest('.delivery-radio__map').slideToggle();
+})
+//попап карты на выборе доставки конец
+
 //удаление карточки
  $('.card-del').on('click',function(){
      $(this).closest('.card-block').remove();
