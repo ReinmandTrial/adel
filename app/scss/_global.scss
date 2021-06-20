@@ -1,14 +1,14 @@
 html,
 body {
-  height: 100%;
-  font-family: 'Montserrat';
-   font-weight: normal;
-   font-style: normal;
-  font-size: 18px;
-  color: $text1;
-  overflow-x: hidden;
+	height: 100%;
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	color: $text1;
+	overflow-x: hidden;
 }
-textarea{
+textarea {
 	resize: none;
 }
 .wrapper {
@@ -24,32 +24,30 @@ textarea{
 .footer {
 	flex: 0 0 auto;
 }
-.container{
+.container {
 	max-width: 1330px;
 	margin: 0 auto;
 	padding: 0px 15px;
 	height: 100%;
 }
 input,
-textarea { 
+textarea {
 	appearance: none;
-	outline:none 
+	outline: none;
 }
 
 .breadcrumbs {
-
 }
 
-.d-flex{
+.d-flex {
 	display: flex !important;
 }
 
-//Ввод данных конец 
-.burger{
-
+//Ввод данных конец
+.burger {
 }
 
-.off{
+.off {
 	display: none !important;
 }
 
@@ -58,7 +56,8 @@ textarea {
 	width: 20px;
 	height: 20px;
 }
-.checkbox-none, .radio-none {
+.checkbox-none,
+.radio-none {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -73,129 +72,122 @@ textarea {
 	border-radius: 2px;
 	cursor: pointer;
 }
-.checkbox-none:checked + .checkbox-style{
+.checkbox-none:checked + .checkbox-style {
 	background: url(../images/svg/check.svg) 1px 3px no-repeat;
 }
 
-
-
-
-.select{
-   &-input{
-      display: none;
-   }
+.select {
+	&-input {
+		display: none;
+	}
 }
 
-
 .card-row-xl {
-   display: flex;
-   position: relative;
-   max-width: 880px;
-   &:not(:last-child){
-       margin-bottom: 30px;
-   }
-   .icon-close {
-       font-size: 24px;
-       position: absolute;
-       top: 10px;
-       right: 17px;
-		 color: #4D4D4D;
-   }
-   &__img {
+	display: flex;
+	position: relative;
+	max-width: 880px;
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.icon-close {
+		font-size: 24px;
+		position: absolute;
+		top: 10px;
+		right: 17px;
+	}
+	&__img {
 		flex: 0 0 auto;
-       width: 200px;
-       height: 207px;
-       & img{
-           width: 100%;
-           height: 100%;
-           object-fit: cover;
-       }
-   }
+		width: 200px;
+		height: 207px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 
-   &__info {
-       flex: 1 1 auto;
-       padding: 20px;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-   }
+	&__info {
+		flex: 1 1 auto;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 
-   &__name {
-       font-weight: 500;
-		 margin-right: 25px;
-   }
+	&__name {
+		font-weight: 500;
+		margin-right: 25px;
+	}
 
-   &__price {
-       margin: 5px 0px;
-		 margin-bottom: 12px;
-		 line-height: unset;
-   }
+	&__price {
+		margin: 5px 0px;
+		margin-bottom: 12px;
+		line-height: unset;
+	}
 
-   &__container {
-       max-width: 530px;
-       height: 65px;
-       display: flex;
-       justify-content: space-between;
-   }
-   &__box{
-       flex: 1 0 auto;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       align-items: center;
-		 cursor: unset;
-       &:not(:last-child){
-           margin-right: 15px;
-       }
-		 .color__item{
-			 cursor: unset;
-		 }
-   }
+	&__container {
+		max-width: 530px;
+		height: 65px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__box {
+		flex: 1 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		cursor: unset;
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+		.color__item {
+			cursor: unset;
+		}
+	}
 
-   &__title_s{
-       text-align: center;
-       margin-bottom: 12px;
-   }
-	&__amount-box{
+	&__title_s {
+		text-align: center;
+		margin-bottom: 12px;
+	}
+	&__amount-box {
 		flex: 0 1 auto;
 	}
-   &__amount {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-		 color: $text1op05;
-       & span{
-           font-size: 12px;
-           padding: 8px;
-       }
-      input{
-			 text-align: center;
-           border: 1px solid $color1;
-           padding: 3px 10px;
-           width: 56px;
-			  color: $text1op05;
-       }
-   }
+	&__amount {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $text1op05;
+		& span {
+			font-size: 12px;
+			padding: 8px;
+		}
+		input {
+			text-align: center;
+			border: 1px solid $color1;
+			padding: 3px 10px;
+			width: 56px;
+			color: $text1op05;
+		}
+	}
 
+	&__color {
+		background: #40697f;
+		margin-bottom: 3px;
+	}
 
-   &__color {
-       background: #40697F;
-       margin-bottom: 3px;
-   }
-
-   &__code {
-       padding-bottom: 5px;
-   }
-   &__price_s{
-      font-family: 'Nunito';
+	&__code {
+		padding-bottom: 5px;
+	}
+	&__price_s {
+		font-family: "Nunito";
 		margin-bottom: 2px;
-		
-   }
+	}
 }
 
 .slider {
 	position: relative;
-	&-box{
+	&-box {
 		position: relative;
 		margin-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1440 - 320)));
 	}
@@ -212,17 +204,17 @@ textarea {
 
 	&__wrapper {
 	}
-	&__linear-gradient{
+	&__linear-gradient {
 		display: block;
 		height: 100%;
 		width: 46px;
-		background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 		position: absolute;
 		right: -2px;
 		top: 0;
 		z-index: 3;
 	}
-	&-button{
+	&-button {
 		position: absolute;
 		top: 40%;
 		transform: translate(0, -50%);
@@ -236,27 +228,27 @@ textarea {
 		justify-content: center;
 		align-items: center;
 		outline: none;
-		& span{
+		& span {
 			font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
 			color: $color2;
 		}
-		&:active{
+		&:active {
 			border: 3px solid $text1;
-			& span{
+			& span {
 				color: $text1;
 			}
 		}
 	}
-	&-button-prev{
+	&-button-prev {
 		left: -17px;
-		& span{
+		& span {
 			position: relative;
 			right: 1px;
 		}
 	}
-	&-button-next{
+	&-button-next {
 		right: calc(-50vw + 695px);
-		& span{
+		& span {
 			position: relative;
 			left: 1px;
 		}
@@ -272,20 +264,19 @@ textarea {
 	&__img {
 		display: block;
 		position: relative;
-		& img{
+		& img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 		}
-		
 	}
-	&__like-btn{
+	&__like-btn {
 		position: absolute;
 		top: 10px;
 		right: 10px;
 		color: $color1;
 	}
-	&__banner{
+	&__banner {
 		display: block;
 		min-width: 90px;
 		padding: 7px 10px 8px 10px;
@@ -293,16 +284,16 @@ textarea {
 		position: absolute;
 		top: 10px;
 		left: 10px;
-  }
+	}
 	&__banner_hit {
 		background: $colorActive;
 	}
-	&__banner_stock{
-		background: #A50D2C;
+	&__banner_stock {
+		background: #a50d2c;
 		color: $white;
 	}
-	&__banner_new{
-		background: #E9C4C9;
+	&__banner_new {
+		background: #e9c4c9;
 	}
 
 	&__name {
@@ -316,23 +307,23 @@ textarea {
 		color: $text1op07;
 	}
 
-	&__availability, &__availability_s {
+	&__availability,
+	&__availability_s {
 		display: flex;
 		justify-content: space-between;
-		& p:first-child{
+		& p:first-child {
 			margin-right: 5px;
 		}
-		& span{
+		& span {
 			color: $text2;
-			&.few{
+			&.few {
 				color: $text3;
 			}
 		}
 	}
-	&__structure{
+	&__structure {
 		color: $text1op07;
 	}
-
 }
 .card-column {
 	display: inline-block;
@@ -344,33 +335,32 @@ textarea {
 			margin-bottom: 8px;
 			color: $text1op035;
 		}
-	
+
 		&__img {
 			display: block;
 			position: relative;
 			margin-bottom: 10px;
 			width: 310px;
 			height: 295px;
-			& img{
+			& img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 			}
-			
 		}
-		&__like-btn{
+		&__like-btn {
 			position: absolute;
 			top: 10px;
 			right: 10px;
 			color: $color1;
-			& span{
+			& span {
 				display: none;
 			}
-			.active{
+			.active {
 				display: block;
 			}
 		}
-		&__banner{
+		&__banner {
 			display: block;
 			min-width: 90px;
 			padding: 7px 10px 8px 10px;
@@ -378,45 +368,44 @@ textarea {
 			position: absolute;
 			top: 10px;
 			left: 10px;
-	  }
+		}
 		&__banner_hit {
 			background: $colorActive;
 		}
-		&__banner_stock{
-			background: #A50D2C;
+		&__banner_stock {
+			background: #a50d2c;
 		}
-		&__banner_new{
-			background: #E9C4C9;
+		&__banner_new {
+			background: #e9c4c9;
 		}
-	
+
 		&__name {
 			margin-bottom: 10px;
 			display: block;
 			font-weight: 500;
 			color: $text1op07;
 		}
-	
+
 		&__price {
 			margin-bottom: 7px;
 			display: block;
 			color: $text1op07;
 		}
-	
+
 		&__availability {
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 20px;
-			& p:first-child{
+			& p:first-child {
 				margin-right: 5px;
 			}
 		}
-		&__structure{
+		&__structure {
 			color: $text1op07;
 		}
-	
 	}
 }
-.card-row-s{
+.card-row-s {
 	display: flex;
 	text-align: left;
 	margin-bottom: 15px;
@@ -425,7 +414,7 @@ textarea {
 			flex: 0 0 auto;
 			width: 54px;
 			height: 57px;
-			& img{
+			& img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
@@ -465,93 +454,93 @@ textarea {
 	}
 }
 .card-row-m {
-   margin-bottom: 30px;
-   display: flex;
-   color: $text1;
-   position: relative;
-   .card {
-      &__img {
-         flex: 0 0 auto;
-         width: 100px;
-         height: 100px;
-      }
-   
-      &__descr {
-         padding: 0px 15px;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-      }
-   
-      &__wrapper {
-         display: flex;
-         justify-content: space-between;
-      }
-   
-      &__name {
-         margin-right: 10px;
-         color: $text1;
-         font-weight: 500;
-      }
-   
-      &__price {
-         color: $text1;
-         flex: 0 0 auto;
-         font-weight: 700;
-      }
-   
-      &__code {
-         margin-bottom: unset;
-      }
-   
-      &__availability {
-         margin-bottom: auto;
-      }
-		&__availability_s{
+	margin-bottom: 30px;
+	display: flex;
+	color: $text1;
+	position: relative;
+	.card {
+		&__img {
+			flex: 0 0 auto;
+			width: 100px;
+			height: 100px;
+		}
+
+		&__descr {
+			padding: 0px 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__name {
+			margin-right: 10px;
+			color: $text1;
+			font-weight: 500;
+		}
+
+		&__price {
+			color: $text1;
+			flex: 0 0 auto;
+			font-weight: 700;
+		}
+
+		&__code {
+			margin-bottom: unset;
+		}
+
+		&__availability {
+			margin-bottom: auto;
+		}
+		&__availability_s {
 			text-align: center;
 			display: none;
 		}
-      &__container {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-      }
-   
-      &__delete {
-         text-decoration-line: underline;
-         color: $color1;
-      }
-      &__close{
-         position: absolute;
-         top: 0;
-         right: 0;
-         display: none;
-         height: 14px;
-         & span{
-            font-size: 14px;
-         }
-      }
-   }
-   .color__item {
-      margin: 0px auto 0px 20px;
-      width: 20px;
-      height: 20px;
-   }
-   .card-row-xl {
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
 
-      &__amount {
-      }
+		&__delete {
+			text-decoration-line: underline;
+			color: $color1;
+		}
+		&__close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: none;
+			height: 14px;
+			& span {
+				font-size: 14px;
+			}
+		}
+	}
+	.color__item {
+		margin: 0px auto 0px 20px;
+		width: 20px;
+		height: 20px;
+	}
+	.card-row-xl {
+		&__amount {
+		}
 
-      &__color {
-      }
-   }
+		&__color {
+		}
+	}
 }
 .color-5 {
 }
 .card-price {
 }
 
-.icon-heart-xl, .icon-heart-xl-on {
+.icon-heart-xl,
+.icon-heart-xl-on {
 	font-size: 32px;
 	cursor: pointer;
 }
@@ -561,17 +550,16 @@ textarea {
 	max-width: 100%;
 	position: relative;
 	padding: 0px 22px 0px 22px;
-	.color__item{
-
-	margin-right: 29.266px;
-}
+	.color__item {
+		margin-right: 29.266px;
+	}
 	&__container {
 	}
-	
+
 	&__wrapper {
 	}
-	
-	&__btn{
+
+	&__btn {
 		padding: 6px 5px 5px 5px;
 		margin: 0px -5px;
 		color: $color1;
@@ -582,21 +570,21 @@ textarea {
 		z-index: 5;
 		font-size: calc(7px + (18 - 7) * ((100vw - 320px) / (1440 - 320)));
 		cursor: pointer;
-		.icon-triangle-left, .icon-triangle-right{
+		.icon-triangle-left,
+		.icon-triangle-right {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			
 		}
 	}
-	&__btn-prev{
+	&__btn-prev {
 		left: 0;
 	}
-	&__btn-next{
+	&__btn-next {
 		right: 0;
 	}
 }
-.color__item{
+.color__item {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
@@ -605,36 +593,34 @@ textarea {
 	position: relative;
 	cursor: pointer;
 }
-.color__style{
+.color__style {
 	width: inherit;
 	height: inherit;
 	border-radius: inherit;
 	display: block;
-	
 }
-.color__input:checked + .color__style{
+.color__input:checked + .color__style {
 	border: 1px solid #000000;
 }
 
 .color-1 {
-	background: #F7C65A;
+	background: #f7c65a;
 }
 .color-2 {
-	background: #977DAD;
+	background: #977dad;
 }
 .color-3 {
-	background: #35405C
+	background: #35405c;
 }
 .color-4 {
-	background: #35405C;
+	background: #35405c;
 }
 .color-5 {
-	background: #40697F;
+	background: #40697f;
 }
 .color-6 {
 	background: #477640;
 }
-
 
 .card-row {
 	display: flex;
@@ -642,7 +628,6 @@ textarea {
 	max-width: 670px;
 	margin-bottom: 25px;
 	.card {
-
 		&__code {
 			width: 100%;
 		}
@@ -657,7 +642,7 @@ textarea {
 			display: flex;
 			flex-direction: column;
 		}
-		&__name{
+		&__name {
 			margin-bottom: 10px;
 		}
 		&__price {
@@ -669,53 +654,53 @@ textarea {
 			justify-content: flex-start;
 			margin-bottom: 13px;
 		}
-		&__structure{
+		&__structure {
 			margin-bottom: 45px;
 		}
-		&__structure-title{
+		&__structure-title {
 			color: $text1;
 			margin-bottom: 5px;
 		}
-		&-row-xl__box{
+		&-row-xl__box {
 			display: none;
 			flex-direction: row;
 			justify-content: start;
 		}
-		&-row-xl__title_s{
+		&-row-xl__title_s {
 			margin-bottom: 0;
 		}
-		&__add-to-cart-box{
+		&__add-to-cart-box {
 			display: none;
 			margin-top: auto;
 		}
-		
 	}
 	.slider-color {
 		margin-bottom: 17px;
 	}
-	&:hover{
-		.card__add-to-cart-box, .card-row-xl__box{
+	&:hover {
+		.card__add-to-cart-box,
+		.card-row-xl__box {
 			display: flex;
 		}
 	}
 }
 
-.progress-bar{
-	&__body{
+.progress-bar {
+	&__body {
 		width: 332px;
 		height: 10px;
 		background: $white;
 		border: 1px solid $color1;
 	}
-	&__line{
+	&__line {
 		height: 100%;
 		background-color: $color1;
 		// width: 100%;
 		border-radius: 20px;
 	}
 }
-.number__page{
+.number__page {
 	margin-bottom: 15px;
 	color: #4d4d4d;
-	font-size: calc(12px + (14 - 12) * ((100vw - 320px)/(1920 - 320)));
+	font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
 }

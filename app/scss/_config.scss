@@ -6,96 +6,87 @@
 
 // }
 
-.h1{
-   font-family: 'Roboto Slab';
+.h1 {
+   font-family: "Roboto Slab";
    font-size: 42px;
-}    
-.h2{
-   font-family: 'Roboto Slab';
+}
+.h2 {
+   font-family: "Roboto Slab";
    font-size: 30px;
 }
-.t1{
+.t1 {
    font-size: 24px;
 }
-.t2{
+.t2 {
    font-size: 24px;
    font-weight: 500;
 }
-.t3{
+.t3 {
    font-size: 18px;
-   
 }
-.t4{
+.t4 {
    font-size: 18px;
    font-weight: 500;
 }
-.t5{
+.t5 {
    font-size: 16px;
 }
-.t6{
+.t6 {
    font-size: 14px;
 }
-.t7{
+.t7 {
    font-size: 12px;
 }
-.t8{
+.t8 {
    font-size: 10px;
 }
 
-
-
-
-
-
-
-.h3{
+.h3 {
    font-weight: bold;
    font-size: 90px;
 }
-.h4{
-   font-family: 'Nunito';
+.h4 {
+   font-family: "Nunito";
    font-weight: 600;
    font-size: 42px;
    line-height: 57px;
 }
-.h5{
-   font-family: 'Roboto Slab';
+.h5 {
+   font-family: "Roboto Slab";
    font-size: 42px;
    line-height: 55px;
 }
-.h6{
-   font-family: 'Nunito';
+.h6 {
+   font-family: "Nunito";
    font-weight: 300;
    font-size: 30px;
    line-height: 41px;
 }
-.h7{
+.h7 {
    font-size: 26px;
 }
-.h8{
+.h8 {
    font-size: 24px;
    line-height: 36px;
 }
-.h9{
+.h9 {
    font-size: 24px;
 }
-.h10{
-   font-size: 20px;    
+.h10 {
+   font-size: 20px;
 }
-.h11{
+.h11 {
    font-size: 16px;
 }
-.h12{
+.h12 {
    font-size: 14px;
 }
-.h13{
+.h13 {
    font-size: 12px;
 }
-.h14{
+.h14 {
    font-size: 10px;
 }
-
-
 
 $text1: #632316;
 $text1op05: rgba(99, 35, 22, 0.5);
@@ -107,7 +98,7 @@ $color1: #e1a986;
 $color2: #d5a083;
 $color3: #fdfaf5;
 $white: #ffffff;
-$colorActive: #F7C65A;
-$colorSuccess: #4ACA35;
-$colorDisabled: #B0A798;
-$colorError: #CF4E32;
+$colorActive: #f7c65a;
+$colorSuccess: #4aca35;
+$colorDisabled: #b0a798;
+$colorError: #cf4e32;
