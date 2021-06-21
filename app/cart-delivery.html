@@ -22,18 +22,18 @@
                   <img src="images/svg/logo.svg" alt="Логотип">
                </div>
                <div class="header__container">
-                  <ul class="menu">
-                     <div class="menu__burger">
+                  <ul class="menu burger-menu">
+                     <div class="menu__burger burger-btn">
                         <span></span>
                      </div>
-                     <div class="menu__container">
+                     <div class="menu__container burger-mobile">
                         <li class="menu__item t3"><a href="#" class="menu__link">Каталог</a></li>
-                        <li class="menu__item t3">
-                           <div class="menu__item-head">
+                        <li class="menu__item t3 toggle-block">
+                           <div class="menu__item-head toggle-btn">
                               <p>Покупателям</p>
-                              <span class="icon icon-triangle-down"></span>
+                              <span class="icon icon-triangle-down toggle-icon"></span>
                            </div>
-                           <div class="menu__item-body t6">
+                           <div class="menu__item-body t6 toggle-body">
                               <a href="#">Оплата заказа</a>
                               <a href="#">Условия доставки</a>
                               <a href="#">Обмен и возврат заказа</a>
@@ -57,16 +57,16 @@
                      <div class="header__link">
                         <a href="#"><span class="icon icon-heart"></span></a>
                      </div>
-                     <div class="header__link">
-                        <a href="#"><span class="icon icon-bag"><i class="header__quantity">99</i></span></a>
-                        <div class="preview-cart">
+                     <div class="header__link toggle-block">
+                        <a class=" toggle-btn" href="#"><span class="icon icon-bag"><i class="header__quantity">99</i></span></a>
+                        <div class="preview-cart toggle-body">
                            <div class="preview-cart__top-line">
-                              <span class="icon icon-close"></span>
+                              <span class="icon icon-close toggle-btn"></span>
                               <p class="preview-cart__title h6">Корзина</p>
                               <button class="preview-cart__clear-btn">Сбросить все</button>
                            </div>
                            <div class="preview-cart__body">
-                              <a href="#" class="card-row-m">
+                              <a href="#" class="card-row-m card-block">
                                  <div class="card__img">
                                     <img src="images/card-row-m-img1.png" alt="">
                                  </div>
@@ -86,10 +86,10 @@
                                     <div class="card__container">
                                        <div class="card-row-xl__amount-box card-row-xl__box">
                                           <p class="card-row-xl__title_s">Количество</p>
-                                          <div class="card-row-xl__amount">
-                                             <span class="icon icon-minus"></span>
-                                             <p>123</p>
-                                             <span class="icon icon-plus"></span>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
                                           </div>
                                        </div>
                                        <div class="card-row-xl__color-box card-row-xl__box">
@@ -102,15 +102,15 @@
                                        </div>
                                        <div class="card-row-xl__box">
                                           <p class="card-row-xl__title_s card__price">9000 ₽</p>
-                                          <button class="card__delete t7">Удалить</button>
+                                          <button class="card__delete t7 card-del">Удалить</button>
                                        </div>
                                     </div>
                                  </div>
-                                 <button class="card__close">
+                                 <button class="card__close card-del">
                                     <span class="icon icon-close"></span>
                                  </button>
                               </a>
-                              <a href="#" class="card-row-m">
+                              <a href="#" class="card-row-m card-block">
                                  <div class="card__img">
                                     <img src="images/card-row-m-img1.png" alt="">
                                  </div>
@@ -130,10 +130,10 @@
                                     <div class="card__container">
                                        <div class="card-row-xl__amount-box card-row-xl__box">
                                           <p class="card-row-xl__title_s">Количество</p>
-                                          <div class="card-row-xl__amount">
-                                             <span class="icon icon-minus"></span>
-                                             <p>123</p>
-                                             <span class="icon icon-plus"></span>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
                                           </div>
                                        </div>
                                        <div class="card-row-xl__color-box card-row-xl__box">
@@ -146,15 +146,15 @@
                                        </div>
                                        <div class="card-row-xl__box">
                                           <p class="card-row-xl__title_s card__price">9000 ₽</p>
-                                          <button class="card__delete t7">Удалить</button>
+                                          <button class="card__delete t7 card-del">Удалить</button>
                                        </div>
                                     </div>
                                  </div>
-                                 <button class="card__close">
+                                 <button class="card__close card-del">
                                     <span class="icon icon-close"></span>
                                  </button>
                               </a>
-                              <a href="#" class="card-row-m">
+                              <a href="#" class="card-row-m card-block">
                                  <div class="card__img">
                                     <img src="images/card-row-m-img1.png" alt="">
                                  </div>
@@ -174,10 +174,10 @@
                                     <div class="card__container">
                                        <div class="card-row-xl__amount-box card-row-xl__box">
                                           <p class="card-row-xl__title_s">Количество</p>
-                                          <div class="card-row-xl__amount">
-                                             <span class="icon icon-minus"></span>
-                                             <p>123</p>
-                                             <span class="icon icon-plus"></span>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
                                           </div>
                                        </div>
                                        <div class="card-row-xl__color-box card-row-xl__box">
@@ -190,16 +190,16 @@
                                        </div>
                                        <div class="card-row-xl__box">
                                           <p class="card-row-xl__title_s card__price">9000 ₽</p>
-                                          <button class="card__delete t7">Удалить</button>
+                                          <button class="card__delete t7 card-del">Удалить</button>
                                        </div>
                                     </div>
                                  </div>
-                                 <button class="card__close">
+                                 <button class="card__close card-del">
                                     <span class="icon icon-close"></span>
                                  </button>
                               </a>
                            </div>
-                           <div class="preview-cart__btn-box">
+                           <div class="preview-cart__btn-box toggle-btn--close">
                               <a class="preview-cart__btn button t3">перейти в корзину</a>
                            </div>
                         </div>
@@ -259,7 +259,7 @@
                                        <p class="delivery-radio__title t4">САМОВЫВОЗ</p>
                                        <div class="delivery-radio__body">
                                           <p class="delivery-radio__adress">г. Черкесск, ул. Первомайская, 15</p>
-                                          <p class="delivery-radio__watch-on-map popup__map-btn">Смотреть на
+                                          <p class="delivery-radio__watch-on-map popup__map-btn t5">Смотреть на
                                              карте</p>
                                           <p class="delivery-radio__timetable">пн-вс с 10:00 до 19:00</p>
                                           <p class="delivery-radio__text_s t6">Бесплатно</p>
@@ -282,7 +282,7 @@
                                              <p>Доставка до ТК</p>
                                              <p>1 день</p>
                                           </div>
-                                          <p class="delivery-radio__descr t7">Осуществляется до приёмного пункта
+                                          <p class="delivery-radio__descr t7 d-none-mobile">Осуществляется до приёмного пункта
                                              Транспортной Компании</p>
                                           <div class="delivery-radio__row t5">
                                              <p>Стоимость: </p>
@@ -342,13 +342,14 @@
                                  </div>
                                  <div class="delivery-address__input-container toggle-body">
                                     <div class="delivery-address__input-wrap t6">
-                                       <div class="delivery-address__select-country">
-                                          <div class="delivery-address__select-country-head">
-                                             <span>Страна</span>
-                                             <span class="icon icon-triangle-down"></span>
+                                       <div class="delivery-address__select-country select">
+                                          <div class="delivery-address__select-country-head select-header">
+                                             <span class="select-title">Страна</span>
+                                             <span class="icon icon-triangle-down select-icon"></span>
                                           </div>
-                                          <div class="delivery-address__select-country-body">
-                                             <p></p>
+                                          <div class="delivery-address__select-country-body select-body">
+                                             <div class="delivery-address__select-country-item select-item">Россия</div>
+                                             <div class="delivery-address__select-country-item select-item">Беларусь</div>
                                           </div>
                                        </div>
                                        <input type="text" class="delivery-address__input input"

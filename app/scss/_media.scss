@@ -32,6 +32,15 @@
    .page-catalog__grid .card-column {
       max-width: 30%;
    }
+   .logo {
+      margin-right: 20px;
+   }
+   .search__input {
+      width: 300px;
+   }
+   .menu__item:not(:last-child) {
+      margin-right: 15px;
+   }
 }
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -63,6 +72,7 @@
    .logo {
       position: absolute;
       width: 100%;
+      max-width: unset;
       display: flex;
       justify-content: center;
       & img {
@@ -70,8 +80,32 @@
          z-index: 2;
       }
    }
-   .menu__burger {
-      display: block;
+   .menu {
+      &.burger-open {
+         .burger-mobile {
+            display: flex;
+         }
+
+         .menu__burger::before {
+            transform: rotate(45deg);
+            top: calc(50% - 1.5px);
+         }
+         .menu__burger::after {
+            transform: rotate(-45deg);
+            bottom: calc(50% - 1.5px);
+         }
+         .menu__burger span {
+            transform: scale(0);
+         }
+      }
+      &__burger {
+         display: block;
+      }
+      &__item {
+         .icon-triangle-up {
+            font-size: 14px;
+         }
+      }
    }
    .search.active {
       position: absolute;
@@ -112,6 +146,7 @@
       position: absolute;
       top: 100%;
       left: 0;
+      z-index: 999;
       width: 100vw;
       background: $white;
       margin-left: -15px;
@@ -170,6 +205,7 @@
       height: 100vh;
       z-index: 99;
       overflow-y: scroll;
+      padding: 0;
       .card-row-xl__title_s {
          display: flex;
       }
@@ -228,6 +264,12 @@
       flex: 0 1 220px;
    }
 
+   .cart-main {
+      .page-cart__container {
+         margin-bottom: 60px;
+      }
+   }
+
    .search {
       margin: unset;
       margin: 0px auto 0px 0px;
@@ -241,45 +283,49 @@
       z-index: 3;
    }
 
-   .footer__content {
-      padding: 70px 0px;
-   }
-   .footer__contacts {
-      order: 1;
-      display: block;
-      margin-bottom: 20px;
-      & p {
-         margin-bottom: 40px;
-         &:not(:last-child) {
-            margin-right: unset;
+   .footer {
+      &__content {
+         padding: 70px 0px;
+      }
+      &__contacts {
+         order: 1;
+         display: block;
+         margin-bottom: 20px;
+         & p {
+            margin-bottom: 40px;
+            &:not(:last-child) {
+               margin-right: unset;
+            }
          }
       }
+      &__socials {
+         order: 2;
+         & span {
+            font-size: 65px;
+         }
+      }
+      &__columns {
+         order: 3;
+         flex-direction: column;
+         align-items: center;
+         margin-bottom: 20px;
+      }
+      &__block {
+         padding: unset;
+      }
+      &__block:nth-child(3) {
+         padding: unset;
+      }
+      &__title {
+         margin: unset;
+      }
+      &__info {
+         order: 4;
+      }
+      &__link {
+         display: none;
+      }
    }
-   .footer__socials {
-      order: 2;
-   }
-   .footer__columns {
-      order: 3;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-   }
-   .footer__block {
-      padding: unset;
-   }
-   .footer__block:nth-child(3) {
-      padding: unset;
-   }
-   .footer__title {
-      margin: unset;
-   }
-   .footer__info {
-      order: 4;
-   }
-   .footer__link {
-      display: none;
-   }
-
    .steps {
       margin-bottom: 45px;
    }
@@ -343,6 +389,14 @@
          width: unset;
          height: calc(220px + (300 - 220) * ((100vw - 768px) / (991 - 768)));
       }
+
+      .card-row-xl__title_s {
+         font-size: 16px;
+      }
+      .card__button {
+         font-size: 14px;
+         margin: 9px 0px 12px 0px;
+      }
    }
    .slider__container {
       margin: 0px;
@@ -359,7 +413,9 @@
    .payment-radio {
       justify-content: space-between;
    }
-
+   .cart-placed .page-cart__button-box {
+      margin-top: 20px;
+   }
    .page-catalog__grid .card-column .card__img {
       height: calc(150px + (280 - 150) * ((100vw - 578px) / (991 - 578)));
    }
@@ -384,6 +440,10 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 30px;
+      &__categories-item p:first-child {
+         width: unset;
+      }
+
       .sidebar__icons {
          display: flex;
          flex: 0 0 auto;
@@ -398,7 +458,7 @@
          margin-bottom: unset;
          margin-right: 30px;
       }
-      .sidebar__categories-item {
+      &__categories-item {
          padding: 8px 0px;
          max-width: unset;
          & p {
@@ -411,6 +471,8 @@
          }
          &.active {
             border-bottom: 5px solid #c48564;
+            background: transparent;
+            color: $text1;
          }
       }
    }
@@ -430,7 +492,7 @@
       width: 100vw;
       height: 100vh;
       background: $white;
-      z-index: 5;
+      z-index: 20;
       overflow-y: scroll;
       display: none;
       .sidebar {
@@ -523,8 +585,11 @@
          &__selector-head {
             padding: 20px 15px;
          }
-         &__color-box {
+         &__color-body {
             display: none;
+         }
+         &__color-box {
+            margin: 0;
          }
          &__subtitle {
             margin-bottom: 0;
@@ -538,6 +603,22 @@
             padding: 15px 15px;
             align-items: center;
          }
+      }
+   }
+
+   .delivery-radio {
+      &__label {
+         width: 49%;
+         &:not(:last-child) {
+            margin-right: 0;
+         }
+      }
+      &__item {
+         width: 100%;
+         padding: 15px;
+      }
+      &__input:checked + .delivery-radio__item {
+         padding: 15px;
       }
    }
 
@@ -616,11 +697,17 @@
    .page-catalog__grid .card-column {
       width: calc(139px + (355.5 - 139) * ((100vw - 320px) / (768 - 320)));
    }
+   .placed-info__subtitle {
+      margin-right: 30px;
+   }
 }
 // MAX-WIDTH 767.98PX breakpoints END
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .header {
+      padding-top: 10px;
+   }
    .cabinet-leftbar-mobile {
       grid-template-columns: 1fr 1fr;
       .cabinet-leftbar__item {
@@ -665,14 +752,22 @@
       top: -8px;
       right: -8px;
    }
-   .placed-info__body {
-      margin-bottom: 20px;
-   }
-   .delivery-radio__row {
-      flex-direction: column;
-      & p:first-child {
-         margin-bottom: 5px;
+
+   .delivery-radio {
+      &__row {
+         flex-direction: column;
+         & p:first-child {
+            margin-bottom: 5px;
+         }
       }
+      &__descr {
+         &:first {
+            display: none;
+         }
+      }
+   }
+   .d-none-mobile {
+      display: none;
    }
    .delivery-radio__title {
       margin-bottom: 12px;
@@ -693,7 +788,7 @@
       margin-bottom: 10px;
    }
    .delivery-address {
-      margin-bottom: 0;
+      margin-bottom: 20px;
    }
    .payment-radio__title {
       min-height: unset;
@@ -829,8 +924,10 @@
       }
    }
    .footer__socials {
-      font-size: 20px;
       margin-bottom: 30px;
+      & span {
+         font-size: 44px;
+      }
       & a {
          &:not(:last-child) {
             margin-right: 30px;
@@ -931,6 +1028,26 @@
    .cart-main .page-cart__container {
       margin-bottom: 35px;
    }
+   .card-column .icon-bag {
+      top: 43px;
+      font-size: 20px;
+   }
+   .card-column .header__quantity {
+      top: -8px;
+      left: -8px;
+   }
+   .card-column {
+      .card-row-xl__title_s {
+         display: none;
+      }
+      .card__button {
+         font-size: 8px;
+         margin: 4.5px 10px;
+      }
+      .card-row-xl__box {
+         justify-content: center;
+      }
+   }
    .card-column .card__name {
       margin-bottom: 7px;
    }
@@ -957,9 +1074,26 @@
    .card-column .card__img {
       margin-bottom: 7px;
    }
+   .cart-placed .page-cart__button-box {
+      margin-top: 0px;
+   }
+   .cart-placed .order-info {
+      padding: 20px 16px 30px 10px;
+   }
    .order-info {
       flex: 0 1 auto;
       padding: 20px 27px 30px 27px;
+      width: unset;
+      max-width: 380px;
+      &__price {
+         font-size: 16px;
+      }
+      &__price_semibold {
+         font-size: 14px;
+      }
+      &__text-line {
+         margin-bottom: 15px;
+      }
    }
    .order-info__text_m,
    .order-info__text_m_medium,
@@ -968,26 +1102,15 @@
    }
    .order-info-button {
       padding: 9.5px 40px;
-   }
-   .order-info__price {
-      font-size: 16px;
-   }
-   .order-info__price_semibold {
-      font-size: 14px;
-   }
-   .order-info__text-line {
-      margin-bottom: 15px;
-   }
-   .order-info-button {
       margin: 10px 0px 20px 0px;
    }
-   .order-info {
-      padding: 20px 27px 30px 27px;
+   .placed-info__body {
+      margin-bottom: 20px;
    }
-
    .placed-info__subtitle {
       width: 45%;
       padding: 0px 10px 0px 0px;
+      margin-right: unset;
    }
    .placed-info__text {
       width: 55%;
@@ -1005,23 +1128,24 @@
    .payment-radio__item {
       flex: 1 1 320px;
    }
+
    .sidebar {
       margin-bottom: 20px;
-      .sidebar__categories-item p {
+      &__icons .sidebar__filter {
+         width: 23px;
+         height: 21px;
+      }
+      &__categories-item p {
          font-size: 10px;
+      }
+      .sidebar__categories-item.active {
+         border-bottom: 2px solid #c48564;
+         background: transparent;
+         color: $text1;
       }
       .sidebar__icons span {
          font-size: 20px;
       }
-   }
-   .sidebar .sidebar__categories-item.active {
-      border-bottom: 2px solid #c48564;
-   }
-   .slider-color__btn-next {
-      padding: 4px;
-   }
-   .sidebar-burger .t5 {
-      font-size: 14px;
    }
    .sidebar-burger .sidebar {
       &__change-price {
@@ -1030,15 +1154,27 @@
       &__change-price-body {
          flex-wrap: wrap;
       }
+      &__categories-item {
+         display: flex;
+         justify-content: space-between;
+         padding: 9px 14px;
+         width: 170px;
+      }
+      &__categories-item p {
+         font-size: 12px;
+      }
       &__input-price,
       &__slider {
          margin-bottom: 20px;
       }
+      &.t5 {
+         font-size: 14px;
+      }
    }
-   .sidebar__icons .sidebar__filter {
-      width: 23px;
-      height: 21px;
+   .slider-color__btn-next {
+      padding: 4px;
    }
+
    .page-catalog__grid .slider-color .color__item {
       margin-right: calc(13.55px + (44.62 - 13.55) * ((100vw - 320px) / (576 - 320)));
    }

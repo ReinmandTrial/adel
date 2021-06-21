@@ -22,18 +22,18 @@
                   <img src="images/svg/logo.svg" alt="Логотип">
                </div>
                <div class="header__container">
-                  <ul class="menu">
-                     <div class="menu__burger">
+                  <ul class="menu burger-menu">
+                     <div class="menu__burger burger-btn">
                         <span></span>
                      </div>
-                     <div class="menu__container">
+                     <div class="menu__container burger-mobile">
                         <li class="menu__item t3"><a href="#" class="menu__link">Каталог</a></li>
-                        <li class="menu__item t3">
-                           <div class="menu__item-head">
+                        <li class="menu__item t3 toggle-block">
+                           <div class="menu__item-head toggle-btn">
                               <p>Покупателям</p>
-                              <span class="icon icon-triangle-down"></span>
+                              <span class="icon icon-triangle-down toggle-icon"></span>
                            </div>
-                           <div class="menu__item-body t6">
+                           <div class="menu__item-body t6 toggle-body">
                               <a href="#">Оплата заказа</a>
                               <a href="#">Условия доставки</a>
                               <a href="#">Обмен и возврат заказа</a>
@@ -57,16 +57,17 @@
                      <div class="header__link">
                         <a href="#"><span class="icon icon-heart"></span></a>
                      </div>
-                     <div class="header__link">
-                        <a href="#"><span class="icon icon-bag"><i class="header__quantity">99</i></span></a>
-                        <div class="preview-cart">
+                     <div class="header__link toggle-block">
+                        <a class=" toggle-btn" href="#"><span class="icon icon-bag"><i
+                                 class="header__quantity">99</i></span></a>
+                        <div class="preview-cart toggle-body">
                            <div class="preview-cart__top-line">
-                              <span class="icon icon-close"></span>
+                              <span class="icon icon-close toggle-btn"></span>
                               <p class="preview-cart__title h6">Корзина</p>
                               <button class="preview-cart__clear-btn">Сбросить все</button>
                            </div>
                            <div class="preview-cart__body">
-                              <a href="#" class="card-row-m">
+                              <a href="#" class="card-row-m card-block">
                                  <div class="card__img">
                                     <img src="images/card-row-m-img1.png" alt="">
                                  </div>
@@ -86,10 +87,10 @@
                                     <div class="card__container">
                                        <div class="card-row-xl__amount-box card-row-xl__box">
                                           <p class="card-row-xl__title_s">Количество</p>
-                                          <div class="card-row-xl__amount">
-                                             <span class="icon icon-minus"></span>
-                                             <p>123</p>
-                                             <span class="icon icon-plus"></span>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
                                           </div>
                                        </div>
                                        <div class="card-row-xl__color-box card-row-xl__box">
@@ -102,15 +103,15 @@
                                        </div>
                                        <div class="card-row-xl__box">
                                           <p class="card-row-xl__title_s card__price">9000 ₽</p>
-                                          <button class="card__delete t7">Удалить</button>
+                                          <button class="card__delete t7 card-del">Удалить</button>
                                        </div>
                                     </div>
                                  </div>
-                                 <button class="card__close">
+                                 <button class="card__close card-del">
                                     <span class="icon icon-close"></span>
                                  </button>
                               </a>
-                              <a href="#" class="card-row-m">
+                              <a href="#" class="card-row-m card-block">
                                  <div class="card__img">
                                     <img src="images/card-row-m-img1.png" alt="">
                                  </div>
@@ -130,10 +131,10 @@
                                     <div class="card__container">
                                        <div class="card-row-xl__amount-box card-row-xl__box">
                                           <p class="card-row-xl__title_s">Количество</p>
-                                          <div class="card-row-xl__amount">
-                                             <span class="icon icon-minus"></span>
-                                             <p>123</p>
-                                             <span class="icon icon-plus"></span>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
                                           </div>
                                        </div>
                                        <div class="card-row-xl__color-box card-row-xl__box">
@@ -146,15 +147,15 @@
                                        </div>
                                        <div class="card-row-xl__box">
                                           <p class="card-row-xl__title_s card__price">9000 ₽</p>
-                                          <button class="card__delete t7">Удалить</button>
+                                          <button class="card__delete t7 card-del">Удалить</button>
                                        </div>
                                     </div>
                                  </div>
-                                 <button class="card__close">
+                                 <button class="card__close card-del">
                                     <span class="icon icon-close"></span>
                                  </button>
                               </a>
-                              <a href="#" class="card-row-m">
+                              <a href="#" class="card-row-m card-block">
                                  <div class="card__img">
                                     <img src="images/card-row-m-img1.png" alt="">
                                  </div>
@@ -174,10 +175,10 @@
                                     <div class="card__container">
                                        <div class="card-row-xl__amount-box card-row-xl__box">
                                           <p class="card-row-xl__title_s">Количество</p>
-                                          <div class="card-row-xl__amount">
-                                             <span class="icon icon-minus"></span>
-                                             <p>123</p>
-                                             <span class="icon icon-plus"></span>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
                                           </div>
                                        </div>
                                        <div class="card-row-xl__color-box card-row-xl__box">
@@ -190,16 +191,16 @@
                                        </div>
                                        <div class="card-row-xl__box">
                                           <p class="card-row-xl__title_s card__price">9000 ₽</p>
-                                          <button class="card__delete t7">Удалить</button>
+                                          <button class="card__delete t7 card-del">Удалить</button>
                                        </div>
                                     </div>
                                  </div>
-                                 <button class="card__close">
+                                 <button class="card__close card-del">
                                     <span class="icon icon-close"></span>
                                  </button>
                               </a>
                            </div>
-                           <div class="preview-cart__btn-box">
+                           <div class="preview-cart__btn-box toggle-btn--close">
                               <a class="preview-cart__btn button t3">перейти в корзину</a>
                            </div>
                         </div>
@@ -213,7 +214,7 @@
       <!-- HEADER end  -->
 
       <!-- MAIN start  -->
-      <main class="main">
+      <main class="main cart-main">
 
 
          <!-- CONTENT start  -->
@@ -380,10 +381,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t5">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -418,6 +422,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -426,10 +441,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6 off">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -464,6 +482,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -472,10 +501,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -510,6 +542,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -518,10 +561,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6 off">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -556,6 +602,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -564,10 +621,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6 off">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -601,6 +661,17 @@
                                                 <span class="icon icon-triangle-right"></span>
                                              </button>
                                           </div>
+                                       </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
                                        </div>
                                     </div>
                                  </div>
@@ -623,16 +694,19 @@
                               <div class="slider__container swiper-container">
                                  <div class="slider__wrapper swiper-wrapper">
                                     <div class="card-column swiper-slide">
-                                       <a href="#" class="card__code t6">арт. CN6269/1Z-6271</a>
+                                       <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
                                        <div class="card__img">
                                           <a href="#">
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t5">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -667,6 +741,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -675,10 +760,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6 off">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -713,6 +801,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -721,10 +820,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -759,6 +861,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -767,10 +880,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6 off">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -805,6 +921,17 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
                                     <div class="card-column swiper-slide">
                                        <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
@@ -813,10 +940,13 @@
                                              <img src="images/card-img1.png" alt="">
                                           </a>
                                           <div class="card__banner card__banner_hit t6 off">Хит</div>
-                                          <button class="card__like-btn">
-                                             <span class="icon icon-heart-xl active"></span>
-                                             <span class="icon icon-heart-xl-on"></span>
+                                          <button class="card__like-btn heart-block">
+                                             <span class="icon icon-heart-xl active heart-item"></span>
+                                             <span class="icon icon-heart-xl-on heart-item"></span>
                                           </button>
+                                          <a href="#">
+                                             <span class="icon icon-bag"><i class="header__quantity">99</i></span>
+                                          </a>
                                        </div>
                                        <div class="card__descr t3">
                                           <a href="#" class="card__name">Комплект «Мерлин»</a>
@@ -851,7 +981,19 @@
                                              </button>
                                           </div>
                                        </div>
+                                       <div class="card__hover-block">
+                                          <div class="card-row-xl__amount-box card-row-xl__box">
+                                             <p class="card-row-xl__title_s">Количество</p>
+                                             <div class="card-row-xl__amount count-block">
+                                                <span class="icon icon-minus count-mine"></span>
+                                                <input class="count-input" value="123" maxlength="3">
+                                                <span class="icon icon-plus count-more"></span>
+                                             </div>
+                                          </div>
+                                          <button class="card__button button">Положить в корзину</button>
+                                       </div>
                                     </div>
+
                                  </div>
                                  <span class="slider__linear-gradient"></span>
                               </div>

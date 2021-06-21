@@ -56,8 +56,10 @@
    font-size: 24px;
 }
 .logo {
-   margin-right: calc(20px + (75 - 20) * ((100vw - 991px) / (1440 - 991)));
+   flex: 0 0 auto;
+   margin-right: 75px;
    width: calc(156px + (195 - 156) * ((100vw - 991px) / (1440 - 991)));
+   max-width: 195px;
    height: 100%;
    & img {
       height: 100%;
@@ -105,17 +107,6 @@
       &::after {
          bottom: 0;
       }
-      &.active::before {
-         transform: rotate(45deg);
-         top: calc(50% - 1.5px);
-      }
-      &.active::after {
-         transform: rotate(-45deg);
-         bottom: calc(50% - 1.5px);
-      }
-      &.active span {
-         transform: scale(0);
-      }
    }
    &__item {
       flex: 0 0 auto;
@@ -124,7 +115,7 @@
          cursor: pointer;
       }
       &:not(:last-child) {
-         margin-right: calc(10px + (40 - 10) * ((100vw - 991px) / (1440 - 991)));
+         margin-right: 40px;
       }
       .icon-triangle-down {
          position: relative;
@@ -147,6 +138,12 @@
       position: absolute;
       top: 44px;
       left: 0;
+      z-index: 99;
+      max-height: 220px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+         width: 0;
+      }
       & a {
          display: block;
          padding: 12px 9px;
@@ -163,10 +160,10 @@
 }
 .search {
    flex: 0 1 auto;
-   margin: 0px calc(0px + (60 - 0) * ((100vw - 991px) / (1440 - 991))) 0px auto;
+   margin: 0px calc(0px + (50 - 0) * ((100vw - 991px) / (1920 - 991))) 0px 10px;
    position: relative;
    &__input {
-      width: calc(260px + (340 - 260) * ((100vw - 991px) / (1440 - 991)));
+      width: 340px;
       padding: 11.5px 55px 11.5px 15px;
       border: unset;
       background: $color3;
@@ -188,6 +185,8 @@
    position: absolute;
    top: 100%;
    right: 0;
+   z-index: 999;
+   padding: 20px 20px 30px;
    width: 440px;
    background: $white;
    box-shadow: 0px 2px 18px rgba(99, 35, 22, 0.2);
@@ -219,7 +218,8 @@
    }
 
    &__body {
-      padding: 20px 20px 10px 20px;
+      // padding: 20px 20px 10px 20px;
+      padding-bottom: 10px;
       margin-bottom: 40px;
       border-bottom: 1px solid $color1;
    }
@@ -303,14 +303,14 @@
       width: 100%;
       margin-bottom: 70px;
       & span {
-         font-size: 44px;
-         &:active {
-            color: $color1;
-         }
+         font-size: 42px;
       }
       & a {
          &:not(:last-child) {
             margin-right: 60px;
+         }
+         &:active {
+            color: $color1;
          }
       }
    }
@@ -341,6 +341,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      flex-wrap: wrap;
       position: relative;
    }
    &__container {
@@ -485,6 +486,7 @@
       opacity: 0.5;
       position: relative;
       margin-bottom: 20px;
+      transition: 0.3s;
    }
    &__label {
       cursor: pointer;
@@ -543,7 +545,7 @@
    }
    &__watch-on-map {
       position: relative;
-      z-index: 3;
+      z-index: 2;
       text-decoration: underline;
       margin-bottom: 8px;
       color: $text1;
@@ -646,17 +648,24 @@
       z-index: 3;
       padding: 17px 26px 20px 26px;
       width: 640px;
+      max-height: 150px;
       background: $white;
       box-shadow: 10px 10px 18px 1px rgba(99, 35, 22, 0.07);
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+         width: 0;
+      }
    }
    &__select-item {
-      margin-bottom: 15px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 300;
       font-size: 16px;
       color: #4d4d4d;
       cursor: pointer;
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
    }
 
    &__add-adress {
@@ -669,6 +678,7 @@
       width: 275px;
       position: relative;
       border: 1px solid $color2;
+      margin-bottom: 50px;
       .icon-triangle-down {
          font-size: 14px;
          position: relative;
@@ -683,19 +693,23 @@
       }
       &-body {
          display: none;
-         overflow: hidden;
+         // overflow: hidden;
          position: absolute;
          top: calc(100% - 1px);
          left: -1px;
          z-index: 2;
          width: 100%;
-         height: 140px;
+         max-height: 180px;
          border: 1px solid $color2;
          width: calc(100% + 2px);
          background: $white;
          border-bottom: 1px solid $color2;
          border-left: 1px solid $color2;
          border-right: 1px solid $color2;
+         overflow-y: scroll;
+         &::-webkit-scrollbar {
+            width: 0;
+         }
          & div {
             background: $white;
             padding: 11px 30px 11px 18px;
@@ -724,6 +738,7 @@
       align-items: start;
    }
    &__select-country {
+      position: relative;
       border: 1px solid $color2;
       font-size: 14px;
       .icon-triangle-down {
@@ -732,6 +747,7 @@
          top: 3px;
       }
       &-head {
+         cursor: pointer;
          display: flex;
          justify-content: space-between;
          color: $text1op05;
@@ -739,11 +755,37 @@
       }
       &-body {
          display: none;
-         & p {
-            padding: 11px 16px 11.5px 18px;
+         // overflow: hidden;
+         position: absolute;
+         top: calc(100% - 1px);
+         left: -1px;
+         z-index: 2;
+         width: 100%;
+         max-height: 180px;
+         border: 1px solid $color2;
+         width: calc(100% + 2px);
+         background: $white;
+         border-bottom: 1px solid $color2;
+         border-left: 1px solid $color2;
+         border-right: 1px solid $color2;
+         overflow-y: scroll;
+         &::-webkit-scrollbar {
+            width: 0;
+         }
+         & div {
+            background: $white;
+            padding: 11px 30px 11px 18px;
             &:not(:last-child) {
                border-bottom: 1px solid $color2;
             }
+         }
+      }
+      &-item {
+         padding: 10px 11px 9px 9px;
+         cursor: pointer;
+         &:hover {
+            background: $color1;
+            color: $white;
          }
       }
    }
@@ -769,6 +811,7 @@
       padding: 20px;
       margin-bottom: 10px;
       cursor: pointer;
+
       &:not(:last-child) {
          margin-right: 60px;
       }
@@ -811,14 +854,14 @@
 
 /* PAGE-CART-PLACED start */
 .placed-info {
-   flex: 1 1 auto;
+   flex: 0 1 820px;
    &__title {
+      text-transform: uppercase;
       font-weight: 500;
       margin-bottom: calc(10px + (40 - 10) * ((100vw - 320px) / (1440 - 320)));
    }
 
    &__body {
-      font-size: 22px;
    }
 
    &__row {
@@ -828,12 +871,12 @@
 
    &__subtitle {
       flex: 0 0 auto;
-      width: 38%;
-      padding: 0px 30px 0px 0px;
+      width: 205px;
+      margin-right: 105px;
    }
 
    &__text {
-      flex: 1 0 62%;
+      // max-width: 420px;
    }
 }
 
@@ -849,7 +892,7 @@
    margin-right: 25px;
    &__box-categories {
       border-bottom: 0.5px solid $text1op05;
-      padding: 25px 15px 45px 15px;
+      padding: 25px 0px 45px 0px;
    }
 
    &__title {
@@ -857,14 +900,12 @@
    }
 
    &__categories-item {
+      padding: 11px 16px;
       display: flex;
       cursor: pointer;
       &.active {
          background: $color1;
          color: $white;
-      }
-      &:not(:last-child) {
-         margin-bottom: 22px;
       }
       & p:first-child {
          width: 160px;
@@ -1096,6 +1137,11 @@
       background: $white;
       width: 100%;
       box-shadow: 10px 10px 18px rgba(99, 35, 22, 0.07);
+      max-height: 150px;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+         width: 0;
+      }
       & p {
          padding: 12px 9px;
 
@@ -1290,4 +1336,4 @@
 
 // Бар в лк, вкладки оформлять как button или a    a и active
 
-// Иконку фильтра через svg
+// Иконку фильтра через svg-+
