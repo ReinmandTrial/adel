@@ -208,3 +208,17 @@ $(document).ready(function() {
         $('.sidebar-burger').slideToggle();
     })
 //filters end
+
+//выбираем самовывоз и скрывается "Адрес доставки"
+$('.delivery-radio__label').on('click',function(){
+    if($(this).hasClass('popup__map-block')){
+        if(!$(this).find('.delivery-radio__input').prop("checked")){
+        $(this).closest('.page-cart__container').find('.delivery-address').fadeOut();
+        $(this).closest('.page-cart__container').find('.delivery-address__select-company').fadeOut();
+        }
+    }else{
+        $(this).closest('.page-cart__container').find('.delivery-address').fadeIn();
+        $(this).closest('.page-cart__container').find('.delivery-address__select-company').fadeIn();
+    }
+})
+//выбираем самовывоз и скрывается "Адрес доставки" конец
