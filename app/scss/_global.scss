@@ -200,12 +200,11 @@ textarea {
 	&__container {
 		position: relative;
 		margin: 0px calc(-50vw + 660px) 0px 15px;
-		overflow: hidden;
-		overflow-y: visible;
+		overflow: visible;
 	}
 
 	&__wrapper {
-		// overflow-y: visible;
+		// height: cacl(100% + 150);
 	}
 	&__linear-gradient {
 		display: block;
@@ -353,11 +352,12 @@ textarea {
 			margin-bottom: 10px;
 			width: 310px;
 			height: 295px;
-			overflow-y: hidden;
+			overflow: hidden;
 			// overflow-x: visible;
 			// overflow-x: visible;
 			& a {
 				// overflow-x: visible;
+				// overflow: hidden;
 			}
 			& img {
 				width: 100%;
@@ -414,7 +414,7 @@ textarea {
 		&__availability {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 20px;
+			margin-bottom: 5px;
 			& p:first-child {
 				margin-right: 5px;
 			}
@@ -424,20 +424,30 @@ textarea {
 		}
 		&__button {
 			display: block;
-			margin: 10px auto 25px auto;
+			margin: 10px 0px 25px 0px;
+			padding: 10px 0px;
+			width: 100%;
+			box-sizing: content-box;
 		}
 		&__hover-block {
-			padding-top: 25px;
+			padding-top: 10px;
 			position: absolute;
 			width: 100%;
 			top: 100%;
 			background: $white;
-			transform: translateY(-100%);
+			// transform: translateY(-100%);
 			z-index: 2;
+			// display: none;
+			transition: 0.3s;
+			height: 0;
+			overflow: hidden;
 			&:hover {
-				transform: translateY(0);
+				// transform: translateY(0);
 			}
 		}
+	}
+	.card-row-xl__box:not(:last-child) {
+		margin-right: unset;
 	}
 	.card-row-xl__box {
 		flex-direction: row;
@@ -446,17 +456,22 @@ textarea {
 		margin-bottom: 0;
 	}
 	&:hover {
+		transform: scale(1.05);
+		transition: 0.3s;
+		z-index: 4;
 		.card__hover-block {
-			transform: translateY(0);
+			height: auto;
+			// transform: translateY(0);
+			// display: block;
 			transition: 0.3s;
+			box-shadow: 0px 2px 18px rgba(99, 35, 22, 0.2);
 		}
 		.card__img a img {
-			transform: scale(1.13);
-			transition: 0.3s;
 		}
 		.icon-bag {
 			display: block;
 		}
+		box-shadow: 0px 2px 18px rgba(99, 35, 22, 0.2);
 	}
 	.icon-bag {
 		display: none;
@@ -618,19 +633,23 @@ textarea {
 	max-width: 100%;
 	position: relative;
 	padding: 0px 22px 0px 22px;
-	z-index: 4;
 	background: $white;
 	.color__item {
 		margin-right: 29.266px;
 		&:hover {
 			transform: scale(2.2);
+			transition: 0.3s;
+			z-index: 2;
 		}
 	}
 	&__container {
-		overflow-y: visible;
+		height: 44px;
+		// overflow-y: visible;
 	}
 
 	&__wrapper {
+		align-items: center;
+		// overflow: visible;
 	}
 
 	&__btn {
@@ -725,7 +744,7 @@ textarea {
 		}
 		&__price {
 			font-weight: 500;
-			margin-bottom: 20px;
+			margin-bottom: 5px;
 		}
 
 		&__availability {
@@ -752,9 +771,6 @@ textarea {
 			margin-top: auto;
 		}
 	}
-	.slider-color {
-		margin-bottom: 17px;
-	}
 	&:hover {
 		.card__add-to-cart-box,
 		.card-row-xl__box {
@@ -765,7 +781,7 @@ textarea {
 
 .progress-bar {
 	&__body {
-		width: 310px;
+		width: 300px;
 		height: 10px;
 		background: $white;
 		border: 1px solid $color1;

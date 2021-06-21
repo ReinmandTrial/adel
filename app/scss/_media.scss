@@ -41,6 +41,9 @@
    .menu__item:not(:last-child) {
       margin-right: 15px;
    }
+   .card-column .card__button {
+      font-size: 14px;
+   }
 }
 // MAX-WIDTH 1199.98PX breakpoints END
 
@@ -396,6 +399,7 @@
       .card__button {
          font-size: 14px;
          margin: 9px 0px 12px 0px;
+         padding: 7.5px 0px;
       }
    }
    .slider__container {
@@ -622,10 +626,15 @@
       }
    }
 
-   .slider-color .color__item {
-      width: 15px;
-      height: 15px;
-      margin-right: calc(19px + (34 - 19) * ((100vw - 768px) / (991 - 768)));
+   .slider-color {
+      .color__item {
+         width: 15px;
+         height: 15px;
+         margin-right: calc(19px + (34 - 19) * ((100vw - 768px) / (991 - 768)));
+      }
+      &__container {
+         height: 36px;
+      }
    }
    .color__item {
       width: 15px;
@@ -699,6 +708,9 @@
    }
    .placed-info__subtitle {
       margin-right: 30px;
+   }
+   .page-catalog__grid .slider-color .color__item {
+      margin-right: calc(26.8px + (51 - 26.8) * ((100vw - 576px) / (767 -576)));
    }
 }
 // MAX-WIDTH 767.98PX breakpoints END
@@ -812,6 +824,9 @@
       font-size: 12px;
    }
    .slider-color {
+      &__container {
+         height: 21px;
+      }
       .icon-triangle-left,
       .icon-triangle-right {
          padding: 2px 0px 0px 0px;
@@ -1041,11 +1056,18 @@
          display: none;
       }
       .card__button {
+         line-height: unset;
          font-size: 8px;
-         margin: 4.5px 10px;
+         margin: 8px 0px 12px 0px;
+         padding: 4.5px 0px;
       }
       .card-row-xl__box {
          justify-content: center;
+      }
+      .card-row-xl__amount input {
+         font-size: 12px;
+         width: 47px;
+         height: 21px;
       }
    }
    .card-column .card__name {
@@ -1176,7 +1198,7 @@
    }
 
    .page-catalog__grid .slider-color .color__item {
-      margin-right: calc(13.55px + (44.62 - 13.55) * ((100vw - 320px) / (576 - 320)));
+      margin-right: calc(13.55px + (26 - 13.55) * ((100vw - 320px) / (576 - 320)));
    }
 }
 // MAX-WIDTH 576.98PX breakpoints END
