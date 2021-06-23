@@ -307,7 +307,7 @@
 
          <!-- CONTENT start  -->
          <div class="content">
-            <div class="page-cabinet cabinet-delivery">
+            <div class="page-cabinet cabinet-favorites-row">
                <div class="container">
                   <div class="page-cabinet__content">
                      <p class="page-cabinet__title h1">Личный кабинет</p>
@@ -319,8 +319,8 @@
                               <div class="cabinet-leftbar__title t2">Мой аккаунт</div>
                               <div class="cabinet-leftbar__body t5">
                                  <a class="cabinet-leftbar__item">Акции и предложения</a>
-                                 <a class="cabinet-leftbar__item active">Мои заказы</a>
-                                 <a class="cabinet-leftbar__item">Избранное </a>
+                                 <a class="cabinet-leftbar__item">Мои заказы</a>
+                                 <a class="cabinet-leftbar__item active">Избранное </a>
                                  <a class="cabinet-leftbar__item">Контактные данные </a>
                                  <a class="cabinet-leftbar__item">Адрес доставки</a>
                               </div>
@@ -338,82 +338,273 @@
 
                         <!-- leftbar mobile start -->
                         <aside class="cabinet-leftbar-mobile t8">
-
+                           <!-- <a class="cabinet-leftbar__item">Акции и предложения</a>
+                           <a class="cabinet-leftbar__item active">Мои заказы</a>
+                           <a class="cabinet-leftbar__item">Контактные данные</a>
+                           <a class="cabinet-leftbar__item">Избранное</a>
+                           <a class="cabinet-leftbar__item">Адрес доставки</a>
+                           <a class="cabinet-leftbar__item">Связаться с нами</a>
+                           <a class="cabinet-leftbar__item">Программа лояльности</a>
+                           <a class="cabinet-leftbar__item">Выйти</a> -->
 
                         </aside>
                         <!-- leftbar mobile end -->
 
-                        <div class="page-cabinet__container">
-                           <div class="cabinet-delivery__radio">
-                              <div class="cabinet-delivery__radio-item t3 active">Текущие заказы</div>
-                              <div class="cabinet-delivery__radio-item t3">История заказов</div>
-                           </div>
-                           <div class="page-cabinet__wrapper">
-                              <div class="cabinet-delivery__block">
-                                 <div class="steps t3">
-                                    <div class="steps__item">
-                                       <div class="steps__num h1">1</div>
-                                       <p class="steps__title">Подготовка <br> заказа</p>
-                                    </div>
-                                    <div class="steps__item">
-                                       <div class="steps__num h1">2</div>
-                                       <p class="steps__title">Заказ в пути</p>
-                                    </div>
-                                    <div class="steps__item disabled">
-                                       <div class="steps__num h1">3</div>
-                                       <p class="steps__title">Доставка</p>
-                                    </div>
-                                 </div>
-                                 <div class="cabinet-delivery__cards">
-                                    <div class="card-row-xs">
-                                       <div class="card__img">
-                                          <img src="images/card-row-xs-img1.png" alt="">
-                                       </div>
-                                       <div class="card__descr t7">
-                                          <p class="card__name">Кардиган с объемными рукавами</p>
-                                          <p class="card__amount-sum">1 шт</p>
-                                       </div>
-                                    </div>
-                                    <div class="card-row-xs">
-                                       <div class="card__img">
-                                          <img src="images/card-row-xs-img1.png" alt="">
-                                       </div>
-                                       <div class="card__descr t7">
-                                          <p class="card__name">Кардиган с объемными рукавами</p>
-                                          <p class="card__amount-sum">1 шт</p>
-                                       </div>
-                                    </div>
-                                    <div class="card-row-xs">
-                                       <div class="card__img">
-                                          <img src="images/card-row-xs-img1.png" alt="">
-                                       </div>
-                                       <div class="card__descr t7">
-                                          <p class="card__name">Кардиган с объемными рукавами</p>
-                                          <p class="card__amount-sum">1 шт</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="cabinet-delivery__info t4">
-                                 <div class="cabinet-delivery__box">
-                                    <p class="cabinet-delivery__info-title">Номер заказа:</p>
-                                    <p class="cabinet-delivery__info-text">49885</p>
-                                 </div>
-                                 <div class="cabinet-delivery__box">
-                                    <p class="cabinet-delivery__info-title">Дата доставки:</p>
-                                    <p class="cabinet-delivery__info-text">21.02.2021</p>
-                                 </div>
-                                 <div class="cabinet-delivery__box">
-                                    <p class="cabinet-delivery__info-title">Адрес доставки</p>
-                                    <p class="cabinet-delivery__info-text">Россия, г. Сочи ул. Петрозаводская 39 кв. 103
-                                    </p>
-                                 </div>
-                                 <div class="cabinet-delivery__box">
-                                    <p class="cabinet-delivery__info-title">Тип оплаты</p>
-                                    <p class="cabinet-delivery__info-text">Картой онлайн</p>
-                                 </div>
-                              </div>
+                        <div class="page-catalog__wrapper">
+                           <div class="page-catalog__block-top t6">
+                              <div class="page-catalog__amount-to-show">
+                                 <p class="page-catalog__amount-title">Показывать:</p>
+                                 <div class="page-catalog__amount-radio">
+                                    <label>
+                                       <input class="amount-radio__input radio-none" type="radio" name="amount">
+                                       <span class="amount-radio__style">9</span>
+                                    </label>
 
+                                    <p>/</p>
+                                    <label>
+                                       <input class="amount-radio__input radio-none" type="radio" name="amount" checked>
+                                       <span class="amount-radio__style">12</span>
+                                    </label>
+                                    <p>/</p>
+                                    <label>
+                                       <input class="amount-radio__input radio-none" type="radio" name="amount">
+                                       <span class="amount-radio__style">18</span>
+                                    </label>
+                                    <p>/</p>
+                                    <label>
+                                       <input class="amount-radio__input radio-none" type="radio" name="amount">
+                                       <span class="amount-radio__style">24</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="page-catalog__view">
+                                 <label>
+                                    <input class="view-radio__input radio-none" type="radio" name="view" checked>
+                                    <span class="view-radio__style icon icon-grid-row"></span>
+                                 </label>
+                                 <label>
+                                    <input class="view-radio__input radio-none" type="radio" name="view">
+                                    <span class="view-radio__style icon icon-grid"></span>
+                                 </label>
+                              </div>
+                              <div class="page-catalog__sorting select">
+                                 <div class="page-catalog__sorting-head select-header">
+                                    <p class="select-title">По популярности</p>
+                                    <span class="icon icon-triangle-down select-icon"></span>
+                                 </div>
+                                 <div class="page-catalog__sorting-body select-body">
+                                    <div class="page-catalog__sorting-item select-item">По популярности</div>
+                                    <div class="page-catalog__sorting-item select-item">По увеличению цены</div>
+                                    <div class="page-catalog__sorting-item select-item">По уменьшению цены</div>
+                                    <div class="page-catalog__sorting-item select-item">По новинкам</div>
+                                 </div>
+                              </div>
+                              <p class="page-catalog__sum">
+                                 32 товара
+                              </p>
+                           </div>
+
+                           <!-- GRID start -->
+                           <div class="page-catalog__grid-row">
+                              <div class="card-row">
+                                 <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
+                                 <div class="card__img">
+                                    <a href="#">
+                                       <img src="images/card-row-img1.png" alt="">
+                                    </a>
+                                    <a href="#" class="card__banner card__banner_hit t6">Хит</a>
+                                    <button class="card__like-btn heart-block">
+                                       <span class="icon icon-heart-xl heart-item"></span>
+                                       <span class="icon icon-heart-xl-on active heart-item"></span>
+                                    </button>
+                                 </div>
+                                 <div class="card__descr">
+                                    <a href="#" class="card__name t3">Комплект «Мерлин»</a>
+                                    <a href="#" class="card__price t3">7 000 ₽</a>
+                                    <div class="slider-color">
+                                       <div class="slider-color__container swiper-container">
+
+                                          <div class="slider-color__wrapper swiper-wrapper">
+                                             <div class="color__item color-1 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-2 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-3 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-4 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-5 active swiper-slide">
+                                             </div>
+                                             <div class="color__item color-6 swiper-slide">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <button class="slider-color__btn slider-color__btn-prev">
+                                          <span class="icon icon-triangle-left"></span>
+                                       </button>
+                                       <button class="slider-color__btn slider-color__btn-next">
+                                          <span class="icon icon-triangle-right"></span>
+                                       </button>
+                                    </div>
+                                    <div class="card__structure t3">
+                                       <p class="card__structure-title">Состав:</p>
+                                       <p class="card__structure-text">50% шерсть</p>
+                                    </div>
+                                    <a href="#" class="card__availability t3">
+                                       <p>Наличие</p>
+                                       <p><span class="color_green semibold">76 шт.</span></p>
+                                    </a>
+                                    <div class="card-row-xl__amount-box card-row-xl__box">
+                                       <p class="card-row-xl__title_s">Количество</p>
+                                       <div class="card-row-xl__amount count-block">
+                                          <span class="icon icon-minus count-mine"></span>
+                                          <input class="count-input" value="123" maxlength="3">
+                                          <span class="icon icon-plus count-more"></span>
+                                       </div>
+                                    </div>
+                                    <div class="card__add-to-cart-box">
+                                       <button class="card__add-to-cart-btn button">В корзину</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card-row">
+                                 <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
+                                 <div class="card__img">
+                                    <a href="#">
+                                       <img src="images/card-row-img1.png" alt="">
+                                    </a>
+                                    <a href="#" class="card__banner card__banner_stock t6">Акция</a>
+                                    <button class="card__like-btn heart-block">
+                                       <span class="icon icon-heart-xl heart-item"></span>
+                                       <span class="icon icon-heart-xl-on active heart-item"></span>
+                                    </button>
+                                 </div>
+                                 <div class="card__descr">
+                                    <a href="#" class="card__name t3">Комплект «Мерлин»</a>
+                                    <a href="#" class="card__price t3">7 000 ₽</a>
+                                    <div class="slider-color">
+                                       <div class="slider-color__container swiper-container">
+
+                                          <div class="slider-color__wrapper swiper-wrapper">
+                                             <div class="color__item color-1 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-2 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-3 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-4 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-5 active swiper-slide">
+                                             </div>
+                                             <div class="color__item color-6 swiper-slide">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <button class="slider-color__btn slider-color__btn-prev">
+                                          <span class="icon icon-triangle-left"></span>
+                                       </button>
+                                       <button class="slider-color__btn slider-color__btn-next">
+                                          <span class="icon icon-triangle-right"></span>
+                                       </button>
+                                    </div>
+                                    <div class="card__structure t3">
+                                       <p class="card__structure-title">Состав:</p>
+                                       <p class="card__structure-text">50% шерсть</p>
+                                    </div>
+                                    <a href="#" class="card__availability t3">
+                                       <p>Наличие</p>
+                                       <p><span class="color_green few semibold">6 шт.</span></p>
+                                    </a>
+                                    <div class="card-row-xl__amount-box card-row-xl__box">
+                                       <p class="card-row-xl__title_s">Количество</p>
+                                       <div class="card-row-xl__amount count-block">
+                                          <span class="icon icon-minus count-mine"></span>
+                                          <input class="count-input" value="123" maxlength="3">
+                                          <span class="icon icon-plus count-more"></span>
+                                       </div>
+                                    </div>
+                                    <div class="card__add-to-cart-box">
+                                       <button class="card__add-to-cart-btn button">В корзину</button>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="card-row">
+                                 <a href="#" class="card__code t7">арт. CN6269/1Z-6271</a>
+                                 <div class="card__img">
+                                    <a href="#">
+                                       <img src="images/card-row-img1.png" alt="">
+                                    </a>
+                                    <a href="#" class="card__banner card__banner_new t6">Новинка</a>
+                                    <button class="card__like-btn heart-block">
+                                       <span class="icon icon-heart-xl heart-item"></span>
+                                       <span class="icon icon-heart-xl-on active heart-item"></span>
+                                    </button>
+                                 </div>
+                                 <div class="card__descr">
+                                    <a href="#" class="card__name t3">Комплект «Мерлин»</a>
+                                    <a href="#" class="card__price t3">7 000 ₽</a>
+                                    <div class="slider-color">
+                                       <div class="slider-color__container swiper-container">
+
+                                          <div class="slider-color__wrapper swiper-wrapper">
+                                             <div class="color__item color-1 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-2 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-3 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-4 swiper-slide">
+                                             </div>
+                                             <div class="color__item color-5 active swiper-slide">
+                                             </div>
+                                             <div class="color__item color-6 swiper-slide">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <button class="slider-color__btn slider-color__btn-prev">
+                                          <span class="icon icon-triangle-left"></span>
+                                       </button>
+                                       <button class="slider-color__btn slider-color__btn-next">
+                                          <span class="icon icon-triangle-right"></span>
+                                       </button>
+                                    </div>
+                                    <div class="card__structure t3">
+                                       <p class="card__structure-title">Состав:</p>
+                                       <p class="card__structure-text">50% шерсть</p>
+                                    </div>
+                                    <a href="#" class="card__availability t3">
+                                       <p>Наличие</p>
+                                       <p><span class="color_green semibold">76 шт.</span></p>
+                                    </a>
+                                    <div class="card-row-xl__amount-box card-row-xl__box">
+                                       <p class="card-row-xl__title_s">Количество</p>
+                                       <div class="card-row-xl__amount count-block">
+                                          <span class="icon icon-minus count-mine"></span>
+                                          <input class="count-input" value="123" maxlength="3">
+                                          <span class="icon icon-plus count-more"></span>
+                                       </div>
+                                    </div>
+                                    <div class="card__add-to-cart-box">
+                                       <button class="card__add-to-cart-btn button">В корзину</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- GRID end -->
+
+                           <div class="page-catalog__pagination">
+                              <div class="page-catalog__prorgess-bar">
+                                 <div class="number__page">
+                                    <span class="number__page-now">22</span> из <span class="number__page-all">34</span>
+                                 </div>
+                                 <div class="progress-bar__body">
+                                    <div class="progress-bar__line"></div>
+                                 </div>
+                              </div>
+                              <div class="page-catalog__btns-block">
+                                 <button class="page-catalog__btn-prev button2">назад</button>
+                                 <button class="page-catalog__btn-next button">дальше</button>
+                              </div>
                            </div>
 
                         </div>
