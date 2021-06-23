@@ -798,3 +798,48 @@ textarea {
 	color: #4d4d4d;
 	font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
+.news-and-offers {
+	// flex: 0 1 420px;
+	// width: 420px;
+	width: calc(50% - 20px);
+	height: 380px;
+	position: relative;
+	margin: 10px;
+	display: flex;
+
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__text-block {
+		position: relative;
+		z-index: 1;
+		width: 250px;
+		height: 110px;
+		margin: auto auto 60px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: $white;
+		padding: 10px;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 8px;
+	}
+
+	&__text {
+	}
+}

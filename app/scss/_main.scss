@@ -222,7 +222,7 @@
       padding-bottom: 10px;
       margin-bottom: 40px;
       border-bottom: 1px solid $color1;
-      height: 390px;
+      max-height: 390px;
       overflow: hidden;
    }
 
@@ -991,7 +991,7 @@
 
    &__slider {
       margin-top: 27px;
-      max-width: 230px;
+      width: 230px;
       display: flex;flex-wrap: wrap;
    }
    &__slider-max{
@@ -1055,6 +1055,8 @@
 
    &__selector-body {
       display: none;
+      max-height: 187px;
+      overflow: hidden;
    }
    &__selector-item {
       padding: 13px 20px 13px 8px;
@@ -1287,24 +1289,58 @@
 
 .page-cabinet {
    &__content {
+      padding: 80px 0px 100px 0px;
    }
 
    &__body {
+      display: flex;
    }
 
    &__title {
+      text-align: center;
       margin-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (1440 - 320)));
+   }
+   &__subtitle {
+      text-transform: uppercase;
+      margin-bottom: 40px;
+   }
+   &__container {
+      display: flex;
+      flex-direction: column;
+   }
+   &__wrapper {
+   }
+}
+.cabinet-promotions {
+   .page-cabinet {
+      &__content {
+         padding-bottom: 180px;
+      }
+      &__subtitle {
+         margin-left: 10px;
+      }
+      &__container {
+         margin: 0px -10px;
+      }
+      &__wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         max-width: 880px;
+         // margin: -10px;
+      }
    }
 }
 
 .cabinet-leftbar {
+   margin-right: 45px;
+   width: 290px;
+   flex: 0 0 auto;
    &__account {
       max-width: 290px;
       margin-bottom: 80px;
    }
 
    &__title {
-      text-align: center;
       padding-left: 20px;
       margin-bottom: 25px;
    }
@@ -1316,6 +1352,7 @@
       padding: 9px 20px;
       display: block;
       margin-bottom: 5px;
+      cursor: pointer;
       &.active {
          background: $color1;
          color: $white;
@@ -1326,6 +1363,7 @@
    }
 
    &__subtitle {
+      padding-left: 20px;
       margin-bottom: 40px;
    }
 }
@@ -1340,9 +1378,159 @@
       padding: 10px 10px;
       text-transform: uppercase;
       border: 1px solid $color1;
+      &:nth-child(3){
+         grid-column: 4;
+         grid-row: 1;
+      }
+      &:nth-child(4){
+         grid-column: 3;
+         grid-row: 1;
+      }
    }
 }
 /* page cabinet promotions end */
+
+/* page cabinet delivery/history end */
+.cabinet-delivery {
+   &__radio {
+      display: flex;
+      margin-bottom: 30px;
+   }
+
+   &__radio-item {
+      height: 36px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:not(:last-child) {
+         margin-right: 60px;
+      }
+      &.active {
+         border-bottom: 5px solid $color2;
+      }
+   }
+   .page-cabinet {
+      &__wrapper {
+         padding: 55px 60px 50px 60px;
+         border: 1px solid $color2;
+         max-width: 970px;
+         display: flex;
+      }
+   }
+   &__block {
+      margin-right: calc(20px + (105 - 20) * ((100vw - 1200px) / (1440 - 1200)));
+   }
+
+   &__cards {
+   }
+
+   &__info {
+      margin-top: 50px;
+      width: 300px;
+   }
+
+   &__box {
+      &:not(:last-child) {
+         margin-bottom: calc(17px + (30 - 17) * ((100vw - 320px) / (1440 - 320)));
+      }
+   }
+
+   &__info-title {
+      color: $color2;
+      margin-bottom: 10px;
+   }
+
+   &__info-text {
+   }
+   .steps {
+      margin-left: 10px;
+      margin-bottom: 45px;
+      &__item {
+         box-sizing: content-box;
+         position: relative;
+         &:not(:first-child) {
+            padding: 0px 0px 0px 85px;
+         }
+         &:not(:first-child)::before {
+            left: 17px;
+         }
+      }
+
+      &__num {
+         width: 80px;
+         height: 80px;
+         margin-bottom: calc(5px + (13 - 5) * ((100vw - 320px) / (1440 - 320)));
+      }
+
+      &__title {
+         margin: 0px -100px;
+         // position: absolute;
+         // top: 100%;
+         // margin: 0px -50%;
+         // transform: translate(-50%, 0);
+      }
+   }
+}
+
+.card-row-xs {
+   display: flex;
+   max-width: 370px;
+   &:not(:last-child) {
+      margin-bottom: 15px;
+   }
+   .card {
+      &__img {
+         flex: 0 0 auto;
+         width: 66px;
+         height: 69px;
+         & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+
+      &__descr {
+         padding: 7px 23px 22px 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         text-transform: uppercase;
+      }
+
+      &__name {
+         text-transform: uppercase;
+      }
+
+      &__amount-sum {
+      }
+   }
+}
+.success {
+   display: flex;
+   margin: 25px 0px 70px 0px;
+   &__item {
+      width: 86px;
+      height: 86px;
+      border: 1px solid $colorSuccess;
+      border-radius: 50%;
+      position: relative;
+      margin-right: 25px;
+      & img {
+         width: 31px;
+         height: 23px;
+         position: absolute;
+         top: 52%;
+         left: 53%;
+         transform: translate(-50%, -50%);
+      }
+   }
+
+   &__text {
+      margin-top: 21px;
+   }
+}
+
+/* page cabinet delivery/history end */
 
 // steps active +
 
@@ -1389,4 +1577,4 @@
 
 // Бар в лк, вкладки оформлять как button или a    a и active
 
-// Иконку фильтра через svg-+
+// Иконку фильтра чере
