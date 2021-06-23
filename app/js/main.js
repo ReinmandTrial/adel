@@ -65,6 +65,8 @@ $('.toggle-btn').on('click', function () {
 
     block.find('.toggle-icon').toggleClass('icon-triangle-down');
     block.find('.toggle-icon').toggleClass('icon-triangle-up');
+
+    block.find('.toggle-body').find('.mobileScroll').mCustomScrollbar();
 })
 
 $('.toggle-btn--close').on('click', function () {
@@ -222,3 +224,25 @@ $('.delivery-radio__label').on('click',function(){
     }
 })
 //выбираем самовывоз и скрывается "Адрес доставки" конец
+
+$(document).ready(function(){
+    $(".niceScroll").niceScroll({
+        cursorcolor: '#E1A986',
+        cursorborder: '0',
+        cursorwidth: '5px',
+        // cursorminheight: '40px'
+    });
+    if($('body').find('div').hasClass('sidebar__slider-slide')){
+        // alert();
+        var slider = $('.sidebar__slider-slide');
+
+        noUiSlider.create(slider[0], {
+            start: [0, 100],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+    }
+})

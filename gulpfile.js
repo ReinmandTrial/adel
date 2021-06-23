@@ -41,10 +41,9 @@ function images() {
 function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    // 'node_modules/jquery-ui/external/jquery/jquery.js',
     'node_modules/swiper/swiper-bundle.min.js',
-    // 'node_modules/jquery-ui/ui/widgets/slider.js',
-    'node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js',
+    'node_modules/nouislider/dist/nouislider.js',
+    'node_modules/jquery.nicescroll/jquery.nicescroll.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
