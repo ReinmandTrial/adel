@@ -263,3 +263,27 @@ $(document).ready(function(){
         });
     }
 })
+
+//popup
+    //popup нажатие вне body
+    $(document).on('click',function(e){
+        if (!$(e.target).closest(".change-pass").length && !$(e.target).closest(".btn-popup").length) {
+            $('.popup').fadeOut();
+        }
+        e.stopPropagation();
+    });
+    //popup нажатие вне body end
+
+    $('.btn-popup').on('click',function(){
+        $(this).closest('.popupBlock').find('.popup').fadeIn();
+    })
+    $('.popup__close').on('click',function(){
+        $(this).closest('.popup').fadeOut();
+    })
+//popup end
+
+//clear info 
+    $('.cabinet-contacts__btn-clear').on('click',function(){
+        $(this).closest('.page-cabinet__container').find('.cabinet-contacts__input').val('');
+    })
+//clear info end

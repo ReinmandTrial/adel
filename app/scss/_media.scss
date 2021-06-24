@@ -1172,7 +1172,7 @@
    .news-and-offers {
       margin-top: 5px;
       margin-bottom: 5px;
-      height: 272px;
+      height: calc(272px + (509 - 272) * ((100vw - 320px) / (575 - 320)));
       &__text-block {
          height: 90px;
          margin-bottom: 27px;
@@ -1187,6 +1187,14 @@
       .cabinet-leftbar__item {
          text-transform: none;
          padding: 10px 8px;
+         &:nth-child(3){
+            grid-column: 2;
+            grid-row: 2;
+         }
+         &:nth-child(4){
+            grid-column: 1;
+            grid-row: 2;
+         }
       }
    }
    .cabinet-delivery {

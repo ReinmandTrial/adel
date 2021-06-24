@@ -369,23 +369,25 @@
                                  <input type="text" class="cabinet-contacts__input input" placeholder="Телефон">
                                  <input type="password" class="cabinet-contacts__input input" placeholder="Пароль">
                               </div>
-                              <div class="cabinet-contacts__buttons">
-                                 <button class="cabinet-contacts__change-pass button2">изменить пароль</button>
+                              <div class="cabinet-contacts__buttons popupBlock">
+                                 <button class="cabinet-contacts__change-pass button2 btn-popup">изменить пароль</button>
                                  <button class="cabinet-contacts__save button">сохранить</button>
 
                                  <!-- popup change pass start -->
                                  <div class="popup">
-                                    <div class="change-pass">
-                                       <span class="icon icon-close"></span>
-                                       <div class="change-pass__input-box">
-                                          <input type="password" class="change-pass__input input"
-                                             placeholder="Введите текущий пароль">
-                                          <input type="password" class="change-pass__input input"
-                                             placeholder="Введите новый пароль">
-                                          <input type="password" class="change-pass__input input"
-                                             placeholder="Повторите новый пароль">
+                                    <div class="popup__body">
+                                       <div class="change-pass">
+                                          <span class="icon icon-close popup__close"></span>
+                                          <div class="change-pass__input-box">
+                                             <input type="password" class="change-pass__input input"
+                                                placeholder="Введите текущий пароль">
+                                             <input type="password" class="change-pass__input input"
+                                                placeholder="Введите новый пароль">
+                                             <input type="password" class="change-pass__input input"
+                                                placeholder="Повторите новый пароль">
+                                          </div>
+                                          <button class="change-pass__btn button">Сохранить</button>
                                        </div>
-                                       <button class="change-pass__btn button">Сохранить</button>
                                     </div>
                                  </div>
                                  <!-- popup change pass end -->
