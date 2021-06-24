@@ -19,7 +19,7 @@
       height: calc(210px + (295 - 210) * ((100vw - 992px) / (1440 - 992)));
    }
    .page-catalog__grid .slider-color .color__item {
-      margin-right: calc(11.5px + (30 - 11.5) * ((100vw - 992px) / (1440 - 992)));
+      margin-right: calc(12.5px + (33.7 - 12.5) * ((100vw - 992px) / (1440 - 992)));
    }
    .cabinet-delivery__block {
       margin-right: calc(20px + (105 - 20) * ((100vw - 1200px) / (1440 - 1200)));
@@ -70,6 +70,119 @@
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+   .change-pass {
+      max-width: 490px;
+      max-height: 480px;
+      &__input-box {
+         margin-bottom: 63px;
+      }
+
+      &__input {
+         width: 300px;
+      }
+   }
+   .forgot-pass {
+      // background: $white;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // margin: 15px;
+      // padding: 75px;
+      // max-width: 665px;
+      // max-height: 600px;
+      // width: 100%;
+      // height: 100%;
+      &__body {
+         // display: flex;
+         // flex-direction: column;
+         // align-items: center;
+         // text-align: center;
+         // width: 390px;
+      }
+
+      &__title {
+         margin-bottom: 35px;
+         font-size: 18px;
+      }
+
+      &__input-box {
+         margin-bottom: 32px;
+      }
+
+      &__input {
+         // width: 300px;
+         &.input {
+            // padding: 17px 18px;
+         }
+         &:not(:last-child) {
+            // margin-bottom: 35px;
+         }
+      }
+
+      &__button {
+         margin-bottom: 33px;
+      }
+
+      &__phone {
+         // text-transform: uppercase;
+      }
+
+      &__phone-title {
+         // line-height: 29px;
+         margin-bottom: 7px;
+         font-size: 18px;
+      }
+
+      &__phone-num {
+      }
+   }
+   .cabinet-contacts {
+      .page-cabinet {
+         &__container {
+            // max-width: 790px;
+         }
+
+         &__subtitle-block {
+            // display: flex;
+            // justify-content: space-between;
+            margin-bottom: 60px;
+         }
+         &__subtitle {
+            // margin-bottom: 0;
+         }
+         &__wrapper {
+         }
+      }
+
+      &__input-box {
+         // display: grid;
+         // grid-template-columns: 42% 28% 30%;
+         margin: -15px -10px 65px -10px;
+      }
+      &__btn-clear {
+         // text-decoration: underline;
+         // color: $text1op05;
+      }
+      &__input {
+         // margin: 12.5px 10px;
+      }
+
+      &__buttons {
+         text-align: left;
+         & button {
+            &:not(:first-child) {
+               // margin-left: 20px;
+            }
+         }
+      }
+
+      &__change-pass {
+      }
+
+      &__save {
+      }
+   }
+
    .cabinet-favorites-column,
    .cabinet-favorites-row {
       .cabinet-leftbar {
@@ -956,6 +1069,89 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .input {
+      padding: 9px 10px;
+   }
+   .popup {
+      .icon-close {
+         display: none;
+      }
+   }
+   .change-pass {
+      max-height: 350px;
+      &__input-box {
+         margin-bottom: 45px;
+      }
+
+      &__input {
+         width: 235px;
+         &.input {
+            padding: 11px 18px 11.5px 18px;
+         }
+         &:not(:last-child) {
+            margin-bottom: 30px;
+         }
+      }
+
+      &__btn {
+      }
+   }
+   .input {
+      font-size: 12px;
+   }
+   .cabinet-contacts {
+      .page-cabinet {
+         &__container {
+            // max-width: 790px;
+         }
+
+         &__subtitle-block {
+            // display: flex;
+            // justify-content: space-between;
+            margin-bottom: 35px;
+         }
+         &__subtitle {
+            // margin-bottom: 0;
+         }
+         &__wrapper {
+         }
+      }
+
+      &__input-box {
+         // display: grid;
+         grid-template-columns: 1fr;
+         margin: -5px 25px 50px 25px;
+      }
+      &__btn-clear.t3 {
+         font-size: 10px;
+      }
+      &__input {
+         margin: 5px;
+      }
+
+      &__buttons {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         & button {
+            padding: 10px 0px;
+            width: 170px;
+            font-size: 10px;
+            &:not(:first-child) {
+               margin-left: unset;
+            }
+         }
+      }
+
+      &__change-pass {
+         order: 2;
+      }
+
+      &__save {
+         margin-bottom: 10px;
+         order: 1;
+      }
+   }
    .page-cabinet {
       &__content {
          padding: 30px 0px 40px 0px;

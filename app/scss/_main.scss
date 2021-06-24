@@ -1536,6 +1536,56 @@
 }
 
 /* page cabinet favorites end */
+/* page cabinet contacts start */
+
+.cabinet-contacts {
+   .page-cabinet {
+      &__container {
+         max-width: 790px;
+      }
+
+      &__subtitle-block {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 75px;
+      }
+      &__subtitle {
+         margin-bottom: 0;
+      }
+      &__wrapper {
+      }
+   }
+
+   &__input-box {
+      display: grid;
+      grid-template-columns: 42% 28% 30%;
+      margin: -15px -10px 70px -10px;
+   }
+   &__btn-clear {
+      text-decoration: underline;
+      color: $text1op05;
+   }
+   &__input {
+      margin: 12.5px 10px;
+   }
+
+   &__buttons {
+      text-align: right;
+      & > button {
+         &:not(:first-child) {
+            margin-left: 20px;
+         }
+      }
+   }
+
+   &__change-pass {
+   }
+
+   &__save {
+   }
+}
+
+/* page cabinet contacts end */
 
 // steps active +
 
