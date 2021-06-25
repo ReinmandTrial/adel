@@ -65,11 +65,58 @@
          margin-right: 15px;
       }
    }
+   .cabinet-adress {
+      &__input-body {
+         margin-bottom: 40px;
+      }
+      &__input-row {
+         &:not(:first-child) {
+            .input-line {
+               display: block;
+            }
+         }
+      }
+      &__input-box {
+         grid-template-columns: 1fr;
+      }
+      &__add-adress {
+      }
+      &__selector {
+         width: 250px;
+         margin-bottom: 30px;
+      }
+
+      &__input-adress-box {
+         grid-row: 2;
+         width: unset;
+         max-width: 100%;
+      }
+      &__input-index-box {
+         grid-row: 2;
+         width: 130px;
+      }
+      &__input-index {
+      }
+   }
 }
 // MAX-WIDTH 1199.98PX breakpoints END
 
 // MAX-WIDTH 991.98PX breakpoints START
 @media (max-width: 991.98px) {
+   .input-line {
+      bottom: calc(100% + 4px);
+   }
+   .cabinet-adress {
+      &__input-body {
+         margin-bottom: 40px;
+      }
+      .page-cabinet__subtitle-block {
+         margin-right: unset;
+      }
+      &__btn-save-box {
+         justify-content: flex-start;
+      }
+   }
    .change-pass {
       max-width: 490px;
       max-height: 480px;
@@ -82,104 +129,47 @@
       }
    }
    .forgot-pass {
-      // background: $white;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // margin: 15px;
-      // padding: 75px;
-      // max-width: 665px;
-      // max-height: 600px;
-      // width: 100%;
-      // height: 100%;
-      &__body {
-         // display: flex;
-         // flex-direction: column;
-         // align-items: center;
-         // text-align: center;
-         // width: 390px;
-      }
+      padding: 40px 40px 50px 40px;
+      max-width: 625px;
+      max-height: 480px;
 
       &__title {
          margin-bottom: 35px;
-         font-size: 18px;
+         &.t1 {
+            font-size: 18px;
+         }
       }
 
       &__input-box {
          margin-bottom: 32px;
       }
 
-      &__input {
-         // width: 300px;
-         &.input {
-            // padding: 17px 18px;
-         }
-         &:not(:last-child) {
-            // margin-bottom: 35px;
-         }
-      }
-
       &__button {
          margin-bottom: 33px;
       }
 
-      &__phone {
-         // text-transform: uppercase;
-      }
-
       &__phone-title {
-         // line-height: 29px;
          margin-bottom: 7px;
          font-size: 18px;
-      }
-
-      &__phone-num {
       }
    }
    .cabinet-contacts {
       .page-cabinet {
          &__container {
-            // max-width: 790px;
+            flex: unset;
          }
 
          &__subtitle-block {
-            // display: flex;
-            // justify-content: space-between;
             margin-bottom: 60px;
-         }
-         &__subtitle {
-            // margin-bottom: 0;
-         }
-         &__wrapper {
          }
       }
 
       &__input-box {
-         // display: grid;
-         // grid-template-columns: 42% 28% 30%;
          margin: -15px -10px 65px -10px;
-      }
-      &__btn-clear {
-         // text-decoration: underline;
-         // color: $text1op05;
-      }
-      &__input {
-         // margin: 12.5px 10px;
       }
 
       &__buttons {
          text-align: left;
-         & button {
-            &:not(:first-child) {
-               // margin-left: 20px;
-            }
-         }
-      }
-
-      &__change-pass {
-      }
-
-      &__save {
       }
    }
 
@@ -959,6 +949,11 @@
 
 // MAX-WIDTH 767.98PX breakpoints START
 @media (max-width: 767.98px) {
+   .cabinet-adress {
+      &__selector {
+         width: 200px;
+      }
+   }
    .cabinet-delivery {
       &__radio {
       }
@@ -1069,8 +1064,90 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
-   .input {
-      padding: 9px 10px;
+   .input-line {
+      bottom: calc(100% + 3px);
+      margin-left: 0px;
+   }
+   .cabinet-adress {
+      .page-cabinet__subtitle-block {
+         margin-bottom: 30px;
+      }
+
+      &__input-body {
+         margin-bottom: unset;
+      }
+      &__input-row {
+         flex-direction: column;
+         margin-left: unset;
+         margin-bottom: 10px;
+         &:not(:last-child) {
+            .cabinet-adress__input-box {
+               margin-right: unset;
+            }
+            margin-bottom: 10px;
+         }
+
+         .cabinet-adress__add-adress {
+            display: flex;
+         }
+      }
+      &__input-box {
+         margin-bottom: 10px;
+         margin-right: unset;
+         padding: 0 25px;
+         flex: unset;
+      }
+      &__add-adress {
+         flex: unset;
+         align-self: center;
+         margin-bottom: 10px;
+      }
+      &__selector {
+         width: 100%;
+         margin: 0px;
+         margin-bottom: 20px;
+         &.t6 {
+            font-size: 12px;
+         }
+      }
+
+      &__selector-head {
+         padding: 9px 10px;
+      }
+
+      &__selector-body {
+         max-height: 144.8px;
+      }
+
+      &__selector-item {
+         padding: 10px 9px;
+      }
+
+      &__input-adress-box {
+         margin: 0;
+         margin-bottom: 20px;
+      }
+
+      &__input-index-box {
+         grid-row: 3;
+         width: 100%;
+         margin: 0;
+      }
+      &__input-index {
+      }
+      &__btn-save-box {
+         justify-content: center;
+         margin-right: unset;
+      }
+      &__btn-save {
+         &.button {
+            padding: 9.5px 45px;
+            font-size: 12px;
+         }
+      }
+      .input {
+         padding: 9px 10px;
+      }
    }
    .popup {
       .icon-close {
@@ -1094,6 +1171,51 @@
       }
 
       &__btn {
+      }
+   }
+   .forgot-pass {
+      height: unset;
+      width: unset;
+      padding: 22px 30px 30px 30px;
+      &__body {
+         width: unset;
+      }
+
+      &__title {
+         margin-bottom: 25px;
+         &.t1 {
+            font-size: 14px;
+         }
+      }
+
+      &__input-box {
+         margin-bottom: 37px;
+      }
+
+      &__input {
+         width: 235px;
+         &.input {
+            padding: 11px 18px;
+         }
+         &:not(:last-child) {
+            margin-bottom: 20px;
+         }
+      }
+
+      &__button {
+         margin-bottom: 40px;
+         width: 235px;
+      }
+
+      &__phone {
+      }
+
+      &__phone-title {
+         font-size: 18px;
+      }
+
+      &__phone-num {
+         font-size: 18px;
       }
    }
    .input {
@@ -1187,11 +1309,11 @@
       .cabinet-leftbar__item {
          text-transform: none;
          padding: 10px 8px;
-         &:nth-child(3){
+         &:nth-child(3) {
             grid-column: 2;
             grid-row: 2;
          }
-         &:nth-child(4){
+         &:nth-child(4) {
             grid-column: 1;
             grid-row: 2;
          }

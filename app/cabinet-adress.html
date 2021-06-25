@@ -307,7 +307,7 @@
 
          <!-- CONTENT start  -->
          <div class="content">
-            <div class="page-cabinet cabinet-contacts">
+            <div class="page-cabinet cabinet-adress">
                <div class="container">
                   <div class="page-cabinet__content">
                      <p class="page-cabinet__title h1">Личный кабинет</p>
@@ -321,8 +321,8 @@
                                  <a class="cabinet-leftbar__item">Акции и предложения</a>
                                  <a class="cabinet-leftbar__item">Мои заказы</a>
                                  <a class="cabinet-leftbar__item">Избранное </a>
-                                 <a class="cabinet-leftbar__item active">Контактные данные </a>
-                                 <a class="cabinet-leftbar__item">Адрес доставки</a>
+                                 <a class="cabinet-leftbar__item">Контактные данные </a>
+                                 <a class="cabinet-leftbar__item active">Адрес доставки</a>
                               </div>
                            </div>
                            <div class="cabinet-leftbar__help">
@@ -352,77 +352,134 @@
 
                         <div class="page-cabinet__container">
                            <div class="page-cabinet__subtitle-block">
-                              <p class="page-cabinet__subtitle t3">контактные данные</p>
+                              <p class="page-cabinet__subtitle t3">Адрес доставки</p>
                               <button class="cabinet-contacts__btn-clear t3">
                                  Очистить все
                               </button>
                            </div>
                            <div class="page-cabinet__wrapper">
-                              <div class="cabinet-contacts__input-box">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="Фамилия">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="Имя">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="Отчество">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="ИНН">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="Город">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="Компания">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="E-mail">
-                                 <input type="text" class="cabinet-contacts__input input" placeholder="Телефон">
-                                 <div class="cabinet-contacts__input popupBlock">
-                                    <input type="password" class="cabinet-contacts__input-pass input"
-                                       placeholder="Пароль">
-                                    <button class="forgot-pass-btn btn-popup">
-                                       Забыли пароль?
-                                    </button>
-                                    <div class="popup">
-                                       <div class="popup__body">
-                                          <div class="forgot-pass">
-                                             <span class="icon icon-close"></span>
-                                             <div class="forgot-pass__body">
-                                                <p class="forgot-pass__title t1">
-                                                   Отправить запрос <br>
-                                                   на восстановление пароля
-                                                </p>
-                                                <div class="forgot-pass__input-box">
-                                                   <input type="text" class="forgot-pass__input input"
-                                                      placeholder="Email">
-                                                   <input type="text" class="forgot-pass__input input"
-                                                      placeholder="Компания">
-                                                </div>
-                                                <button class="forgot-pass__button button">отправить</button>
-                                                <div class="forgot-pass__phone h2">
-                                                   <p class="forgot-pass__phone-title">номер горячей линии</p>
-                                                   <p class="forgot-pass__phone-num">0800-555-55-55</p>
-                                                </div>
-                                             </div>
+                              <div class="cabinet-adress__input-body">
+                                 <div class="cabinet-adress__input-row">
+                                    <div class="cabinet-adress__input-box">
+                                       <div class="cabinet-adress__selector t6 select">
+                                          <p class="input-line">Страна</p>
+                                          <div class="cabinet-adress__selector-head select-header">
+                                             <p class="cabinet-adress__selector-title select-title">Cтрана</p>
+                                             <span class="icon icon-triangle-down select-icon"></span>
+                                          </div>
+                                          <div class="cabinet-adress__selector-body select-body niceScroll">
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Азербайджан
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Албания
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Алжир
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Афганистан
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Афганистан
+                                             </p>
                                           </div>
                                        </div>
+                                       <div class="cabinet-adress__input-adress-box t6">
+                                          <p class="input-line">Начните вводить адрес</p>
+                                          <input type="text"
+                                             class="cabinet-adress__input-adress cabinet-adress__input input"
+                                             placeholder="Начните вводить адрес">
+                                          <div class="cabinet-adress__input-adress-body niceScroll">
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                585</p>
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                36</p>
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                97</p>
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                94</p>
+                                          </div>
+                                       </div>
+                                       <div class="cabinet-adress__input-index-box">
+                                          <p class="input-line">Индекс</p>
+                                          <input type="text"
+                                             class="cabinet-adress__input-index cabinet-adress__input input"
+                                             placeholder="Индекс">
+                                       </div>
+                                    </div>
+                                    <div class="cabinet-adress__add-adress">
+                                       <div class="icon-add">
+                                          <span class="icon icon-plus"></span>
+                                       </div>
+                                       <p>Добавить новый адрес</p>
+                                    </div>
+                                 </div>
+                                 <div class="cabinet-adress__input-row">
+                                    <div class="cabinet-adress__input-box">
+                                       <div class="cabinet-adress__selector t6 select">
+                                          <p class="input-line">Страна</p>
+                                          <div class="cabinet-adress__selector-head select-header">
+                                             <p class="cabinet-adress__selector-title select-title">Cтрана</p>
+                                             <span class="icon icon-triangle-down select-icon"></span>
+                                          </div>
+                                          <div class="cabinet-adress__selector-body select-body niceScroll">
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Азербайджан
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Албания
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Алжир
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Афганистан
+                                             </p>
+                                             <p class="cabinet-adress__selector-item select-item">
+                                                Афганистан
+                                             </p>
+                                          </div>
+                                       </div>
+                                       <div class="cabinet-adress__input-adress-box t6">
+                                          <p class="input-line">Начните вводить адрес</p>
+                                          <input type="text" class="cabinet-adress__input-adress input"
+                                             placeholder="Начните вводить адрес">
+                                          <div class="cabinet-adress__input-adress-body niceScroll">
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                585</p>
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                36</p>
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                97</p>
+                                             <p class="cabinet-adress__input-adress-item">г. Сочи ул Петрозаводская 38
+                                                кв
+                                                94</p>
+                                          </div>
+                                       </div>
+                                       <div class="cabinet-adress__input-index-box">
+                                          <p class="input-line">Индекс</p>
+                                          <input type="text" class="cabinet-adress__input-index input"
+                                             placeholder="Индекс">
+                                       </div>
+                                    </div>
+                                    <div class="cabinet-adress__add-adress">
+                                       <div class="icon-add">
+                                          <span class="icon icon-plus"></span>
+                                       </div>
+                                       <p>Добавить новый адрес</p>
                                     </div>
                                  </div>
                               </div>
-                              <div class="cabinet-contacts__buttons popupBlock">
-                                 <button class="cabinet-contacts__change-pass button2 btn-popup">изменить
-                                    пароль</button>
-                                 <button class="cabinet-contacts__save button">сохранить</button>
-
-                                 <!-- popup change pass start -->
-                                 <div class="popup">
-                                    <div class="popup__body">
-                                       <div class="change-pass">
-                                          <span class="icon icon-close popup__close"></span>
-                                          <div class="change-pass__input-box">
-                                             <input type="password" class="change-pass__input input"
-                                                placeholder="Введите текущий пароль">
-                                             <input type="password" class="change-pass__input input"
-                                                placeholder="Введите новый пароль">
-                                             <input type="password" class="change-pass__input input"
-                                                placeholder="Повторите новый пароль">
-                                          </div>
-                                          <button class="change-pass__btn button">Сохранить</button>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <!-- popup change pass end -->
-
+                              <div class="cabinet-adress__btn-save-box">
+                                 <button class="cabinet-adress__btn-save button">сохранить</button>
                               </div>
                            </div>
                         </div>

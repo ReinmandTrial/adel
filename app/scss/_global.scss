@@ -64,7 +64,7 @@ textarea {
 		right: 35px;
 		color: $text1;
 	}
-	&__body{
+	&__body {
 		background: rgba(45, 39, 38, 0.75);
 		display: flex;
 		justify-content: center;
@@ -79,12 +79,12 @@ textarea {
 	width: 100%;
 	max-width: 665px;
 	height: 100%;
-	max-height: 570px;
+	// max-height: 570px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 15px 15px;
+	margin: 15px;
 	box-shadow: 10px 10px 20px rgba(99, 35, 22, 0.1);
 	&__input-box {
 		display: flex;
@@ -113,9 +113,11 @@ textarea {
 	margin: 15px;
 	padding: 75px;
 	max-width: 665px;
-	max-height: 600px;
+	// max-height: 600px;
 	width: 100%;
 	height: 100%;
+	position: relative;
+
 	&__body {
 		display: flex;
 		flex-direction: column;
@@ -130,6 +132,8 @@ textarea {
 	}
 
 	&__input-box {
+		display: flex;
+		flex-direction: column;
 		margin-bottom: 52px;
 	}
 
@@ -158,7 +162,15 @@ textarea {
 	&__phone-num {
 	}
 }
-
+.forgot-pass-btn {
+	position: absolute;
+	top: calc(100% + 7px);
+	right: 0;
+	font-size: 10px;
+	color: $text1op05;
+	text-decoration: underline;
+	cursor: pointer;
+}
 /* popup change pass end  */
 
 .off {
@@ -968,7 +980,9 @@ textarea {
 	position: relative;
 	margin: 10px;
 	display: flex;
-
+	&:hover {
+		transform: scale(1.03);
+	}
 	&__img {
 		position: absolute;
 		top: 0;
@@ -1004,4 +1018,12 @@ textarea {
 
 	&__text {
 	}
+}
+.input-line {
+	font-size: 10px;
+	color: #4d4d4d;
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 0;
+	margin-left: 18px;
 }

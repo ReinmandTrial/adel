@@ -1541,7 +1541,7 @@
 .cabinet-contacts {
    .page-cabinet {
       &__container {
-         max-width: 790px;
+         flex: 0 1 790px;
       }
 
       &__subtitle-block {
@@ -1564,11 +1564,15 @@
    &__btn-clear {
       text-decoration: underline;
       color: $text1op05;
+      cursor: pointer;
    }
    &__input {
       margin: 12.5px 10px;
+      position: relative;
    }
-
+   &__input-pass {
+      width: 100%;
+   }
    &__buttons {
       text-align: right;
       & > button {
@@ -1586,6 +1590,200 @@
 }
 
 /* page cabinet contacts end */
+
+/* page cabinet adress start */
+
+.cabinet-adress {
+   .page-cabinet {
+      &__container {
+         flex: 1 1 auto;
+      }
+
+      &__subtitle-block {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 40px;
+         // max-width: 770px;
+         margin-right: 195px;
+      }
+      &__subtitle {
+         margin-bottom: 0;
+      }
+      &__wrapper {
+         display: flex;
+         flex-direction: column;
+      }
+   }
+   .cabinet-contacts__btn-clear {
+      text-decoration: underline;
+      color: $text1op05;
+      cursor: pointer;
+   }
+   &__input-body {
+      margin-bottom: 55px;
+   }
+   &__input-row {
+      display: flex;
+      margin-left: -10px;
+      &:not(:last-child) {
+         margin-bottom: 25px;
+         .cabinet-adress__input-box {
+            margin-right: 185px;
+         }
+      }
+      &:last-child {
+         .cabinet-adress__add-adress {
+            display: flex;
+         }
+      }
+      &:not(:first-child) {
+         .input-line {
+            display: none;
+         }
+      }
+   }
+   &__input-box {
+      display: grid;
+      grid-template-columns: 30% 53% 17%;
+      flex-wrap: wrap;
+      flex: 0 1 790px;
+      // max-width: 790px;
+      margin-right: 10px;
+   }
+   &__add-adress {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      flex: 0 0 175px;
+      justify-content: center;
+      height: 41.3px;
+      display: none;
+      .icon-add {
+         width: 17px;
+         height: 17px;
+         border: 1px solid $color1;
+         border-radius: 50%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-right: 10px;
+      }
+      &:active {
+         .icon-add {
+            background: $color1;
+            transition: 0.3s;
+            & span {
+               color: $white;
+               transition: 0.3s;
+            }
+         }
+      }
+      & span {
+         position: relative;
+         top: 0.3px;
+         font-size: 9px;
+         color: $color1;
+      }
+      & p {
+         color: #4d4d4d;
+         font-size: 12px;
+      }
+   }
+   &__selector {
+      border: 1px solid $color2;
+      position: relative;
+      // height: 41.3px;
+      // overflow: visible;
+      // width: 30%;
+      cursor: pointer;
+      margin: 0px 10px;
+   }
+
+   &__selector-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 32px 12.5px 18px;
+   }
+
+   &__selector-title {
+   }
+
+   &__selector-body {
+      position: absolute;
+      top: calc(100%);
+      left: -1px;
+      width: calc(100% + 2px);
+      z-index: 2;
+      display: none;
+      max-height: 167.2px;
+      background: $white;
+      overflow: hidden;
+      border: 1px solid $color2;
+   }
+
+   &__selector-item {
+      padding: 12px;
+      color: #4d4d4d;
+      &:hover {
+         background: $color1;
+         color: $white;
+      }
+      &:not(:last-child) {
+         border-bottom: 1px solid $color2;
+      }
+   }
+   &__input-adress-box {
+      position: relative;
+      margin: 0 10px;
+   }
+   &__input-adress {
+      height: 100%;
+      width: 100%;
+   }
+   &__input-adress-body {
+      position: absolute;
+      top: calc(100% - 1px);
+      left: 0px;
+      width: 100%;
+      background: $white;
+      z-index: 2;
+      border: 1px solid $color2;
+      display: none;
+      max-height: 167.2px;
+      overflow: hidden;
+   }
+   &__input-adress-item {
+      padding: 12px;
+      color: #4d4d4d;
+      &:hover {
+         background: $color1;
+         color: $white;
+      }
+      &:not(:last-child) {
+         border-bottom: 1px solid $color2;
+      }
+   }
+   &__input-index-box {
+      position: relative;
+      margin: 0 10px;
+   }
+   &__input-index {
+      width: 100%;
+      height: 100%;
+   }
+   &__btn-save-box {
+      max-width: 770px;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 195px;
+   }
+   &__btn-save {
+   }
+}
+
+/* page cabinet adress end */
 
 // steps active +
 
