@@ -178,7 +178,7 @@ $(document).ready(function () {
         })
     }
     // При загрузке страницы (медиа)
-    if ($(window).width() < 991) {
+    if ($(window).width() <= 991) {
         //изменение положения кнопки в корзине
         $('.page-cart__button-box').appendTo('.page-cart__body');
 
@@ -197,7 +197,7 @@ $(document).ready(function () {
     }
     // При изменении экрана страницы (медиа)
     $(window).resize(function () {
-        if ($(window).width() < 991) {
+        if ($(window).width() <= 991) {
             $('.cabinet-leftbar__item').appendTo('.cabinet-leftbar-mobile');
             $('.page-cart__button-box').appendTo('.page-cart__body');
             // alert();
@@ -267,7 +267,7 @@ $(document).ready(function () {
 //popup
 //popup нажатие вне body
 $(document).on('click', function (e) {
-    if (!$(e.target).closest(".change-pass").length && !$(e.target).closest(".btn-popup").length) {
+    if (!$(e.target).closest(".change-pass").length && !$(e.target).closest(".btn-popup").length && !$(e.target).closest(".forgot-pass").length) {
         $('.popup').fadeOut();
     }
     e.stopPropagation();
