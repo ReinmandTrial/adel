@@ -284,7 +284,7 @@ $('.popup__close').on('click', function () {
 
 //clear info 
 $('.cabinet-contacts__btn-clear').on('click', function () {
-    $(this).closest('.page-cabinet__container').find('.cabinet-contacts__input').val('');
+    $(this).closest('.page-cabinet__container').find('.cabinet-contacts__input, .cabinet-contacts__input-pass').val('');
 })
 
 $('.cabinet-contacts__btn-clear').on('click', function () {

@@ -79,22 +79,27 @@ textarea {
 	width: 100%;
 	max-width: 665px;
 	height: 100%;
-	// max-height: 570px;
+	max-height: 570px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	margin: 15px;
 	box-shadow: 10px 10px 20px rgba(99, 35, 22, 0.1);
-	&__input-box {
+	&__input-block {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 72px;
 	}
 
-	&__input {
+	&__input-box {
 		width: 300px;
-		&.input {
+		position: relative;
+		& input {
+			width: 100%;
+			height: 100%;
+		}
+		& .input {
 			padding: 17px 18px;
 		}
 		&:not(:last-child) {
@@ -113,7 +118,7 @@ textarea {
 	margin: 15px;
 	padding: 75px;
 	max-width: 665px;
-	// max-height: 600px;
+	max-height: 600px;
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -982,6 +987,7 @@ textarea {
 	display: flex;
 	&:hover {
 		transform: scale(1.03);
+		transition: 0.3s;
 	}
 	&__img {
 		position: absolute;

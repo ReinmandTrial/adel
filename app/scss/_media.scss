@@ -120,11 +120,11 @@
    .change-pass {
       max-width: 490px;
       max-height: 480px;
-      &__input-box {
+      &__input-block {
          margin-bottom: 63px;
       }
 
-      &__input {
+      &__input-box {
          width: 300px;
       }
    }
@@ -165,7 +165,8 @@
       }
 
       &__input-box {
-         margin: -15px -10px 65px -10px;
+         grid-template-columns: 37% 30% 33%;
+         margin: -15px -10px 60px -10px;
       }
 
       &__buttons {
@@ -243,7 +244,7 @@
          }
       }
       &__block {
-         margin-right: 60px;
+         margin-right: 40px;
       }
 
       &__cards {
@@ -256,7 +257,6 @@
             font-weight: 400;
          }
       }
-
       &__box {
       }
 
@@ -1155,14 +1155,15 @@
       }
    }
    .change-pass {
+      max-width: 295px;
       max-height: 350px;
-      &__input-box {
+      &__input-block {
          margin-bottom: 45px;
       }
 
-      &__input {
+      &__input-box {
          width: 235px;
-         &.input {
+         & .input {
             padding: 11px 18px 11.5px 18px;
          }
          &:not(:last-child) {
@@ -1339,7 +1340,7 @@
       }
       .page-cabinet {
          &__wrapper {
-            padding: 20px 10px 30px 15px;
+            padding: 20px 6px 30px 14px;
          }
       }
       &__block {
@@ -1352,14 +1353,12 @@
       &__info {
          margin-top: unset;
       }
-
-      &__box {
-      }
-
       &__info-title {
+         margin-bottom: 8px;
       }
 
       &__info-text {
+         font-size: 12px;
       }
       .steps {
          margin-bottom: 25px;
@@ -1377,9 +1376,6 @@
          &__num {
             width: 40px;
             height: 40px;
-         }
-
-         &__title {
          }
       }
    }
@@ -1427,6 +1423,7 @@
       font-size: 10px;
    }
    .page-catalog__grid .card-column {
+      margin: 10px 7.5px;
       width: calc(139px + (364.5 - 139) * ((100vw - 320px) / (768 - 320)));
    }
    .menu__container,
@@ -1778,14 +1775,16 @@
       margin-bottom: 2px;
    }
    .card-column .card__availability {
-      margin-bottom: 8px;
+      margin-bottom: 2px;
    }
    .page-catalog__title {
       font-size: 18px;
    }
    .card-column .card__banner {
       left: 0;
-      min-width: 53px;
+      top: 7px;
+      padding: 4px 5px;
+      min-width: 56px;
       font-size: 10px;
    }
    .slider-button-prev {
