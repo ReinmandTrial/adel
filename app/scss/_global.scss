@@ -888,7 +888,7 @@ textarea {
 .card-row {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 670px;
+	max-width: 710px;
 	margin-bottom: 25px;
 
 	.card {
@@ -897,7 +897,7 @@ textarea {
 		}
 
 		&__img {
-			width: 46%;
+			width: 44%;
 			height: 350px;
 		}
 		&__like-btn {
@@ -913,7 +913,7 @@ textarea {
 			}
 		}
 		&__descr {
-			width: 54%;
+			width: 56%;
 			padding: 0px 0px 0px 50px;
 			display: flex;
 			flex-direction: column;
@@ -931,11 +931,14 @@ textarea {
 			margin-bottom: 13px;
 		}
 		&__structure {
-			margin-bottom: 45px;
+			margin-bottom: 10px;
 		}
 		&__structure-title {
 			color: $text1;
 			margin-bottom: 5px;
+		}
+		&__structure-text {
+			height: 70px;
 		}
 		&-row-xl__box {
 			display: none;
@@ -955,6 +958,9 @@ textarea {
 		.card-row-xl__box {
 			display: flex;
 		}
+	}
+	.slider-color {
+		margin-right: 33px;
 	}
 }
 
