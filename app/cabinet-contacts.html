@@ -370,63 +370,16 @@
                                  <div class="cabinet-contacts__input popupBlock">
                                     <input type="password" class="cabinet-contacts__input-pass input"
                                        placeholder="Пароль">
-                                    <button class="forgot-pass-btn btn-popup">
+                                    <button class="forgot-pass-btn btn-popup btn-popup__recovery">
                                        Забыли пароль?
                                     </button>
-                                    <div class="popup">
-                                       <div class="popup__body">
-                                          <div class="forgot-pass">
-                                             <span class="icon icon-close popup__close"></span>
-                                             <div class="forgot-pass__body">
-                                                <p class="forgot-pass__title t1">
-                                                   Отправить запрос <br>
-                                                   на восстановление пароля
-                                                </p>
-                                                <div class="forgot-pass__input-box">
-                                                   <input type="text" class="forgot-pass__input input"
-                                                      placeholder="Email">
-                                                   <input type="text" class="forgot-pass__input input"
-                                                      placeholder="Компания">
-                                                </div>
-                                                <button class="forgot-pass__button button">отправить</button>
-                                                <div class="forgot-pass__phone h2">
-                                                   <p class="forgot-pass__phone-title">номер горячей линии</p>
-                                                   <p class="forgot-pass__phone-num">0800-555-55-55</p>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
                                  </div>
                               </div>
                               <div class="cabinet-contacts__buttons popupBlock">
-                                 <button class="cabinet-contacts__change-pass button2 btn-popup">изменить
+                                 <button class="cabinet-contacts__change-pass button2 btn-popup btn-popup__change">изменить
                                     пароль</button>
                                  <button class="cabinet-contacts__save button">сохранить</button>
                                  <!-- popup change pass start -->
-                                 <div class="popup">
-                                    <div class="popup__body">
-                                       <div class="change-pass">
-                                          <span class="icon icon-close popup__close"></span>
-                                          <div class="change-pass__input-block">
-                                             <div class="change-pass__input-box">
-                                                <input type="password" class="change-pass__input input"
-                                                   placeholder="Введите текущий пароль">
-                                             </div>
-                                             <div class="change-pass__input-box">
-                                                <input type="password" class="change-pass__input input"
-                                                   placeholder="Введите новый пароль">
-                                             </div>
-                                             <div class="change-pass__input-box">
-                                                <input type="password" class="change-pass__input input"
-                                                   placeholder="Повторите новый пароль">
-                                             </div>
-
-                                          </div>
-                                          <button class="change-pass__btn button">Сохранить</button>
-                                       </div>
-                                    </div>
-                                 </div>
                                  <!-- popup change pass end -->
 
                               </div>
@@ -443,7 +396,57 @@
             </div>
          </div>
          <!-- CONTENT end -->
+         <!-- popup  -->
+            
+         <div class="popup popup-recovery">
+            <div class="popup__body">
+               <div class="forgot-pass">
+                  <span class="icon icon-close popup__close"></span>
+                  <div class="forgot-pass__body">
+                     <p class="forgot-pass__title t1">
+                        Отправить запрос <br>
+                        на восстановление пароля
+                     </p>
+                     <div class="forgot-pass__input-box">
+                        <input type="text" class="forgot-pass__input input"
+                           placeholder="Email">
+                        <input type="text" class="forgot-pass__input input"
+                           placeholder="Компания">
+                     </div>
+                     <button class="forgot-pass__button button">отправить</button>
+                     <div class="forgot-pass__phone h2">
+                        <p class="forgot-pass__phone-title">номер горячей линии</p>
+                        <p class="forgot-pass__phone-num">0800-555-55-55</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="popup popup-change">
+            <div class="popup__body">
+               <div class="change-pass">
+                  <span class="icon icon-close popup__close"></span>
+                  <div class="change-pass__input-block">
+                     <div class="change-pass__input-box">
+                        <input type="password" class="change-pass__input input"
+                           placeholder="Введите текущий пароль">
+                     </div>
+                     <div class="change-pass__input-box">
+                        <input type="password" class="change-pass__input input"
+                           placeholder="Введите новый пароль">
+                     </div>
+                     <div class="change-pass__input-box">
+                        <input type="password" class="change-pass__input input"
+                           placeholder="Повторите новый пароль">
+                     </div>
 
+                  </div>
+                  <button class="change-pass__btn button">Сохранить</button>
+               </div>
+            </div>
+         </div>
+         <!-- popup end  -->
       </main>
       <!-- MAIN end -->
 

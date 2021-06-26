@@ -275,7 +275,21 @@ $(document).on('click', function (e) {
 //popup нажатие вне body end
 
 $('.btn-popup').on('click', function () {
-    $(this).closest('.popupBlock').find('.popup').fadeIn();
+    var btn = $(this);
+    // $(this).closest('.popupBlock').find('.popup').fadeIn();
+    $($('.main').find('.popup')).each(function(){
+        if(btn.hasClass('btn-popup__recovery')){
+            if($(this).hasClass('popup-recovery')){
+                $(this).fadeIn();
+            }
+        }else if(btn.hasClass('btn-popup__change')){
+            if($(this).hasClass('popup-change')){
+                $(this).fadeIn();
+            }
+        }else{
+            $(this).fadeOut();
+        }
+    })
 })
 $('.popup__close').on('click', function () {
     $(this).closest('.popup').fadeOut();
