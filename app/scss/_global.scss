@@ -86,6 +86,7 @@ textarea {
 	align-items: center;
 	margin: 15px;
 	box-shadow: 10px 10px 20px rgba(99, 35, 22, 0.1);
+	z-index: 99991;
 	&__input-block {
 		display: flex;
 		flex-direction: column;
@@ -106,9 +107,9 @@ textarea {
 			margin-bottom: 35px;
 		}
 	}
-
-	&__btn {
-	}
+}
+.popup-recovery {
+	z-index: 99992;
 }
 .forgot-pass {
 	background: $white;
@@ -122,7 +123,7 @@ textarea {
 	width: 100%;
 	height: 100%;
 	position: relative;
-
+	z-index: 99992;
 	&__body {
 		display: flex;
 		flex-direction: column;
@@ -162,9 +163,6 @@ textarea {
 
 	&__phone-title {
 		margin-bottom: 10px;
-	}
-
-	&__phone-num {
 	}
 }
 .forgot-pass-btn {
@@ -1032,10 +1030,12 @@ textarea {
 	}
 }
 .input-line {
+}
+.input-bottom-line {
 	font-size: 10px;
 	color: #4d4d4d;
 	position: absolute;
-	bottom: calc(100% + 8px);
-	left: 0;
+	top: calc(100% + 8px);
+	right: 0;
 	margin-left: 18px;
 }

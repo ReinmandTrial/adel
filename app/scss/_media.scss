@@ -1070,6 +1070,9 @@
 
 // MAX-WIDTH 576.98PX breakpoints START
 @media (max-width: 575.98px) {
+   .input-bottom-line {
+      top: calc(100% + 6px);
+   }
    .input-line {
       bottom: calc(100% + 3px);
       margin-left: 0px;
