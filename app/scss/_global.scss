@@ -1027,6 +1027,12 @@ textarea {
 	}
 }
 .input-line {
+	font-size: 10px;
+	color: #4d4d4d;
+	position: absolute;
+	bottom: calc(100% + 8px);
+	left: 0;
+	margin-left: 18px;
 }
 .input-bottom-line {
 	font-size: 10px;
