@@ -276,8 +276,11 @@ $(document).on('click', function (e) {
 
 $('.btn-popup').on('click', function () {
     var btn = $(this);
-    // $(this).closest('.popupBlock').find('.popup').fadeIn();
+    ;($('.main').find('.popup')).each(function(){
+        $(this).fadeOut();
+    })
     $($('.main').find('.popup')).each(function(){
+        
         if(btn.hasClass('btn-popup__recovery')){
             if($(this).hasClass('popup-recovery')){
                 $(this).fadeIn();
