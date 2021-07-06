@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шаблон</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+   <!-- WRAPPER start -->
+   <div class="wrapper">
+
+      <!-- HEADER start  -->
+
+      <!-- <header class="header">
+         <div class="container">
+            <div class="header__content">
+               <div class="logo">
+                  <img src="images/svg/logo.svg" alt="Логотип">
+               </div>
+               <div class="header__container">
+                  <ul class="menu burger-menu">
+                     <div class="menu__burger burger-btn">
+                        <span></span>
+                     </div>
+                     <div class="menu__container burger-mobile">
+                        <li class="menu__item t3"><a href="#" class="menu__link">Каталог</a></li>
+                        <li class="menu__item t3 toggle-block">
+                           <div class="menu__item-head toggle-btn">
+                              <p>Покупателям</p>
+                              <span class="icon icon-triangle-down toggle-icon"></span>
+                           </div>
+                           <div class="menu__item-body t6 toggle-body">
+                              <a href="#">Оплата заказа</a>
+                              <a href="#">Условия доставки</a>
+                              <a href="#">Обмен и возврат заказа</a>
+                              <a href="#">Уход за изделиями</a>
+                              <a href="#">Полезное</a>
+                           </div>
+                        </li>
+                        <li class="menu__item t3"><a href="#" class="menu__link">Контакты</a></li>
+                     </div>
+
+                  </ul>
+
+                  <div class="header__nav">
+                     <label class="search">
+                        <input type="text" class="search__input t3">
+                        <span class="icon icon-search"></span>
+                     </label>
+                     <div class="header__link">
+                        <a href="#"><span class="icon icon-person"></span></a>
+                     </div>
+                     <div class="header__link">
+                        <a href="#"><span class="icon icon-heart"></span></a>
+                     </div>
+                     <div class="header__link toggle-block">
+                        <a class=" toggle-btn" href="#"><span class="icon icon-bag"><i
+                                 class="header__quantity">99</i></span></a>
+                        <div class="preview-cart toggle-body">
+                           <div class="preview-cart__top-line">
+                              <span class="icon icon-close toggle-btn"></span>
+                              <p class="preview-cart__title h6">Корзина</p>
+                              <button class="preview-cart__clear-btn">Сбросить все</button>
+                           </div>
+                           <div class="preview-cart__body niceScroll">
+                              <a href="#" class="card-row-m card-block">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr t6">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code t7">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability_s card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete t7 card-del">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close card-del">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                              <a href="#" class="card-row-m card-block">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr t6">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code t7">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability_s card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete t7 card-del">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close card-del">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                              <a href="#" class="card-row-m card-block">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr t6">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code t7">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability_s card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete t7 card-del">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close card-del">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                              <a href="#" class="card-row-m card-block">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr t6">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code t7">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability_s card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete t7 card-del">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close card-del">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                              <a href="#" class="card-row-m card-block">
+                                 <div class="card__img">
+                                    <img src="images/card-row-m-img1.png" alt="">
+                                 </div>
+                                 <div class="card__descr t6">
+                                    <div class="card__main">
+                                       <div class="card__wrapper">
+                                          <p class="card__name">Кардиган
+                                             с объемными рукавами</p>
+                                          <p class="card__price">9000 ₽</p>
+                                       </div>
+                                       <p class="card__code t7">арт. CN6269/1Z-6271</p>
+                                       <div class="card__availability">
+                                          <p>Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                    </div>
+                                    <div class="card__container">
+                                       <div class="card-row-xl__amount-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Количество</p>
+                                          <div class="card-row-xl__amount count-block">
+                                             <span class="icon icon-minus count-mine"></span>
+                                             <input class="count-input" value="123" maxlength="3">
+                                             <span class="icon icon-plus count-more"></span>
+                                          </div>
+                                       </div>
+                                       <div class="card-row-xl__color-box card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Цвет</p>
+                                          <span class="card-row-xl__color color__item color-5"></span>
+                                       </div>
+                                       <div class="card__availability_s card-row-xl__box">
+                                          <p class="card-row-xl__title_s">Наличие</p>
+                                          <p><span class="semibold">123 шт.</span></p>
+                                       </div>
+                                       <div class="card-row-xl__box">
+                                          <p class="card-row-xl__title_s card__price">9000 ₽</p>
+                                          <button class="card__delete t7 card-del">Удалить</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <button class="card__close card-del">
+                                    <span class="icon icon-close"></span>
+                                 </button>
+                              </a>
+                           </div>
+                           <div class="preview-cart__btn-box toggle-btn--close">
+                              <a class="preview-cart__btn button t3">перейти в корзину</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header> -->
+
+      <!-- HEADER end  -->
+
+      <!-- MAIN start  -->
+      <main class="main">
+
+
+         <!-- CONTENT start  -->
+         <div class="content">
+            <div class="page-main before-main">
+               <div class="container">
+                  <div class="page-main__content">
+                     <div class="before-main__container">
+                        <div class="before-main__sliders-container">
+                           <div class="slider-simple-auto swiper-container">
+                              <div class="slider-simple-auto__wrapper swiper-wrapper">
+                                 <div class="slider-simple-auto__slide swiper-slide">
+                                    <img src="images/slider-simple-auto-img.png" alt="">
+                                 </div>
+                                 <div class="slider-simple-auto__slide swiper-slide">
+                                    <img src="images/slider-simple-auto-img.png" alt="">
+                                 </div>
+                                 <div class="slider-simple-auto__slide swiper-slide">
+                                    <img src="images/slider-simple-auto-img.png" alt="">
+                                 </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                           </div>
+                           <div class="slider-clients">
+                              <p class="slider-clients__title t4">Наши клиенты:</p>
+                              <div class="slider-clients__container swiper-container">
+                                 <div class="slider-clients__wrapper swiper-wrapper">
+                                    <div class="slider-clients__slide swiper-slide">
+                                       <div class="slider-clients__img">
+                                          <img src="images/slider-clients-img.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="slider-clients__slide swiper-slide">
+                                       <div class="slider-clients__img">
+                                          <img src="images/slider-clients-img.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="slider-clients__slide swiper-slide">
+                                       <div class="slider-clients__img">
+                                          <img src="images/slider-clients-img.png" alt="">
+                                       </div>
+                                    </div>
+                                    <div class="slider-clients__slide swiper-slide">
+                                       <div class="slider-clients__img">
+                                          <img src="images/slider-clients-img.png" alt="">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="slider-button slider-button-prev">
+                                 <span class="icon icon-triangle-left"></span>
+                              </div>
+                              <div class="slider-button slider-button-next">
+                                 <span class="icon icon-triangle-right"></span>
+                              </div>
+
+
+                           </div>
+                        </div>
+                        <div class="before-main__info-block">
+                           <div class="before-main__logo">
+                              <a href="#" class="logo">
+                                 <img src="images/svg/logo.svg" alt="Логотип">
+                              </a>
+                           </div>
+                           <div class="before-main__info t3">
+                              <p>Модели нашего производства широкого представлены
+                                 в крупнейших торговых сетях и модных шоу-румах.</p>
+                              <p>Мы предлагаем широкий ассортимент
+                                 модных моделей по оптовым ценам, а
+                                 так же выполнение заказа под вашем
+                                 маркой.</p>
+                           </div>
+                           <div class="auth-reg-block-mobile">
+                              <button class="auth-reg-block-button button2">Авторизация</button>
+                              <button class="auth-reg-block-button button2">Регистрация</button>
+                           </div>
+                           <div class="auth-reg-block">
+                              <div class="auth-reg-block__title-box">
+                                 <p class="auth-reg-block__title t1">Авторизация</p>
+                                 <p class="auth-reg-block__title t1 active">Регистрация</p>
+                              </div>
+                              <div class="auth-reg-block__auth-form">
+                                 <div class="auth-reg-block__input-box">
+                                    <input type="text" class="auth-reg-block__input input" placeholder="Email">
+                                 </div>
+                                 <div class="auth-reg-block__input-box popupBlock">
+                                    <input type="password" class="auth-reg-block__input input" placeholder="Пароль">
+                                    <button class="forgot-pass-btn btn-popup btn-popup__recovery">
+                                       Забыли пароль?
+                                    </button>
+                                 </div>
+                                 <button class="auth-reg-block__btn-enter button">войти</button>
+                              </div>
+                              <div class="auth-reg-block__reg-form">
+                                 <div class="auth-reg-block__reg-form-box">
+                                    <div class="auth-reg-block__input-box">
+                                       <input type="text" class="auth-reg-block__input input"
+                                          placeholder="Имя и фамилия">
+                                    </div>
+                                    <div class="auth-reg-block__input-box">
+                                       <input type="text" class="auth-reg-block__input input" placeholder="Телефон">
+                                    </div>
+                                    <div class="auth-reg-block__input-box">
+                                       <input type="text" class="auth-reg-block__input input" placeholder="Почта">
+                                    </div>
+                                    <div class="auth-reg-block__input-box">
+                                       <input type="text" class="auth-reg-block__input input" placeholder="Город">
+                                    </div>
+                                    <div class="auth-reg-block__input-box">
+                                       <input type="text" class="auth-reg-block__input input" placeholder="Компания">
+                                    </div>
+                                    <button class="auth-reg-block__btn-register button">зарегистрироваться</button>
+                                 </div>
+                                 <label class="auth-reg-block__agreement-block">
+                                    <input type="checkbox" class="checkbox-none">
+                                    <span class="checkbox-style"></span>
+                                    <div class="auth-reg-block__agreement-text t6">
+                                       Я даю свое согласие на обработку <a href="#"
+                                          class="auth-reg-block__agreement-link">персональных данных</a> и
+                                       подтверждаю,
+                                       что ознакомился с <a href="#"
+                                          class="auth-reg-block__agreement-link">правилами</a>
+                                    </div>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="before-main__contacts t1">
+                        <p class="before-main__contacts-title">
+                           Наш контактный номер:
+                        </p>
+                        <p class="before-main__contacts-num">
+                           8 800 495 84 49
+                        </p>
+                     </div>
+                     <div class="before-main__choose">
+                        <p class="before-main__choose-title h1">
+                           Почему выбирают Адель?
+                        </p>
+                        <div class="before-main__choose-main t1">
+                           <div class="before-main__choose-column">
+                              <div class="before-main__choose-row">
+                                 <p class="before-main__choose-num">
+                                    01
+                                 </p>
+                                 <p class="before-main__choose-text">
+                                    12 лет на рынке вязаных головных уборов
+                                 </p>
+                              </div>
+                              <div class="before-main__choose-row">
+                                 <p class="before-main__choose-num">
+                                    02
+                                 </p>
+                                 <p class="before-main__choose-text">
+                                    Производим более 500000 единиц изделий в год
+                                 </p>
+                              </div>
+                              <div class="before-main__choose-row">
+                                 <p class="before-main__choose-num">
+                                    03
+                                 </p>
+                                 <p class="before-main__choose-text">
+                                    Производим более 500000 единиц изделий в год
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="before-main__choose-column">
+                              <div class="before-main__choose-row">
+                                 <p class="before-main__choose-num">
+                                    04
+                                 </p>
+                                 <p class="before-main__choose-text">
+                                    Пряжа из натуральных материалов производства Италии и Турции
+                                 </p>
+                              </div>
+                              <div class="before-main__choose-row">
+                                 <p class="before-main__choose-num">
+                                    05
+                                 </p>
+                                 <p class="before-main__choose-text">
+                                    Германское (STOLL) и японское вязальное оборудование
+                                 </p>
+                              </div>
+                              <div class="before-main__choose-row">
+                                 <p class="before-main__choose-num">
+                                    06
+                                 </p>
+                                 <p class="before-main__choose-text">
+                                    Германское (STOLL) и японское вязальное оборудование
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="slider-awards">
+                        <p class="slider-awards__title h1">
+                           Награды и дипломы
+                        </p>
+                        <div class="slider-awards__body">
+                           <div class="slider-awards__container swiper-container">
+                              <div class="slider-awards__wrapper swiper-wrapper">
+                                 <div class="slider-awards__slide swiper-slide">
+                                    <div class="slider-awards__img">
+                                       <img src="images/slider-awards-img1.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="slider-awards__slide swiper-slide">
+                                    <div class="slider-awards__img">
+                                       <img src="images/slider-awards-img1.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="slider-awards__slide swiper-slide">
+                                    <div class="slider-awards__img">
+                                       <img src="images/slider-awards-img1.png" alt="">
+                                    </div>
+                                 </div>
+                                 <div class="slider-awards__slide swiper-slide">
+                                    <div class="slider-awards__img">
+                                       <img src="images/slider-awards-img1.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="slider-button slider-button-prev">
+                              <span class="icon icon-triangle-left"></span>
+                           </div>
+                           <div class="slider-button slider-button-next">
+                              <span class="icon icon-triangle-right"></span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="gallery">
+                        <p class="gallery__title h1">
+                           Узнавайте первыми о наших новинках
+                        </p>
+                        <p class="gallery__subtitle t1">
+                           подписывайтеь на инстаграм
+                        </p>
+                        <div class="gallery__links">
+                           <a href="#">
+                              <span class="icon icon-vk"></span>
+                           </a>
+                           <a href="#">
+                              <span class="icon icon-inst"></span>
+                           </a>
+                           <a href="#">
+                              <span class="icon icon-youtube"></span>
+                           </a>
+                        </div>
+                        <div class="gallery__body">
+                           <div class="gallery__img">
+                              <img src="images/gallery-img1.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img2.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img3.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img4.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img5.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img6.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img7.png" alt="">
+                           </div>
+                           <div class="gallery__img">
+                              <img src="images/gallery-img8.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- CONTENT end -->
+
+         <!-- popup start -->
+
+
+         <div class="popup popup-change">
+            <div class="popup__body">
+               <div class="change-pass">
+                  <span class="icon icon-close popup__close"></span>
+                  <div class="change-pass__input-block">
+                     <div class="change-pass__input-box popupBlock">
+                        <input type="password" class="change-pass__input input" placeholder="Введите текущий пароль">
+                        <button class="forgot-pass-btn btn-popup btn-popup__recovery">
+                           Забыли пароль?
+                        </button>
+                     </div>
+                     <div class="change-pass__input-box">
+                        <input type="password" class="change-pass__input input" placeholder="Введите новый пароль">
+                        <p class="input-bottom-line">
+                           Не более 8 символов
+                        </p>
+                     </div>
+                     <div class="change-pass__input-box">
+                        <input type="password" class="change-pass__input input" placeholder="Повторите новый пароль">
+                        <p class="input-bottom-line">
+                           Не более 8 символов
+                        </p>
+                     </div>
+
+                  </div>
+                  <button class="change-pass__btn button">Сохранить</button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="popup popup-auth-reg">
+            <div class="popup__body">
+               <div class="auth-reg-block">
+                  <div class="auth-reg-block__title-box">
+                     <p class="auth-reg-block__title t1">Авторизация</p>
+                     <p class="auth-reg-block__title t1 active">Регистрация</p>
+                  </div>
+                  <div class="auth-reg-block__auth-form">
+                     <div class="auth-reg-block__input-box">
+                        <input type="text" class="auth-reg-block__input input" placeholder="Email">
+                     </div>
+                     <div class="auth-reg-block__input-box popupBlock">
+                        <input type="password" class="auth-reg-block__input input" placeholder="Пароль">
+                        <button class="forgot-pass-btn btn-popup btn-popup__recovery">
+                           Забыли пароль?
+                        </button>
+                     </div>
+                     <button class="auth-reg-block__btn-enter button">войти</button>
+                  </div>
+                  <div class="auth-reg-block__reg-form">
+                     <div class="auth-reg-block__reg-form-box">
+                        <div class="auth-reg-block__input-box">
+                           <input type="text" class="auth-reg-block__input input" placeholder="Имя и фамилия">
+                        </div>
+                        <div class="auth-reg-block__input-box">
+                           <input type="text" class="auth-reg-block__input input" placeholder="Телефон">
+                        </div>
+                        <div class="auth-reg-block__input-box">
+                           <input type="text" class="auth-reg-block__input input" placeholder="Почта">
+                        </div>
+                        <div class="auth-reg-block__input-box">
+                           <input type="text" class="auth-reg-block__input input" placeholder="Город">
+                        </div>
+                        <div class="auth-reg-block__input-box">
+                           <input type="text" class="auth-reg-block__input input" placeholder="Компания">
+                        </div>
+                        <button class="auth-reg-block__btn-register button">зарегистрироваться</button>
+                     </div>
+                     <label class="auth-reg-block__agreement-block">
+                        <input type="checkbox" class="checkbox-none">
+                        <span class="checkbox-style"></span>
+                        <div class="auth-reg-block__agreement-text t6">
+                           Я даю свое согласие на обработку <a href="#"
+                              class="auth-reg-block__agreement-link">персональных данных</a> и
+                           подтверждаю,
+                           что ознакомился с <a href="#" class="auth-reg-block__agreement-link">правилами</a>
+                        </div>
+                     </label>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <!-- popup end -->
+
+
+
+
+      </main>
+      <!-- MAIN end -->
+
+      <!-- FOOTER start  -->
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__content">
+               <div class="footer__columns">
+                  <div class="footer__block t6">
+                     <p class="footer__title t3">КАТАЛОГ</p>
+                     <a href="#" class="footer__link">Шапки</a>
+                     <a href="#" class="footer__link">Шарфы и бафы</a>
+                     <a href="#" class="footer__link">Комплекты</a>
+                  </div>
+                  <div class="footer__block t6">
+                     <p class="footer__title t3">ПОКУПАТЕЛЯМ</p>
+                     <a href="#" class="footer__link">Оплата заказа</a>
+                     <a href="#" class="footer__link">Условия доставки</a>
+                     <a href="#" class="footer__link">Обмен и возврат заказа</a>
+                     <a href="#" class="footer__link">Уход за изделиями</a>
+                     <a href="#" class="footer__link">Полезное</a>
+                  </div>
+                  <div class="footer__block t6">
+                     <p class="footer__title t3">СВЯЗАТЬСЯ С НАМИ</p>
+                     <a href="#" class="footer__link">Контакты и адреса магазинов</a>
+                  </div>
+                  <div class="footer__block t6">
+                     <p class="footer__title t3">ПАРТНЕРАМ</p>
+                     <p class="footer__link"></p>
+                  </div>
+               </div>
+
+               <div class="footer__contacts t1">
+                  <p>8 800 495 84 49</p>
+                  <p>Aiva-shop@gmail.com</p>
+               </div>
+               <div class="footer__socials">
+                  <a href="#"><span class="icon icon-inst"></span></a>
+                  <a href="#"><span class="icon icon-vk"></span></a>
+                  <a href="#"><span class="icon icon-facebook"></span></a>
+               </div>
+               <a href="#" class="footer__info t3">Соглашение об обработке персональных данных</a>
+            </div>
+         </div>
+      </footer>
+      <!-- FOOTER end -->
+
+   </div>
+   <!-- WRAPPER end -->
+
+
+
+   <!-- SCRIPTS start  -->
+   <script src="js/main.min.js"></script>
+
+
+
+</body>
+
+</html>

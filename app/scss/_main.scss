@@ -1,5 +1,7 @@
 // calc(210px + (295 - 210) * ((100vw - 320px) / (1440 - 320)))
 
+// 1 Этап начало
+
 /* HEADER start */
 .header {
    border-bottom: 1px solid $text1;
@@ -1287,6 +1289,10 @@
 
 /* PAGE-CATALOG end  */
 
+// 1 Этап конец
+
+// 2 Этап начало
+
 /* page cabinet promotions start */
 
 .page-cabinet {
@@ -1785,49 +1791,261 @@
 
 /* page cabinet adress end */
 
-// steps active +
+// 2 Этап конец
 
-// Как работает выбор цвета  +
+// 3 Этап начало
 
-//  Положение кнопки в корзине       + через js
+/*  page main start */
 
-// Как сделать скролл полоску на фильтре?      +
-// Сделать скролл
+.page-main {
+   &__content {
+   }
+}
+.before-main {
+   .page-main__content {
+      padding: 20px 0px 100px 0px;
+   }
+   &__container {
+      display: flex;
+      margin-bottom: 45px;
+   }
+   &__sliders-container {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+   }
+   &__info-block {
+      width: calc(50% - 10px);
+   }
+   &__logo {
+      margin-left: 30px;
+      margin-bottom: 25px;
+      .logo {
+         display: block;
+         width: calc(78px + (237 - 78) * ((100vw - 320px) / (1440 - 320)));
+         max-width: 237px;
+         height: calc(40px + (115 - 40) * ((100vw - 320px) / (1440 - 320)));
+         max-height: 115px;
+      }
+   }
 
-// Сладер в сайдбаре и гриде   +
+   &__info {
+      margin-left: 40px;
+      margin-bottom: 22px;
+      & p {
+         line-height: 1.44;
+      }
+      & p:not(:last-child) {
+         margin-bottom: 15px;
+      }
+   }
+   &__contacts {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #000;
+      margin-bottom: 60px;
+      line-height: 1.57;
+   }
+   &__contacts-title {
+      margin-right: 15px;
+      font-weight: 300;
+   }
+   &__contacts {
+      font-weight: 500;
+   }
+   &__choose {
+      margin-bottom: 90px;
+      width: 95%;
+      // max-width: 1210px;
+   }
 
-// Как устроен фильтр?    +
+   &__choose-title {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+   }
 
-// Бургер   +
+   &__choose-main {
+      display: flex;
+   }
 
-// Иконки, изменения при нажатии  opacity
+   &__choose-column {
+      width: 50%;
+   }
 
-// Шрифты     +
+   &__choose-row {
+      display: flex;
+      align-items: center;
+      padding-right: 23px;
+   }
 
-// Инпуты в корзине адаптив           адаптировать самому
+   &__choose-num {
+      flex: 0 0 125px;
+      margin-right: 25px;
+      font-size: 90px;
+      font-weight: bold;
+      color: $color1;
+      opacity: 0.5;
+   }
 
-// Цвета сердец в каталоге        оставить
+   &__choose-text {
+      color: $text1op07;
+      line-height: 1.5;
+      max-height: 100%;
+   }
+}
+.auth-reg-block {
+   padding: 60px 22px 80px 20px;
+   background: $white;
+   box-shadow: 0px 2px 18px rgba(99, 35, 22, 0.2);
 
-// Что сделать с адаптивом цветов    фваифва
+   &__title-box {
+      margin: 0 auto;
+      max-width: 430px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 70px;
+   }
 
-// Наеладывать a на кнопки, и как?   Без разницы
+   &__title {
+      text-transform: uppercase;
+      color: #4d4d4d;
+      height: 43px;
+      &.active {
+         border-bottom: 5px solid $color2;
+      }
+   }
 
-// Предпросмотр карзины, где нажимается, откуда выпадает     поставить overflow
+   &__auth-form {
+      display: none;
+      margin: 0 auto;
+      max-width: 420px;
+      & .auth-reg-block__input-box {
+         margin: 0 20px;
+         // width: calc(50% - 20px);
+         margin-bottom: 20px;
+      }
+   }
 
-// Как выглядят селекты в фильтре       +
+   &__input-box {
+      position: relative;
+   }
 
-// Как выглядит поиск а адаптиве          потом
+   &__input {
+      width: 100%;
+      padding: 17px 18px;
+   }
 
-// Как оформить бургер, заново писать, вставить          + не вставить, изменить положение
+   &__btn-enter {
+      display: block;
+      margin: 40px 0px 0px 20px;
+   }
 
-// Карточки в адаптиве не все     использовать имеющиеся шаблоны
+   &__reg-form {
+   }
 
-// Поиск при нажатии       потом
+   &__reg-form-box {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+      margin-bottom: 17px;
+      & .auth-reg-block__input-box {
+         margin: 10px;
+         width: calc(33.332% - 20px);
+      }
+   }
 
-// Должны ли подсвечиваться элементы с opacity           не трогать
+   &__btn-register {
+      margin: 10px;
+      width: calc(33.332% - 20px);
+      font-size: 12px;
+      padding: 18px 5px;
+   }
 
-// В фильтре мог бы сделать категории в радио         не мог бы
+   &__agreement-block {
+      display: flex;
 
-// Бар в лк, вкладки оформлять как button или a    a и active
+      & .checkbox-style {
+         margin-top: 3px;
+         margin-right: 18px;
+         flex: 0 0 auto;
+      }
+   }
 
-// Иконку фильтра чере
+   &__agreement-text {
+   }
+
+   &__agreement-link {
+      text-decoration: underline;
+      line-height: 1.71;
+   }
+}
+.auth-reg-block-mobile {
+   display: none;
+   background: $white;
+   box-shadow: 0px 2px 18px rgba(99, 35, 22, 0.2);
+   padding: 28px 57px;
+   .auth-reg-block-button {
+      width: 100%;
+      text-transform: unset;
+      padding: 11px;
+      &:not(:last-child) {
+         margin-bottom: 15px;
+      }
+      .button2 {
+      }
+   }
+}
+
+.forgot-pass-btn {
+}
+.btn-popup {
+   &__recovery {
+   }
+}
+.checkbox-none {
+}
+.checkbox-style {
+}
+
+.gallery {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   &__title {
+      margin-bottom: 8px;
+      text-transform: uppercase;
+   }
+   &__subtitle {
+      color: $text1op07;
+      margin-bottom: 36px;
+   }
+   &__links {
+      margin-bottom: 60px;
+
+      & a:not(:last-child) {
+         margin-right: 25px;
+      }
+      & span {
+         color: #f0d4c3;
+         font-size: 58px;
+      }
+   }
+   &__body {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+   }
+   &__img {
+      margin: 10px;
+      width: calc(25% - 20px);
+      height: calc(169px + (298 - 169) * ((100vw - 768px) / (1440 - 768)));
+      max-height: 298px;
+      & img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}
+
+/*  page main end */

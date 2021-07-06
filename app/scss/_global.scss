@@ -47,7 +47,7 @@ textarea {
 .burger {
 }
 
-/* popup change pass start  */
+/* popup start  */
 .popup {
 	display: none;
 	position: fixed;
@@ -171,7 +171,7 @@ textarea {
 	text-decoration: underline;
 	cursor: pointer;
 }
-/* popup change pass end  */
+/* popup end  */
 
 .off {
 	display: none !important;
@@ -207,6 +207,8 @@ textarea {
 		display: none;
 	}
 }
+
+// 1 Этап начало
 
 .card-row-xl {
 	display: flex;
@@ -348,6 +350,8 @@ textarea {
 		transform: translate(0, -50%);
 		z-index: 4;
 		width: calc(26px + (50 - 26) * ((100vw - 320px) / (1440 - 320)));
+		max-width: 51px;
+		max-height: 51px;
 		height: calc(26px + (50 - 26) * ((100vw - 320px) / (1440 - 320)));
 		background: $color3;
 		border: 3px solid $color1;
@@ -356,11 +360,13 @@ textarea {
 		justify-content: center;
 		align-items: center;
 		outline: none;
+		cursor: pointer;
 		& span {
 			font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
 			color: $color2;
 		}
 		&:active {
+			transition: 0.3s;
 			border: 3px solid $text1;
 			& span {
 				color: $text1;
@@ -978,6 +984,11 @@ textarea {
 	color: #4d4d4d;
 	font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
 }
+
+// 1 Этап конец
+
+// 2 Этап начало
+
 .news-and-offers {
 	// flex: 0 1 420px;
 	// width: 420px;
@@ -1041,4 +1052,140 @@ textarea {
 	top: calc(100% + 8px);
 	right: 0;
 	margin-left: 18px;
+}
+
+// 2 Этап конец
+
+// 3 Этап начало
+
+.slider-simple-auto {
+	position: relative;
+	margin-bottom: 24px;
+	&__wrapper {
+	}
+
+	&__slide {
+		height: calc(320px + (575 - 320) * ((100vw - 768px) / (1330 - 768)));
+		max-height: 575px;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__container {
+		position: relative;
+	}
+	.swiper-pagination {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		// position: absolute;
+		// bottom: 0;
+		// left: 0;
+		height: 42px;
+		z-index: 10;
+		// height: 100px;
+		// width: 100%;
+		.swiper-pagination-bullet {
+			width: 20px;
+			height: 20px;
+			background: #f0d4c3;
+			border-radius: 50px;
+			transition: 0.3s;
+			// background: #000;
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+		}
+		.swiper-pagination-bullet-active {
+			width: 50px;
+			transition: 0.3s;
+		}
+	}
+}
+.slider-clients {
+	position: relative;
+	&__title {
+		font-weight: 500;
+		margin-bottom: 35px;
+	}
+
+	&__container {
+		margin: 0px 70px 0px 40px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__wrapper {
+	}
+
+	&__slide {
+		display: flex;
+		justify-content: center;
+	}
+	&__img {
+		width: calc(52px + (95 - 52) * ((100vw - 768px) / (1330 - 768)));
+		max-width: 95px;
+		height: calc(22px + (40 - 22) * ((100vw - 768px) / (1330 - 768)));
+		max-height: 40px;
+	}
+	.slider-button {
+		transform: translate(0, 50%);
+		bottom: 20px;
+		top: unset;
+	}
+	.slider-button-prev {
+		left: -25.5px;
+	}
+	.slider-button-next {
+		right: 0;
+	}
+}
+.slider-awards {
+	margin-bottom: 90px;
+	&__title {
+		margin-bottom: 50px;
+		text-transform: uppercase;
+	}
+
+	&__body {
+		position: relative;
+		margin: 0 -26px;
+	}
+
+	&__container {
+		margin: 0 71px;
+	}
+
+	&__wrapper {
+	}
+
+	&__slide {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__img {
+		width: 285px;
+		max-width: 285px;
+		height: 263px;
+		max-height: 263px;
+
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.slider-button {
+		top: 50%;
+	}
+	.slider-button-prev {
+		left: 0;
+	}
+	.slider-button-next {
+		right: 0;
+	}
 }
